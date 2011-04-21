@@ -1,0 +1,18 @@
+foreach $root do
+  if $children do
+    <ul class="projects isotope">
+      foreach $children do
+        <li class="element if @width_class do @width_class endif if @height_class do @height_class endif if @data-related do @data-related endif" if @data-related do data-related="@data-related" endif>
+            if @thumb do <a href="@url" class="image"><img src="@thumb" class="thumb" width="@width" height="@height" alt=""></a> endif
+            <section class="text">
+              <h4 class="title">@title</h4>
+              if @blurb do
+                <div class="blurb">
+                @blurb
+              </div>endif
+            </section>
+        </li>
+      endforeach
+    </ul>
+  endif
+endforeach

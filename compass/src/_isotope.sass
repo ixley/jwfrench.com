@@ -1,0 +1,106 @@
+
+
+/* Start: Recommended Isotope styles
+
+/**** Isotope Filtering ***
+
+.isotope-item
+  z-index: 2
+
+.isotope-hidden.isotope-item
+  pointer-events: none
+  z-index: 1
+
+/**** Isotope CSS3 transitions ***
+
+.isotope
+  -webkit-transition-duration: 0.8s
+  -moz-transition-duration: 0.8s
+  transition-duration: 0.8s
+  .isotope-item
+    -webkit-transition-duration: 0.8s
+    -moz-transition-duration: 0.8s
+    transition-duration: 0.8s
+    -webkit-transition-property: -webkit-transform, opacity
+    -moz-transition-property: -moz-transform, opacity
+    transition-property: transform, opacity
+  -webkit-transition-property: height, width
+  -moz-transition-property: height, width
+  transition-property: height, width
+  /* End: Recommended Isotope styles
+  /**** disabling Isotope CSS3 transitions ***
+  &.no-transition
+    -webkit-transition-duration: 0s
+    -moz-transition-duration: 0s
+    transition-duration: 0s
+    .isotope-item
+      -webkit-transition-duration: 0s
+      -moz-transition-duration: 0s
+      transition-duration: 0s
+  /* disable CSS transitions for containers with infinite scrolling
+  &.infinite-scrolling
+    -webkit-transition: none
+    -moz-transition: none
+    transition: none
+
+
+/* required for containers to inherit vertical size from window
+html, body
+  height: 100%
+
+#artboard
+  margin: 10px 0 20px
+  padding: 5px 10px
+  position: relative
+  overflow: hidden
+
+.element
+  +box-shadow(rgba(0,0,0,.08),0,1px,2px)
+  margin: 0 15px 15px 0
+  float: left
+  display: inline-block
+  overflow: hidden
+  position: relative
+  background: #fff
+  color: #222
+  padding: 0
+  -webkit-transition: all .5s
+  -o-transition: all .5s
+  -moz-transition: all .5s
+  transition: all .5s
+  +width(3)
+  height: auto
+  
+  &:hover
+    +box-shadow(rgba(0,45,45,.3), 0, 1px, 7px)
+    .text
+  section.description
+    position: relative
+    margin: 0
+  a.image
+    display: block
+    position: relative
+  .thumb
+    display: block
+    width: 100%
+    position: relative
+    top: 0
+    left: 0
+  img.art
+    display: block
+    float: left
+    margin: 0 15px 15px 0
+  .text
+    position: relative
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba(255,255,255,.7)
+    padding: 10px 7px 5px
+    h4.title
+      margin-bottom: 3px
+    .blurb
+      text-transform: uppercase
+      font-size: 10px
+      color: #999
+

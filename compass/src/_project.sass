@@ -1,0 +1,100 @@
+// PROJECT page
+
+body.project
+  #content
+    padding-left: $col-width
+    position: relative
+    +width(7)
+    a.back-btn, .prev-project a, .next-project a
+      display: block
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 9px
+      color: #ccc
+      +border-radius(3px)
+      padding: 4px 5px
+      opacity: .4
+      background-color: #fff
+      &:hover
+        opacity: 1
+      span
+        font: 
+          family: $museo
+          size: 30px
+          weight: bold
+        display: block
+        line-height: 24px
+        margin-bottom: 3px
+    a.back-btn
+      position: absolute
+      left: 27px
+      top: 0
+
+
+    #media
+      margin-bottom: 40px
+      .image
+        margin-bottom: 10px
+        img
+          +width(7)
+          height: auto
+
+    #container-nav
+      +clearfix
+      border-top: 1px solid #ddd
+      padding-top: 8px
+      vertical-align: middle
+      p
+        width: 45%
+        color: #999
+    .prev-project 
+      text-align: left
+      float: left
+      a
+        margin-right: 10px
+        float: left
+    .next-project 
+      text-align: right
+      float: right
+      a
+        margin-left: 10px
+        float: right
+    
+
+
+  div#image-wrapper
+    overflow: hidden
+    +width(7)
+    div#image-holder
+      width: 100000000px
+      div.image
+        float: left
+        +width(7)
+
+.description
+  .header, p
+    margin-bottom: 10px
+  +width(7)
+  margin-bottom: 20px
+  .hed
+    font: 
+      size: 2.3em
+      family: $museo
+    color: #666
+
+
+        
+/* Javascript-enabled styles
+
+body.js
+  p#gallery-count, div#gallery-navigation
+    display: block
+  p#project-count
+    display: none    
+
+  div#media div.image
+    display: none
+    &:first-child
+      display: block 
+      

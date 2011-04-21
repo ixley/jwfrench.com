@@ -1,0 +1,31 @@
+  :html_head
+  <body class="@slug project if @body_class do @body_class endif">
+    :header
+    <div id="content" class="">
+      <a href="javascript:history.go(-1)" class="back-btn"><span>&larr;</span> Back</a>
+      <div class="description">
+        <div class="header">
+          <h2 class="hed">@title</h2>
+          if @client do
+          <h4 class="dek">@client</h4>
+          endif
+        </div>
+        @content
+      </div>
+      <!--
+      <div id="gallery-navigation" class="col three">
+        <p id="gallery-count"><span>1/1</span></p>
+        <p><a href="#" id="next-image">Next image</a> <em>&rarr;</em></p>
+        <p><a href="#" id="previous-image">Previous image</a> <em>&larr;</em></p>
+      </div>
+          -->    
+        :media
+      
+      <div id="page-nav" class="navigation">
+        if $siblings do
+          :next-page
+          :previous-page
+        endif
+      </div>
+    </div>
+  :footer
