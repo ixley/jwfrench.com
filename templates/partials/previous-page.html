@@ -1,3 +1,3 @@
 foreach $previous_sibling do
-  <p class="prev-project"><a href="@url">Previous <span>&laquo;</span> project</a> @title</p>
+  <a href="@url" class="prev-project"><span class="arrow">&laquo;</span>Previous<span class="title">if @short do @short endif if !@short do @title endif</span></a>
 endforeach

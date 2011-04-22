@@ -1,6 +1,46 @@
 title: Information
 -
 content:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et mauris eu magna convallis cursus. Pellentesque a justo nisl. Duis vel velit at libero ultricies consectetur. Ut sem libero, ornare in ullamcorper eget, molestie sit amet tellus. Aenean auctor porttitor consectetur. Aliquam erat volutpat.
-
-I can be contacted at: <hi@yourdomain.com>.
+<ul class="summary">
+  <li><h2>I am an @job-title that loves problem-solving.</h2></li> 
+  <li>I believe that great design comes not just from a thorough understanding of visual and interactive elements,</li> 
+  <li>but that it depends on a solid understanding of contextual application as well.</li> 
+  <li>And while I can get excited about everything from icons and breaking grids to user flows and design patterns,</li> 
+  <li>I ultimately want to contribute to projects with valuable, real-world applications.</li>
+</ul>
+-
+testimonials:
+<ul class="testimonials">
+  <li>Jeff is the most dedicated and passionate designer I've had the pleasure of working with. He played a central role in growing Change.org from a small advocacy site to a platform with millions of monthly visitors, and fluidly adapted to our rapid expansion.<span class="close quote">&rdquo;</span>
+  <div>&mdash; Ben Rattray, Founder & CEO, Change.org</div>
+  </li>
+  
+  <li>Jeff is a rock-solid designer with a solid understanding of the technologies used to power the web.... he's able to produce high quality work under incredibly short deadlines and immense pressure. I thoroughly enjoyed working with him.<span class="close quote">&rdquo;</span>
+  <div>&mdash; Jeffrey Wescott, VP of Product & Engineering, Change.org</div>
+  </li>
+  
+  <li>Jeff has been a great resource on a number of campaigns. We've used him for everything from web advertising design to full design of microsites, and he's come through every time with a great product, on time and on or under budget.<span class="close quote">&rdquo;</span>
+  <div>&mdash; Daniel Mintz, Campaign Director, MoveOn.org</div>
+  </li>
+  
+  <li>One of the smartest business decisions I made was to hire Jeff to create my company website.<span class="close quote">&rdquo;</span>
+  <div>&mdash; Aneta Genova, Accessories Designer</div>
+  </li>
+  
+  <li>Jeff always goes above and beyond with each effort, while exhibiting a state of grace that truly bring peace and composure into the working environment.<span class="close quote">&rdquo;</span>
+  <div>&mdash; Christopher Lee Boon, Editor in Chief, YRB Magazine</div>
+  
+  </li>
+  
+  <li>Jeff was extremely dedicated to the team, and could always be counted on to deliver work on time. Beyond all that he's a pleasure to work with...<span class="close quote">&rdquo;</span>
+  <div>&mdash; Mark Dimas, CTO & Chief Architect, Change.org</div>
+  </li>
+  
+  <li>Jeff always delivered stylish, relevant, high-quality work that consistently exceeded what we had even envisioned. Always organized, thorough, and on time. ...he really worked to understand where we were coming from, our audience, and our goals for the project. His strong sense for how design is linked with user-interface, puts him in the most elite and valuable class of designer.<span class="close quote">&rdquo;</span>
+  <div>&mdash; Sam Dorman, League of Young Voters</div>
+  </li>
+  
+  <li>Jeff worked with me from beginning to end to draw my vision into reality. It's that attention to detail that makes working with him so easy.<span class="close quote">&rdquo;</span>
+  <div>Mervyn Marcano, Communications Director, League of Young Voters</div>
+  </li>
+</ul>

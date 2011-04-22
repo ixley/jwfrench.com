@@ -105,7 +105,6 @@ a
     outline: none
 
 ul
-  margin-left: 2em
 
 ol
   margin-left: 2em
@@ -215,10 +214,12 @@ input:invalid, textarea:invalid
 
 /* These selection declarations have to be separate
  * No text-shadow: twitter.com/miketaylr/status/12228805301
- * Also: hot pink!
 
-
-::-moz-selection, ::selection
+::-moz-selection
+  background: #ff9600
+  color: #fff
+  text-shadow: none
+::selection
   background: #ff9600
   color: #fff
   text-shadow: none
@@ -226,7 +227,7 @@ input:invalid, textarea:invalid
 /* j.mp/webkit-tap-highlight-color
 
 a:link
-  -webkit-tap-highlight-color: #FF5E99
+  -webkit-tap-highlight-color: #0094c0
 
 /* Make buttons play nice in IE:
  * www.viget.com/inspire/styling-the-button-element-in-internet-explorer/

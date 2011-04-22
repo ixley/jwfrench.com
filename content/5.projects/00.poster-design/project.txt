@@ -1,0 +1,10 @@
+title: Poster Design
+-
+date:
+-
+content: 
+Personal illustration project
+-
+role: Personal
+-
+data-related: personal misc

@@ -1,0 +1,8 @@
+title: Women of Color Flyer
+-
+content: 
+A simple but bold design for the 2nd Annual Social Justice Conference sponsored by the Women of Color organization at the New School.
+-
+blurb: Flyer Design
+-
+data-related: print

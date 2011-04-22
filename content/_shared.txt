@@ -1,2 +1,3 @@
 name: Jeff French
 -
+job-title: Interaction &amp; Visual Designer

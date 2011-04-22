@@ -1,9 +1,28 @@
-$col-width: 80px
-$col-margin: 15px
-
-$museo: "museo-slab-1", sans-serif
-
-
 @mixin width($count:1)
   width: ($col-width * $count) - $col-margin
   
+@mixin max-width($count:1)
+  max-width: ($col-width * $count) - $col-margin
+
+
+@mixin size( $width, $height: $width )
+  width: $width
+  height: $height
+
+@mixin size-of-image($path)
+  +size(image-width($path), image-height($path))
+    
+// This duplicates the provided method to add display:block (because there is no super to override)
+
+@mixin replace-text($img, $x: 50%, $y: 50%)
+  @include hide-text
+  display: block
+  background:
+    image: image-url($img)
+    repeat: no-repeat
+    position: $x $y
+  font-size: 0
+  line-height: 0
+  overflow: hidden
+  position: relative
+  +size-of-image($img)

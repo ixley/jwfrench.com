@@ -1,0 +1,10 @@
+title: The League of Young Voters
+-
+date:
+-
+content: 
+I worked on a number of projects with the League of Young Voters starting with a rebranding project to help streamline their visual identity. Subsequent projects included a homepage design, brochures and various print collateral.
+-
+role: Web Design, Rebranding, Print Collateral
+-
+data-related: web print identity

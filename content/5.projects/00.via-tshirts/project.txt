@@ -1,0 +1,10 @@
+title: Tshirt Designs
+-
+date:
+-
+content: 
+Three various t-shirt designs I created with Via.
+-
+role: Personal
+-
+data-related: misc

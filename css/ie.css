@@ -1,5 +1,64 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+/* line 4, ../compass/src/ie.sass */
+html.ie6 #navigation li, html.ie7 #navigation li, html.ie8 #navigation li {
+  display: block;
+  float: left;
+}
+/* line 9, ../compass/src/ie.sass */
+html.ie6 .projects-index .intro, html.ie7 .projects-index .intro, html.ie8 .projects-index .intro {
+  display: block;
+}
+/* line 11, ../compass/src/ie.sass */
+html.ie6 .projects-index .intro li, html.ie7 .projects-index .intro li, html.ie8 .projects-index .intro li {
+  display: inline;
+}
+/* line 14, ../compass/src/ie.sass */
+html.ie6 #options, html.ie7 #options, html.ie8 #options {
+  display: block;
+}
+/* line 16, ../compass/src/ie.sass */
+html.ie6 #options h5, html.ie6 #options ul, html.ie6 #options li, html.ie6 #options a, html.ie7 #options h5, html.ie7 #options ul, html.ie7 #options li, html.ie7 #options a, html.ie8 #options h5, html.ie8 #options ul, html.ie8 #options li, html.ie8 #options a {
+  display: block;
+  float: left;
+}
+/* line 20, ../compass/src/ie.sass */
+html.ie6 .gallery, html.ie7 .gallery, html.ie8 .gallery {
+  clear: both;
+  float: none;
+}
+/* line 23, ../compass/src/ie.sass */
+html.ie6 .gallery .element, html.ie7 .gallery .element, html.ie8 .gallery .element {
+  display: block;
+}
+/* line 25, ../compass/src/ie.sass */
+html.ie6 .gallery .element img.thumb, html.ie7 .gallery .element img.thumb, html.ie8 .gallery .element img.thumb {
+  width: 100%;
+  height: auto;
+}
+
+/* line 34, ../compass/src/ie.sass */
+html.ie6 body.project .description .role, html.ie6 body.project .description h4.title, html.ie7 body.project .description .role, html.ie7 body.project .description h4.title {
+  display: block;
+  float: left;
+}
+/* line 37, ../compass/src/ie.sass */
+html.ie6 body.project .description p, html.ie7 body.project .description p {
+  clear: both;
+}
+/* line 41, ../compass/src/ie.sass */
+html.ie6 body.project #media .image em.label, html.ie7 body.project #media .image em.label {
+  display: none !important;
+}
+/* line 45, ../compass/src/ie.sass */
+html.ie6 body.information ul.links, html.ie7 body.information ul.links {
+  overflow: hidden;
+}
+/* line 47, ../compass/src/ie.sass */
+html.ie6 body.information ul.links li, html.ie6 body.information ul.links a, html.ie7 body.information ul.links li, html.ie7 body.information ul.links a {
+  display: block;
+  float: left;
+}
+
+/* line 54, ../compass/src/ie.sass */
+html.ie7 #container {
+  overflow: hidden;
+}

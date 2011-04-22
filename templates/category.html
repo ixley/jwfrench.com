@@ -1,14 +1,10 @@
-  :html_head
-  <body class="@slug if @body_class do @body_class endif">
-    <div id="container">
-      <h1 class="col three">
-        <a href="@root_path">@name</a>
-        <strong>@profession CAAATEGORY</strong>
-      </h1>
-      <em class="col three">@email</em>
-      <hr>
-      :navigation
-      <div id="content" class="col eight">
-        :projects-list
-      </div>
+ :html_head
+  <body class="projects-index @slug if @body_class do @body_class endif">
+  :header
+  
+  :sort
+
+  :projects-list
+
+
 :footer

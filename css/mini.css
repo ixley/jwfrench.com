@@ -1,0 +1,44 @@
+/* line 2, ../compass/src/mini.sass */
+header#header {
+  height: auto;
+}
+/* line 4, ../compass/src/mini.sass */
+header#header h2.title {
+  margin: 0 0 15px 0;
+  float: none;
+  display: block;
+  height: auto;
+  background: pink;
+}
+/* line 10, ../compass/src/mini.sass */
+header#header h2.title a {
+  width: 100%;
+  height: auto;
+  background-position: 17px 12px;
+  padding-left: 70px;
+}
+/* line 15, ../compass/src/mini.sass */
+header#header #navigation {
+  display: block;
+  margin: 0 20px 20px 12px;
+  height: auto;
+  font-size: 16px;
+}
+
+/* line 27, ../compass/src/mini.sass */
+body.project #content {
+  padding: 0 20px;
+}
+/* line 29, ../compass/src/mini.sass */
+body.project #content a.back-btn {
+  display: none;
+}
+/* line 31, ../compass/src/mini.sass */
+body.project #content .description {
+  width: 100%;
+}
+/* line 36, ../compass/src/mini.sass */
+body.project #content #media .image img {
+  max-width: 100%;
+  height: auto;
+}

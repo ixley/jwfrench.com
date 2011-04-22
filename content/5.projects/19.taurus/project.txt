@@ -1,0 +1,10 @@
+title: The Constellation Taurus
+-
+short: Taurus
+-
+content: 
+Exploration with texture and type.
+-
+role: Personal
+-
+data-related: misc

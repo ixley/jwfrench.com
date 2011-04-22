@@ -1,0 +1,19 @@
+title: Change.org
+-
+date:
+-
+content: 
+Change.org is an online platform where anyone can start movements for social change by creating and sharing online petitions.
+As the staff web designer, I managed all visual and web design responsibilities, including:
+<ul>
+  <li>&raquo; creating and maintaining site-wide visual consistency</li>
+  <li>&raquo; employing clean, standards-compliant code</li>
+  <li>&raquo; creating custom graphics and icons across the site and for in-house materials</li>
+  <li>&raquo; testing alternative designs to improve conversions</li>
+</ul>
+-
+role: Web Design
+-
+data-related: web featured
+-
+in-house: x
