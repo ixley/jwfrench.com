@@ -5,4 +5,4 @@ The simple branding for this young media collective focused on the creative proc
 -
 role: Identity & Web Design
 -
-data-related: web identity
+data-related: web identity featured

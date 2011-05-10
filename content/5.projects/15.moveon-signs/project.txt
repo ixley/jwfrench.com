@@ -7,4 +7,4 @@ A sample of the different flyer and sign designs created for various MoveOn.org 
 -
 role: Print 
 -
-data-related: print
+data-related: print featured

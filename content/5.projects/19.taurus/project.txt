@@ -7,4 +7,4 @@ Exploration with texture and type.
 -
 role: Personal
 -
-data-related: misc
+data-related: misc featured
