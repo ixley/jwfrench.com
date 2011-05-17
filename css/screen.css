@@ -1,1600 +1,368 @@
-@charset "UTF-8";
-/*
- * HTML5 ✰ Boilerplate
- *
- * style.css contains a reset, font normalization and some base styles.
- *
- * Credit is left where credit is due.
- * Much inspiration was taken from these projects:
- * - yui.yahooapis.com/2.8.1/build/base/base.css
- * - camendesign.com/design/
- * - praegnanz.de/weblog/htmlcssjs-kickstart */
-/*
- * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
- * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
- * html5doctor.com/html-5-reset-stylesheet/ */
-/* line 17, ../compass/src/_html5-boilerplate.sass */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/* HTML5 ✰ Boilerplate  style.css contains a reset, font normalization and some base styles.  Credit is left where credit is due. Much inspiration was taken from these projects: - yui.yahooapis.com/2.8.1/build/base/base.css - camendesign.com/design/ - praegnanz.de/weblog/htmlcssjs-kickstart */
+/* html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline) v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark html5doctor.com/html-5-reset-stylesheet/ */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
-/* line 25, ../compass/src/_html5-boilerplate.sass */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-/* line 28, ../compass/src/_html5-boilerplate.sass */
-blockquote, q {
-  quotes: none;
-}
+blockquote, q { quotes: none; }
 
-/* line 32, ../compass/src/_html5-boilerplate.sass */
-blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+blockquote:before, blockquote:after { content: ""; content: none; }
 
-/* line 37, ../compass/src/_html5-boilerplate.sass */
-q:before, q:after {
-  content: "";
-  content: none;
-}
+q:before, q:after { content: ""; content: none; }
 
-/* line 41, ../compass/src/_html5-boilerplate.sass */
-ins {
-  background-color: #ffff99;
-  color: black;
-  text-decoration: none;
-}
+ins { background-color: #ffff99; color: black; text-decoration: none; }
 
-/* line 46, ../compass/src/_html5-boilerplate.sass */
-mark {
-  background-color: #ffff99;
-  color: black;
-  font-style: italic;
-  font-weight: bold;
-}
+mark { background-color: #ffff99; color: black; font-style: italic; font-weight: bold; }
 
-/* line 52, ../compass/src/_html5-boilerplate.sass */
-del {
-  text-decoration: line-through;
-}
+del { text-decoration: line-through; }
 
-/* line 55, ../compass/src/_html5-boilerplate.sass */
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
 
-/* line 59, ../compass/src/_html5-boilerplate.sass */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 63, ../compass/src/_html5-boilerplate.sass */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
-}
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
 
-/* line 71, ../compass/src/_html5-boilerplate.sass */
-input, select {
-  vertical-align: middle;
-}
+input, select { vertical-align: middle; }
 
-/*
- * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/ */
-/* line 77, ../compass/src/_html5-boilerplate.sass */
-body {
-  font: 75% sans-serif;
-  *font-size: small;
-  color: #333333;
-}
+/* Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/ */
+body { font: 75% sans-serif; *font-size: small; color: #333333; }
 
 /* Hack retained to preserve specificity */
-/* line 84, ../compass/src/_html5-boilerplate.sass */
-select, input, textarea, button {
-  font: 99% sans-serif;
-}
+select, input, textarea, button { font: 99% sans-serif; }
 
-/* Normalize monospace sizing:
- * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
-/* line 90, ../compass/src/_html5-boilerplate.sass */
-pre, code, kbd, samp {
-  font-family: monospace, sans-serif;
-}
+/* Normalize monospace sizing: en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
-/*
- * Minimal base styles. */
+/* Minimal base styles. */
 /* Always force a scrollbar in non-IE */
-/* line 98, ../compass/src/_html5-boilerplate.sass */
-html {
-  overflow-y: scroll;
-}
+html { overflow-y: scroll; }
 
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
-/* line 104, ../compass/src/_html5-boilerplate.sass */
-a:hover, a:active {
-  outline: none;
-}
+a:hover, a:active { outline: none; }
 
-/* line 109, ../compass/src/_html5-boilerplate.sass */
-ol {
-  margin-left: 2em;
-  list-style-type: decimal;
-}
+ol { margin-left: 2em; list-style-type: decimal; }
 
-/* line 113, ../compass/src/_html5-boilerplate.sass */
-p {
-  line-height: 1.4;
-  margin-bottom: 1em;
-}
+p { line-height: 1.4; margin-bottom: 1em; }
 
 /* Remove margins for navigation lists */
-/* line 120, ../compass/src/_html5-boilerplate.sass */
-nav ul, nav li {
-  margin: 0;
-  list-style: none;
-  list-style-image: none;
-}
+nav ul, nav li { margin: 0; list-style: none; list-style-image: none; }
 
-/* line 125, ../compass/src/_html5-boilerplate.sass */
-small {
-  font-size: 85%;
-}
+small { font-size: 85%; }
 
-/* line 128, ../compass/src/_html5-boilerplate.sass */
-strong, th {
-  font-weight: bold;
-}
+strong, th { font-weight: bold; }
 
-/* line 131, ../compass/src/_html5-boilerplate.sass */
-em {
-  font-style: italic;
-}
+em { font-style: italic; }
 
-/* line 134, ../compass/src/_html5-boilerplate.sass */
-td {
-  vertical-align: top;
-}
+td { vertical-align: top; }
 
 /* Set sub, sup without affecting line-height: gist.github.com/413930 */
-/* line 139, ../compass/src/_html5-boilerplate.sass */
-sub {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-}
+sub { font-size: 75%; line-height: 0; position: relative; }
 
-/* line 144, ../compass/src/_html5-boilerplate.sass */
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  top: -0.5em;
-}
+sup { font-size: 75%; line-height: 0; position: relative; top: -0.5em; }
 
-/* line 150, ../compass/src/_html5-boilerplate.sass */
-sub {
-  bottom: -0.25em;
-}
+sub { bottom: -0.25em; }
 
-/* line 153, ../compass/src/_html5-boilerplate.sass */
-pre {
-  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  padding: 15px;
-}
+pre { /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */ white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
 
-/* line 160, ../compass/src/_html5-boilerplate.sass */
-textarea {
-  overflow: auto;
-}
+textarea { overflow: auto; }
 
 /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
-/* line 165, ../compass/src/_html5-boilerplate.sass */
-.ie6 legend, .ie7 legend {
-  margin-left: -7px;
-}
+.ie6 legend, .ie7 legend { margin-left: -7px; }
 
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css */
-/* line 171, ../compass/src/_html5-boilerplate.sass */
-input[type="radio"] {
-  vertical-align: text-bottom;
-}
-/* line 173, ../compass/src/_html5-boilerplate.sass */
-input[type="checkbox"] {
-  vertical-align: bottom;
-}
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
 
-/* line 176, ../compass/src/_html5-boilerplate.sass */
-.ie7 input[type="checkbox"] {
-  vertical-align: baseline;
-}
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
 
-/* line 179, ../compass/src/_html5-boilerplate.sass */
-.ie6 input {
-  vertical-align: text-bottom;
-}
+.ie6 input { vertical-align: text-bottom; }
 
 /* Hand cursor on clickable input elements */
-/* line 184, ../compass/src/_html5-boilerplate.sass */
-label {
-  cursor: pointer;
-}
+label { cursor: pointer; }
 
-/* line 188, ../compass/src/_html5-boilerplate.sass */
-input[type="button"], input[type="submit"], input[type="image"] {
-  cursor: pointer;
-}
+input[type="button"], input[type="submit"], input[type="image"] { cursor: pointer; }
 
-/* line 191, ../compass/src/_html5-boilerplate.sass */
-button {
-  cursor: pointer;
-  margin: 0;
-}
+button { cursor: pointer; margin: 0; }
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
-/* line 197, ../compass/src/_html5-boilerplate.sass */
-input, select, textarea {
-  margin: 0;
-}
+input, select, textarea { margin: 0; }
 
 /* Colors for form validity */
-/* line 205, ../compass/src/_html5-boilerplate.sass */
-input:invalid, textarea:invalid {
-  border-radius: 1px;
-  -moz-box-shadow: 0px 0px 5px red;
-  -webkit-box-shadow: 0px 0px 5px red;
-  box-shadow: 0px 0px 5px red;
-}
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
 
-/* line 212, ../compass/src/_html5-boilerplate.sass */
-.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
-  background-color: #f0dddd;
-}
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
-/* These selection declarations have to be separate
- * No text-shadow: twitter.com/miketaylr/status/12228805301 */
-/* line 218, ../compass/src/_html5-boilerplate.sass */
-::-moz-selection {
-  background: #ff9600;
-  color: white;
-  text-shadow: none;
-}
+/* These selection declarations have to be separate No text-shadow: twitter.com/miketaylr/status/12228805301 */
+::-moz-selection { background: #ff9600; color: white; text-shadow: none; }
 
-/* line 222, ../compass/src/_html5-boilerplate.sass */
-::selection {
-  background: #ff9600;
-  color: white;
-  text-shadow: none;
-}
+::selection { background: #ff9600; color: white; text-shadow: none; }
 
 /* j.mp/webkit-tap-highlight-color */
-/* line 229, ../compass/src/_html5-boilerplate.sass */
-a:link {
-  -webkit-tap-highlight-color: #0094c0;
-}
+a:link { -webkit-tap-highlight-color: #0094c0; }
 
-/* Make buttons play nice in IE:
- * www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-/* line 235, ../compass/src/_html5-boilerplate.sass */
-button {
-  width: auto;
-  overflow: visible;
-}
+/* Make buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button { width: auto; overflow: visible; }
 
-/* Bicubic resizing for non-native sized IMG:
- * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-/* line 242, ../compass/src/_html5-boilerplate.sass */
-.ie7 img {
-  -ms-interpolation-mode: bicubic;
-}
+/* Bicubic resizing for non-native sized IMG: code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-/* line 251, ../compass/src/_html5-boilerplate.sass */
-a {
-  color: #607890;
-}
-/* line 253, ../compass/src/_html5-boilerplate.sass */
-a:active, a:visited {
-  color: #607890;
-}
-/* line 255, ../compass/src/_html5-boilerplate.sass */
-a:hover {
-  color: #003366;
-}
+a { color: #607890; }
+a:active, a:visited { color: #607890; }
+a:hover { color: #003366; }
 
-/*
- * Primary styles
- *
- * Author: */
-/*
- * Non-semantic helper classes: please define your styles before this section. */
+/* Primary styles  Author: */
+/* Non-semantic helper classes: please define your styles before this section. */
 /* For image replacement */
-/* line 268, ../compass/src/_html5-boilerplate.sass */
-.ir {
-  display: block;
-  text-indent: -999em;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  text-align: left;
-  direction: ltr;
-}
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 
-/* Hide for both screenreaders and browsers:
- * css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 279, ../compass/src/_html5-boilerplate.sass */
-.hidden {
-  display: none;
-  visibility: hidden;
-}
+/* Hide for both screenreaders and browsers: css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
 
-/* Hide only visually, but have it available for screenreaders: by Jon Neal.
- *www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 286, ../compass/src/_html5-boilerplate.sass */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-/* line 296, ../compass/src/_html5-boilerplate.sass */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
+/* Hide only visually, but have it available for screenreaders: by Jon Neal. www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 308, ../compass/src/_html5-boilerplate.sass */
-.invisible {
-  visibility: hidden;
-}
+.invisible { visibility: hidden; }
 
-/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
- * j.mp/bestclearfix */
-/* line 314, ../compass/src/_html5-boilerplate.sass */
-.clearfix {
-  zoom: 1;
-}
-/* line 315, ../compass/src/_html5-boilerplate.sass */
-.clearfix:before {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-/* line 320, ../compass/src/_html5-boilerplate.sass */
-.clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-  clear: both;
-}
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements. j.mp/bestclearfix */
+.clearfix { zoom: 1; }
+.clearfix:before { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-/*
- * Media queries for responsive design.
- *
- * These follow after primary styles so they will successfully override. */
-@media all and (orientation:portrait) {
-  /* Style adjustments for portrait mode goes here */
-}
-
-@media all and (orientation:landscape) {
-  /* Style adjustments for landscape mode goes here */
-}
-
-/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
- * consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
-  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
-  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
-}
-
-/*
- * Print styles.
- *
- * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/ */
-@media print {
-  /* line 355, ../compass/src/_html5-boilerplate.sass */
-  * {
-    background: transparent !important;
-    color: black !important;
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important;
-  }
-
+/* Media queries for responsive design.  These follow after primary styles so they will successfully override. */
+@media all and (orientation:portrait) { /* Style adjustments for portrait mode goes here */ }
+@media all and (orientation:landscape) { /* Style adjustments for landscape mode goes here */ }
+/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome) consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) { /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */ }
+/* Print styles.  Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/ */
+@media print { * { background: transparent !important; color: black !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
   /* Black prints faster: sanbeiji.com/archives/953 */
-  /* line 362, ../compass/src/_html5-boilerplate.sass */
-  a {
-    color: #444444 !important;
-    text-decoration: underline;
-  }
-  /* line 365, ../compass/src/_html5-boilerplate.sass */
-  a:visited {
-    color: #444444 !important;
-    text-decoration: underline;
-  }
-  /* line 368, ../compass/src/_html5-boilerplate.sass */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  /* line 370, ../compass/src/_html5-boilerplate.sass */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* line 372, ../compass/src/_html5-boilerplate.sass */
-  .ir a:after {
-    content: "";
-  }
-
-  /* line 375, ../compass/src/_html5-boilerplate.sass */
-  a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: "";
-  }
-
+  a { color: #444444 !important; text-decoration: underline; }
+  a:visited { color: #444444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }
+  a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
   /* Don't show links for images, or javascript/internal links */
-  /* line 378, ../compass/src/_html5-boilerplate.sass */
-  pre, blockquote {
-    border: 1px solid #999999;
-    page-break-inside: avoid;
-  }
-
-  /* line 381, ../compass/src/_html5-boilerplate.sass */
-  thead {
-    display: table-header-group;
-  }
-
+  pre, blockquote { border: 1px solid #999999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
   /* css-discuss.incutio.com/wiki/Printing_Tables */
-  /* line 384, ../compass/src/_html5-boilerplate.sass */
-  tr, img {
-    page-break-inside: avoid;
-  }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; } }
+html, body { height: 100%; }
 
-  @page {
-    margin: 0.5cm;
-}
+#container { clear: both; min-height: 100%; height: auto !important; height: 100%; margin-bottom: -3em; }
+#container #container-footer { height: 3em; }
 
-  /* line 389, ../compass/src/_html5-boilerplate.sass */
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
+#footer { clear: both; position: relative; height: 3em; }
 
-  /* line 392, ../compass/src/_html5-boilerplate.sass */
-  h2, h3 {
-    page-break-after: avoid;
-  }
-}
+html { height: 100%; }
 
-/* line 10, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-html, body {
-  height: 100%;
-}
+body { height: 100%; position: relative; }
 
-/* line 12, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#container {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -3em;
-}
-/* line 18, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#container #container-footer {
-  height: 3em;
-}
+#container { min-height: 100%; margin-bottom: -3em; *zoom: 1; }
+#container:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
 
-/* line 20, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#footer {
-  clear: both;
-  position: relative;
-  height: 3em;
-}
+#container-footer { height: 3em; clear: both; }
 
-/* line 4, ../compass/src/_layout.sass */
-html {
-  height: 100%;
-}
+#footer { clear: both; position: relative; }
 
-/* line 7, ../compass/src/_layout.sass */
-body {
-  height: 100%;
-  position: relative;
-}
+body { background: white url("/images/body-bg.png") center top repeat; }
 
-/* line 11, ../compass/src/_layout.sass */
-#container {
-  min-height: 100%;
-  margin-bottom: -3em;
-  *zoom: 1;
-}
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#container:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
+header { height: 50px; position: relative; display: block; padding-bottom: 5px; margin-bottom: 20px; overflow: hidden; *zoom: 1; }
+header .title { float: left; margin-right: 15px; margin-bottom: 15px; }
+header .title a { background: white url("/images/x-icn.png") 25px 12px no-repeat; -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -o-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); display: inline-block; padding: 15px 25px 15px 80px; height: 20px; font-family: "museo-slab", Rockwell, Georgia, sans-serif; font-weight: 300; font-size: 18px; color: #999999; text-decoration: none; }
+header .title a .highlight { color: #ff9600; }
+header .title a:hover .highlight { color: #ff9600; }
+header .title a:active { padding: 16px 25px 14px 80px; -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); background-position: 25px 13px; height: 21px; }
 
-/* line 16, ../compass/src/_layout.sass */
-#container-footer {
-  height: 3em;
-  clear: both;
-}
+#navigation { display: block; height: 50px; margin: 18px 0 20px 80px; }
+#navigation li { display: inline-block; margin-right: 5px; line-height: 1; vertical-align: bottom; }
+#navigation a { text-decoration: none; font-weight: bold; display: inline-block; position: relative; padding: 5px 7px; color: #aaaaaa; top: 0; left: 0; }
+#navigation a:hover { color: #666666; }
 
-/* line 20, ../compass/src/_layout.sass */
-#footer {
-  clear: both;
-  position: relative;
-}
+#content { clear: both; overflow: hidden; *zoom: 1; padding-bottom: 4em; }
 
-/* line 1, ../compass/src/_base.sass */
-body {
-  background: white url("/images/body-bg.png") center top repeat;
-}
+footer#footer { border-top: 1px solid #e3e3e3; color: #cccccc; font-size: 11px; margin: 0 20px 0 80px; }
+footer#footer ul.navigation { padding: 10px 0 10px 3px; margin: 0; }
+footer#footer ul.navigation li { display: inline-block; }
 
-/* line 4, ../compass/src/_base.sass */
-header {
-  height: 50px;
-  position: relative;
-  display: block;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 12, ../compass/src/_base.sass */
-header .title {
-  float: left;
-  margin-right: 15px;
-  margin-bottom: 15px;
-}
-/* line 16, ../compass/src/_base.sass */
-header .title a {
-  background: white url("/images/x-icn.png") 25px 12px no-repeat;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  display: inline-block;
-  padding: 15px 25px 15px 80px;
-  height: 20px;
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  color: #999999;
-  text-decoration: none;
-}
-/* line 28, ../compass/src/_base.sass */
-header .title a .highlight {
-  color: #ff9600;
-}
-/* line 31, ../compass/src/_base.sass */
-header .title a:hover .highlight {
-  color: #ff9600;
-}
-/* line 33, ../compass/src/_base.sass */
-header .title a:active {
-  padding: 16px 25px 14px 80px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0;
-  background-position: 25px 13px;
-  height: 21px;
-}
+.js #jsnotice { display: none; }
 
-/* line 39, ../compass/src/_base.sass */
-#navigation {
-  display: block;
-  height: 50px;
-  margin: 18px 0 20px 80px;
-}
-/* line 43, ../compass/src/_base.sass */
-#navigation li {
-  display: inline-block;
-  margin-right: 5px;
-  line-height: 1;
-  vertical-align: bottom;
-}
-/* line 48, ../compass/src/_base.sass */
-#navigation a {
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  position: relative;
-  padding: 5px 7px;
-  color: #aaaaaa;
-  top: 0;
-  left: 0;
-}
-/* line 57, ../compass/src/_base.sass */
-#navigation a:hover {
-  color: #666666;
-}
+.no-js #jsnotice { display: block; padding: 15px 15px 15px 80px; background: white; border-top: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3; }
 
-/* line 61, ../compass/src/_base.sass */
-#content {
-  clear: both;
-  overflow: hidden;
-  *zoom: 1;
-  padding-bottom: 4em;
-}
+@font-face { font-family: "museo-slab"; src: url("/fonts/museo_slab_500-webfont.eot"); src: url("/fonts/museo_slab_500-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/museo_slab_500-webfont.woff") format("woff"), url("/fonts/museo_slab_500-webfont.ttf") format("truetype"), url("/fonts/museo_slab_500-webfont.svg#MuseoSlab500") format("svg"); font-weight: normal; font-style: normal; }
 
-/* line 66, ../compass/src/_base.sass */
-footer#footer {
-  border-top: 1px solid #e3e3e3;
-  color: #cccccc;
-  font-size: 11px;
-  margin: 0 20px 0 80px;
-}
-/* line 71, ../compass/src/_base.sass */
-footer#footer ul.navigation {
-  padding: 10px 0 10px 3px;
-  margin: 0;
-}
-/* line 74, ../compass/src/_base.sass */
-footer#footer ul.navigation li {
-  display: inline-block;
-}
+@font-face { font-family: "museo-slab"; src: url("/fonts/museo_slab_500italic-webfont.eot"); src: url("/fonts/museo_slab_500italic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/museo_slab_500italic-webfont.woff") format("woff"), url("/fonts/museo_slab_500italic-webfont.ttf") format("truetype"), url("/fonts/museo_slab_500italic-webfont.svg#MuseoSlab500Italic") format("svg"); font-weight: normal; font-style: italic; }
 
-/* line 78, ../compass/src/_base.sass */
-.js #jsnotice {
-  display: none;
-}
+#sb-title-inner, #sb-info-inner, #sb-loading-inner, div.sb-message { font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 200; color: white; }
 
-/* line 80, ../compass/src/_base.sass */
-.no-js #jsnotice {
-  display: block;
-  padding: 15px 15px 15px 80px;
-  background: white;
-  border-top: 1px solid #e3e3e3;
-  border-bottom: 1px solid #e3e3e3;
-}
+#sb-container { position: fixed; margin: 0; padding: 0; top: 0; left: 0; z-index: 999; text-align: left; visibility: hidden; display: none; }
 
-@font-face {
-  font-family: "museo-slab";
-  src: url("/fonts/museo_slab_500-webfont.eot");
-  src: url("/fonts/museo_slab_500-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/museo_slab_500-webfont.woff") format("woff"), url("/fonts/museo_slab_500-webfont.ttf") format("truetype"), url("/fonts/museo_slab_500-webfont.svg#MuseoSlab500") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+#sb-overlay { position: relative; height: 100%; width: 100%; }
 
-@font-face {
-  font-family: "museo-slab";
-  src: url("/fonts/museo_slab_500italic-webfont.eot");
-  src: url("/fonts/museo_slab_500italic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/museo_slab_500italic-webfont.woff") format("woff"), url("/fonts/museo_slab_500italic-webfont.ttf") format("truetype"), url("/fonts/museo_slab_500italic-webfont.svg#MuseoSlab500Italic") format("svg");
-  font-weight: normal;
-  font-style: italic;
-}
+#sb-wrapper { position: absolute; visibility: hidden; width: 100px; }
 
-/* line 1, ../compass/src/_shadowbox.sass */
-#sb-title-inner, #sb-info-inner, #sb-loading-inner, div.sb-message {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  color: white;
-}
+#sb-wrapper-inner { position: relative; overflow: hidden; height: 100px; }
 
-/* line 6, ../compass/src/_shadowbox.sass */
-#sb-container {
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  text-align: left;
-  visibility: hidden;
-  display: none;
-}
+#sb-body { position: relative; height: 100%; }
 
-/* line 17, ../compass/src/_shadowbox.sass */
-#sb-overlay {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
+#sb-body-inner { position: absolute; height: 100%; width: 100%; }
 
-/* line 22, ../compass/src/_shadowbox.sass */
-#sb-wrapper {
-  position: absolute;
-  visibility: hidden;
-  width: 100px;
-}
+#sb-player.html { height: 100%; overflow: auto; }
 
-/* line 27, ../compass/src/_shadowbox.sass */
-#sb-wrapper-inner {
-  position: relative;
-  overflow: hidden;
-  height: 100px;
-}
+#sb-body img { border: none; }
 
-/* line 32, ../compass/src/_shadowbox.sass */
-#sb-body {
-  position: relative;
-  height: 100%;
-}
+#sb-loading { position: relative; height: 100%; }
 
-/* line 36, ../compass/src/_shadowbox.sass */
-#sb-body-inner {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
+#sb-loading-inner { position: absolute; font-size: 14px; line-height: 24px; height: 24px; top: 50%; margin-top: -12px; width: 100%; text-align: center; }
+#sb-loading-inner span { background: url(/images/shadowbox/loading.gif) no-repeat; padding-left: 34px; display: inline-block; }
 
-/* line 41, ../compass/src/_shadowbox.sass */
-#sb-player.html {
-  height: 100%;
-  overflow: auto;
-}
+#sb-body, #sb-loading { background-color: white; }
 
-/* line 45, ../compass/src/_shadowbox.sass */
-#sb-body img {
-  border: none;
-}
+#sb-title, #sb-info { position: relative; margin: 0; padding: 0; overflow: hidden; }
 
-/* line 48, ../compass/src/_shadowbox.sass */
-#sb-loading {
-  position: relative;
-  height: 100%;
-}
+#sb-title { height: 26px; line-height: 26px; }
 
-/* line 52, ../compass/src/_shadowbox.sass */
-#sb-loading-inner {
-  position: absolute;
-  font-size: 14px;
-  line-height: 24px;
-  height: 24px;
-  top: 50%;
-  margin-top: -12px;
-  width: 100%;
-  text-align: center;
-}
-/* line 61, ../compass/src/_shadowbox.sass */
-#sb-loading-inner span {
-  background: url(/images/shadowbox/loading.gif) no-repeat;
-  padding-left: 34px;
-  display: inline-block;
-}
+#sb-title-inner { display: none; height: 26px; line-height: 26px; font-size: 16px; }
 
-/* line 66, ../compass/src/_shadowbox.sass */
-#sb-body, #sb-loading {
-  background-color: white;
-}
+#sb-info { height: 20px; line-height: 20px; }
 
-/* line 69, ../compass/src/_shadowbox.sass */
-#sb-title, #sb-info {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+#sb-info-inner { height: 20px; line-height: 20px; font-size: 12px; }
 
-/* line 75, ../compass/src/_shadowbox.sass */
-#sb-title {
-  height: 26px;
-  line-height: 26px;
-}
+#sb-nav { float: right; height: 16px; padding: 2px 0; width: 45%; }
+#sb-nav a { display: block; float: right; height: 16px; width: 16px; margin-left: 3px; cursor: pointer; background-repeat: no-repeat; }
 
-/* line 79, ../compass/src/_shadowbox.sass */
-#sb-title-inner {
-  display: none;
-  height: 26px;
-  line-height: 26px;
-  font-size: 16px;
-}
+#sb-nav-close { background-image: url(/images/shadowbox/close.png); }
 
-/* line 85, ../compass/src/_shadowbox.sass */
-#sb-info {
-  height: 20px;
-  line-height: 20px;
-}
+#sb-nav-next { background-image: url(/images/shadowbox/next.png); }
 
-/* line 89, ../compass/src/_shadowbox.sass */
-#sb-info-inner {
-  height: 20px;
-  line-height: 20px;
-  font-size: 12px;
-}
+#sb-nav-previous { background-image: url(/images/shadowbox/previous.png); }
 
-/* line 94, ../compass/src/_shadowbox.sass */
-#sb-nav {
-  float: right;
-  height: 16px;
-  padding: 2px 0;
-  width: 45%;
-}
-/* line 99, ../compass/src/_shadowbox.sass */
-#sb-nav a {
-  display: block;
-  float: right;
-  height: 16px;
-  width: 16px;
-  margin-left: 3px;
-  cursor: pointer;
-  background-repeat: no-repeat;
-}
+#sb-nav-play { background-image: url(/images/shadowbox/play.png); }
 
-/* line 108, ../compass/src/_shadowbox.sass */
-#sb-nav-close {
-  background-image: url(/images/shadowbox/close.png);
-}
+#sb-nav-pause { background-image: url(/images/shadowbox/pause.png); }
 
-/* line 111, ../compass/src/_shadowbox.sass */
-#sb-nav-next {
-  background-image: url(/images/shadowbox/next.png);
-}
+#sb-counter { float: left; width: 45%; }
+#sb-counter a { padding: 0 4px 0 0; text-decoration: none; cursor: pointer; color: white; }
+#sb-counter a.sb-counter-current { text-decoration: underline; }
 
-/* line 114, ../compass/src/_shadowbox.sass */
-#sb-nav-previous {
-  background-image: url(/images/shadowbox/previous.png);
-}
-
-/* line 117, ../compass/src/_shadowbox.sass */
-#sb-nav-play {
-  background-image: url(/images/shadowbox/play.png);
-}
-
-/* line 120, ../compass/src/_shadowbox.sass */
-#sb-nav-pause {
-  background-image: url(/images/shadowbox/pause.png);
-}
-
-/* line 123, ../compass/src/_shadowbox.sass */
-#sb-counter {
-  float: left;
-  width: 45%;
-}
-/* line 126, ../compass/src/_shadowbox.sass */
-#sb-counter a {
-  padding: 0 4px 0 0;
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-}
-/* line 131, ../compass/src/_shadowbox.sass */
-#sb-counter a.sb-counter-current {
-  text-decoration: underline;
-}
-
-/* line 134, ../compass/src/_shadowbox.sass */
-div.sb-message {
-  font-size: 12px;
-  padding: 10px;
-  text-align: center;
-}
-/* line 139, ../compass/src/_shadowbox.sass */
-div.sb-message a:link, div.sb-message a:visited {
-  color: white;
-  text-decoration: underline;
-}
+div.sb-message { font-size: 12px; padding: 10px; text-align: center; }
+div.sb-message a:link, div.sb-message a:visited { color: white; text-decoration: underline; }
 
 /* Start: Recommended Isotope styles */
 /*** Isotope Filtering *** */
-/* line 4, ../compass/src/_isotope.sass */
-.isotope-item {
-  z-index: 2;
-}
+.isotope-item { z-index: 2; }
 
-/* line 7, ../compass/src/_isotope.sass */
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
+.isotope-hidden.isotope-item { pointer-events: none; z-index: 1; }
 
 /*** Isotope CSS3 transitions *** */
-/* line 13, ../compass/src/_isotope.sass */
-.isotope {
-  -moz-transition-duration: 0.8s;
-  -webkit-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  transition-property: height, width;
-  /* End: Recommended Isotope styles */
-  /*** disabling Isotope CSS3 transitions *** */
-  /* disable CSS transitions for containers with infinite scrolling */
-}
-/* line 15, ../compass/src/_isotope.sass */
-.isotope .isotope-item {
-  -moz-transition-duration: 0.8s;
-  -webkit-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
-  -webkit-transition-property: -webkit-transform, opacity, box-shadow;
-  -moz-transition-property: -moz-transform, opacity, box-shadow;
-  transition-property: transform, opacity, box-shadow;
-}
-/* line 25, ../compass/src/_isotope.sass */
-.isotope.no-transition {
-  -moz-transition-duration: 0s;
-  -webkit-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
-}
-/* line 27, ../compass/src/_isotope.sass */
-.isotope.no-transition .isotope-item {
-  -moz-transition-duration: 0s;
-  -webkit-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
-}
-/* line 30, ../compass/src/_isotope.sass */
-.isotope.infinite-scrolling {
-  -webkit-transition: none;
-  -moz-transition: none;
-  transition: none;
-}
+.isotope { -moz-transition-duration: 0.8s; -webkit-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s; -webkit-transition-property: height, width; -moz-transition-property: height, width; transition-property: height, width; /* End: Recommended Isotope styles */ /*** disabling Isotope CSS3 transitions *** */ /* disable CSS transitions for containers with infinite scrolling */ }
+.isotope .isotope-item { -moz-transition-duration: 0.8s; -webkit-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s; -webkit-transition-property: -webkit-transform, opacity, box-shadow; -moz-transition-property: -moz-transform, opacity, box-shadow; transition-property: transform, opacity, box-shadow; }
+.isotope.no-transition { -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; transition-duration: 0s; }
+.isotope.no-transition .isotope-item { -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; transition-duration: 0s; }
+.isotope.infinite-scrolling { -webkit-transition: none; -moz-transition: none; transition: none; }
 
 /* required for containers to inherit vertical size from window */
-/* line 37, ../compass/src/_isotope.sass */
-html, body {
-  height: 100%;
-}
+html, body { height: 100%; }
 
-/* line 5, ../compass/src/_gallery.sass */
-.projects-index h2 {
-  color: #333333;
-}
-/* line 7, ../compass/src/_gallery.sass */
-.projects-index .intro {
-  margin-left: 80px;
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  font-size: 24px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e3e3e3;
-  margin-bottom: 15px;
-  margin-right: 20px;
-}
-/* line 16, ../compass/src/_gallery.sass */
-.projects-index .intro ul {
-  list-style: none;
-  margin: 0;
-  color: #666666;
-}
-/* line 20, ../compass/src/_gallery.sass */
-.projects-index .intro li {
-  display: inline-block;
-  color: #cccccc;
-}
-/* line 23, ../compass/src/_gallery.sass */
-.projects-index .intro h2 {
-  color: #5f2a00;
-}
+.projects-index h2 { color: #333333; }
+.projects-index .intro { margin-left: 80px; font-family: "museo-slab", Rockwell, Georgia, sans-serif; font-size: 24px; padding-bottom: 20px; border-bottom: 1px solid #e3e3e3; margin-bottom: 15px; margin-right: 20px; }
+.projects-index .intro ul { list-style: none; margin: 0; color: #666666; }
+.projects-index .intro li { display: inline-block; color: #cccccc; }
+.projects-index .intro h2 { color: #5f2a00; }
 
-/* line 28, ../compass/src/_gallery.sass */
-#options {
-  margin-left: 80px;
-}
-/* line 30, ../compass/src/_gallery.sass */
-#options h5 {
-  margin-right: 5px;
-  color: #999999;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  display: inline-block;
-}
-/* line 37, ../compass/src/_gallery.sass */
-#options ul {
-  display: inline-block;
-  margin: 0 20px 10px 0;
-}
-/* line 40, ../compass/src/_gallery.sass */
-#options li {
-  display: inline-block;
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-/* line 44, ../compass/src/_gallery.sass */
-#options a {
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 10px;
-  position: relative;
-  padding: 5px 7px;
-  background-color: #eeeeee;
-  color: #cccccc;
-  top: 0;
-  left: 0;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-}
-/* line 57, ../compass/src/_gallery.sass */
-#options a:hover {
-  background-color: #cccccc;
-  color: white;
-}
-/* line 60, ../compass/src/_gallery.sass */
-#options a:active {
-  top: 1px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0;
-}
-/* line 63, ../compass/src/_gallery.sass */
-#options a.selected {
-  background-color: #999999;
-  color: white;
-}
+#options { margin-left: 80px; }
+#options h5 { margin-right: 5px; color: #999999; font-family: Georgia, "Times New Roman", Times, serif; font-style: italic; display: inline-block; }
+#options ul { display: inline-block; margin: 0 20px 10px 0; }
+#options li { display: inline-block; margin-right: 3px; margin-bottom: 5px; }
+#options a { cursor: pointer; text-decoration: none; display: inline-block; text-transform: uppercase; font-size: 10px; position: relative; padding: 5px 7px; background-color: #eeeeee; color: #cccccc; top: 0; left: 0; -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -o-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+#options a:hover { background-color: #cccccc; color: white; }
+#options a:active { top: 1px; -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); }
+#options a.selected { background-color: #999999; color: white; }
 
-/* line 67, ../compass/src/_gallery.sass */
-.gallery {
-  margin: 5px 5px 15px 75px;
-  padding: 5px;
-  position: relative;
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.gallery:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-/* line 73, ../compass/src/_gallery.sass */
-.csstransitions .gallery ul:hover .element {
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-}
-/* line 75, ../compass/src/_gallery.sass */
-.csstransitions .gallery ul:hover .element:hover {
-  opacity: 1;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-}
-/* line 77, ../compass/src/_gallery.sass */
-.gallery .element {
-  -moz-box-shadow: rgba(0, 0, 0, 0.08) 0 1px 2px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0 1px 2px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.08) 0 1px 2px 0;
-  box-shadow: rgba(0, 0, 0, 0.08) 0 1px 2px 0;
-  margin: 0 15px 15px 0;
-  float: left;
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  background: white;
-  color: #222222;
-  padding: 0;
-  width: 225px;
-  height: auto;
-}
-/* line 90, ../compass/src/_gallery.sass */
-.gallery .element:hover {
-  -moz-box-shadow: rgba(0, 45, 45, 0.5) 0 1px 7px 0;
-  -webkit-box-shadow: rgba(0, 45, 45, 0.5) 0 1px 7px 0;
-  -o-box-shadow: rgba(0, 45, 45, 0.5) 0 1px 7px 0;
-  box-shadow: rgba(0, 45, 45, 0.5) 0 1px 7px 0;
-}
-/* line 93, ../compass/src/_gallery.sass */
-.gallery .element section.description {
-  position: relative;
-  margin: 0;
-}
-/* line 96, ../compass/src/_gallery.sass */
-.gallery .element a {
-  display: block;
-  position: relative;
-  text-decoration: none;
-}
-/* line 100, ../compass/src/_gallery.sass */
-.gallery .element .thumb {
-  display: block;
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  *zoom: 1;
-}
-/* line 107, ../compass/src/_gallery.sass */
-.gallery .element .text {
-  position: relative;
-  display: block;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px 7px 5px;
-}
-/* line 114, ../compass/src/_gallery.sass */
-.gallery .element .text h4.title {
-  margin-bottom: 3px;
-  color: #999999;
-  display: inline-block;
-}
-/* line 118, ../compass/src/_gallery.sass */
-.gallery .element .text span.in-house {
-  margin-left: 4px;
-  display: inline-block;
-  text-align: right;
-  padding: 2px 4px;
-  color: white;
-  font-size: 11px;
-  background-color: #c6d4e0;
-}
-/* line 126, ../compass/src/_gallery.sass */
-.gallery .element .text .client {
-  color: #999999;
-  margin: -2px 0 3px;
-}
-/* line 129, ../compass/src/_gallery.sass */
-.gallery .element .text .client em {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-/* line 131, ../compass/src/_gallery.sass */
-.gallery .element .text .role {
-  text-transform: uppercase;
-  font-size: 10px;
-  color: #cccccc;
-  margin-top: 2px;
-}
+.gallery { margin: 5px 5px 15px 75px; padding: 5px; position: relative; overflow: hidden; *zoom: 1; }
+.gallery:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+.csstransitions .gallery ul:hover .element { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
+.csstransitions .gallery ul:hover .element:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+.gallery .element { -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); margin: 0 15px 15px 0; float: left; display: inline-block; overflow: hidden; position: relative; background: white; color: #222222; padding: 0; width: 225px; height: auto; }
+.gallery .element:hover { -moz-box-shadow: 0 1px 7px rgba(0, 45, 45, 0.5); -webkit-box-shadow: 0 1px 7px rgba(0, 45, 45, 0.5); -o-box-shadow: 0 1px 7px rgba(0, 45, 45, 0.5); box-shadow: 0 1px 7px rgba(0, 45, 45, 0.5); }
+.gallery .element section.description { position: relative; margin: 0; }
+.gallery .element a { display: block; position: relative; text-decoration: none; }
+.gallery .element .thumb { display: block; width: 100%; position: relative; top: 0; left: 0; *zoom: 1; }
+.gallery .element .text { position: relative; display: block; bottom: 0; left: 0; right: 0; padding: 10px 7px 5px; }
+.gallery .element .text h4.title { margin-bottom: 3px; color: #999999; display: inline-block; }
+.gallery .element .text span.in-house { margin-left: 4px; display: inline-block; text-align: right; padding: 2px 4px; color: white; font-size: 11px; background-color: #c6d4e0; }
+.gallery .element .text .client { color: #999999; margin: -2px 0 3px; }
+.gallery .element .text .client em { font-family: Georgia, "Times New Roman", Times, serif; }
+.gallery .element .text .role { text-transform: uppercase; font-size: 10px; color: #cccccc; margin-top: 2px; }
 
-/* line 4, ../compass/src/_project.sass */
-body.project #content {
-  padding-left: 80px;
-  position: relative;
-}
-/* line 7, ../compass/src/_project.sass */
-body.project #content.project {
-  margin-bottom: 120px;
-}
-/* line 10, ../compass/src/_project.sass */
-body.project #content a.back-btn, body.project #content a.prev-project, body.project #content a.next-project {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-transform: none;
-  font-size: 11px;
-  font-style: italic;
-  color: #cccccc;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
-  padding: 4px 5px;
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  -moz-transition-property: opacity;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  background-color: white;
-}
-/* line 25, ../compass/src/_project.sass */
-body.project #content a.back-btn:hover, body.project #content a.prev-project:hover, body.project #content a.next-project:hover {
-  opacity: 1;
-}
-/* line 27, ../compass/src/_project.sass */
-body.project #content a.back-btn span.arrow, body.project #content a.prev-project span.arrow, body.project #content a.next-project span.arrow {
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  display: block;
-  line-height: 24px;
-  margin-bottom: 3px;
-}
-/* line 35, ../compass/src/_project.sass */
-body.project #content a.back-btn {
-  position: absolute;
-  left: 23px;
-  top: 0;
-}
-/* line 39, ../compass/src/_project.sass */
-body.project #content a.back-btn span.arrow {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background: url("/images/projects-icn.png") center 3px no-repeat;
-  min-width: 35px;
-}
-/* line 46, ../compass/src/_project.sass */
-body.project #content .description {
-  width: 545px;
-  margin-bottom: 20px;
-  float: left;
-}
-/* line 47, ../compass/src/_project.sass */
-body.project #content .description .header, body.project #content .description p {
-  margin-bottom: 10px;
-}
-/* line 52, ../compass/src/_project.sass */
-body.project #content .description .hed {
-  font-size: 2.3em;
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  color: #666666;
-}
-/* line 57, ../compass/src/_project.sass */
-body.project #content .description .client {
-  color: #999999;
-  font-size: 1.2em;
-}
-/* line 60, ../compass/src/_project.sass */
-body.project #content .description .client em {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-/* line 62, ../compass/src/_project.sass */
-body.project #content .description .role {
-  display: inline-block;
-  background-color: #dddddd;
-  padding: 2px 4px;
-  color: white;
-  font-size: 11px;
-  margin-top: 5px;
-}
-/* line 69, ../compass/src/_project.sass */
-body.project #content .description .role.in-house {
-  background-color: #c6d4e0;
-  margin-left: 2px;
-}
-/* line 72, ../compass/src/_project.sass */
-body.project #content .description ul {
-  margin: -5px 0 10px 0;
-  list-style: none;
-  line-height: 1.4;
-}
-/* line 77, ../compass/src/_project.sass */
-body.project #content #page-nav {
-  position: relative;
-  margin-left: 560px;
-  top: 0;
-  display: block;
-}
-/* line 82, ../compass/src/_project.sass */
-body.project #content #page-nav a.prev-project, body.project #content #page-nav a.next-project {
-  margin: 0 7px 10px 0;
-  float: left;
-  min-width: 42px;
-}
-/* line 86, ../compass/src/_project.sass */
-body.project #content #page-nav a.prev-project span.title, body.project #content #page-nav a.next-project span.title {
-  position: absolute;
-  display: block;
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  left: 122px;
-  top: 0;
-  font-size: 14px;
-  text-transform: none;
-  color: #666666;
-  background: white;
-  text-align: left;
-  padding: 10px;
-  margin-right: 10px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
-  opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-}
-/* line 101, ../compass/src/_project.sass */
-body.project #content #page-nav a.prev-project:hover span.title, body.project #content #page-nav a.next-project:hover span.title {
-  opacity: 1;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-}
-/* line 104, ../compass/src/_project.sass */
-body.project #content #media {
-  margin-bottom: 40px;
-  clear: both;
-}
-/* line 107, ../compass/src/_project.sass */
-body.project #content #media .artboard {
-  padding: 3px;
-  margin: -3px 0 0 -3px;
-}
-/* line 110, ../compass/src/_project.sass */
-body.project #content #media .image {
-  margin-bottom: 15px;
-  position: relative;
-  padding: 0;
-}
-/* line 114, ../compass/src/_project.sass */
-body.project #content #media .image img {
-  max-width: 545px;
-  margin: 0;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px 0;
-  display: block;
-}
-/* line 119, ../compass/src/_project.sass */
-body.project #content #media .image em.label {
-  display: block;
-  -webkit-font-smoothing: antialiased;
-  opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  -moz-transition-property: opacity;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  text-align: center;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 250px;
-  margin: -2em 0 0 -135px;
-  padding: 8px 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
-  background: #303030;
-  background: rgba(0, 0, 0, 0.8);
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  font-size: 14px;
-  font-style: italic;
-}
-/* line 140, ../compass/src/_project.sass */
-body.project #content #media .image:hover em.label {
-  opacity: 1;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-}
-/* line 144, ../compass/src/_project.sass */
-body.project .project-nav {
-  border-top: 1px solid #e3e3e3;
-  padding-top: 10px;
-  margin-right: 20px;
-  margin-left: 80px;
-}
-/* line 149, ../compass/src/_project.sass */
-body.project .project-nav h4.section-header {
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  font-size: 18px;
-  color: #999999;
-  margin-bottom: 10px;
-}
-/* line 155, ../compass/src/_project.sass */
-body.project .project-nav .gallery {
-  margin-left: -5px;
-}
-/* line 157, ../compass/src/_project.sass */
-body.project .project-nav .element {
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-}
-/* line 159, ../compass/src/_project.sass */
-body.project .project-nav .gallery ul .element:hover {
-  opacity: 1;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-}
+body.project #content { padding-left: 80px; position: relative; }
+body.project #content.project { margin-bottom: 120px; }
+body.project #content a.back-btn, body.project #content a.prev-project, body.project #content a.next-project { display: block; text-align: center; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; text-transform: none; font-size: 11px; font-style: italic; color: #cccccc; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; padding: 4px 5px; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; -moz-transition-property: opacity; -webkit-transition-property: opacity; -o-transition-property: opacity; transition-property: opacity; -moz-transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; background-color: white; }
+body.project #content a.back-btn:hover, body.project #content a.prev-project:hover, body.project #content a.next-project:hover { opacity: 1; }
+body.project #content a.back-btn span.arrow, body.project #content a.prev-project span.arrow, body.project #content a.next-project span.arrow { font-family: "museo-slab", Rockwell, Georgia, sans-serif; font-size: 30px; font-weight: bold; display: block; line-height: 24px; margin-bottom: 3px; }
+body.project #content a.back-btn { position: absolute; left: 23px; top: 0; }
+body.project #content a.back-btn span.arrow { text-indent: -119988px; overflow: hidden; text-align: left; background: url("/images/projects-icn.png") center 3px no-repeat; min-width: 35px; }
+body.project #content .description { width: 545px; margin-bottom: 20px; float: left; }
+body.project #content .description .header, body.project #content .description p { margin-bottom: 10px; }
+body.project #content .description .hed { font-size: 2.3em; font-family: "museo-slab", Rockwell, Georgia, sans-serif; color: #666666; }
+body.project #content .description .client { color: #999999; font-size: 1.2em; }
+body.project #content .description .client em { font-family: Georgia, "Times New Roman", Times, serif; }
+body.project #content .description .role { display: inline-block; background-color: #dddddd; padding: 2px 4px; color: white; font-size: 11px; margin-top: 5px; }
+body.project #content .description .role.in-house { background-color: #c6d4e0; margin-left: 2px; }
+body.project #content .description ul { margin: -5px 0 10px 0; list-style: none; line-height: 1.4; }
+body.project #content #page-nav { position: relative; margin-left: 560px; top: 0; display: block; }
+body.project #content #page-nav a.prev-project, body.project #content #page-nav a.next-project { margin: 0 7px 10px 0; float: left; min-width: 42px; }
+body.project #content #page-nav a.prev-project span.title, body.project #content #page-nav a.next-project span.title { position: absolute; display: block; font-family: "museo-slab", Rockwell, Georgia, sans-serif; left: 122px; top: 0; font-size: 14px; text-transform: none; color: #666666; background: white; text-align: left; padding: 10px; margin-right: 10px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+body.project #content #page-nav a.prev-project:hover span.title, body.project #content #page-nav a.next-project:hover span.title { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+body.project #content #media { margin-bottom: 40px; clear: both; }
+body.project #content #media .artboard { padding: 3px; margin: -3px 0 0 -3px; }
+body.project #content #media .image { margin-bottom: 15px; position: relative; padding: 0; }
+body.project #content #media .image img { max-width: 545px; margin: 0; -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); display: block; }
+body.project #content #media .image em.label { display: block; -webkit-font-smoothing: antialiased; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transition-property: opacity; -webkit-transition-property: opacity; -o-transition-property: opacity; transition-property: opacity; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; text-align: center; color: white; position: absolute; top: 50%; left: 50%; width: 250px; margin: -2em 0 0 -135px; padding: 8px 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; -khtml-border-radius: 10px; border-radius: 10px; background: #303030; background: rgba(0, 0, 0, 0.8); font-family: "museo-slab", Rockwell, Georgia, sans-serif; font-size: 14px; font-style: italic; }
+body.project #content #media .image:hover em.label { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+body.project .project-nav { border-top: 1px solid #e3e3e3; padding-top: 10px; margin-right: 20px; margin-left: 80px; }
+body.project .project-nav h4.section-header { font-family: "museo-slab", Rockwell, Georgia, sans-serif; font-size: 18px; color: #999999; margin-bottom: 10px; }
+body.project .project-nav .gallery { margin-left: -5px; }
+body.project .project-nav .element { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
+body.project .project-nav .gallery ul .element:hover { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
-/* line 8, ../compass/src/_about.sass */
-body.information h4.section-header {
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  font-size: 18px;
-  color: #0094c0;
-  margin-bottom: 5px;
-}
-/* line 14, ../compass/src/_about.sass */
-body.information section.photo {
-  float: left;
-  clear: both;
-  width: 225px;
-  margin-right: 20px;
-}
-/* line 19, ../compass/src/_about.sass */
-body.information section.photo img.me {
-  display: block;
-  width: 215px;
-  border: 5px solid white;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0;
-}
-/* line 25, ../compass/src/_about.sass */
-body.information .about {
-  border-bottom: 1px solid #dddddd;
-  margin: 0 20px 20px 0;
-  padding: 0 20px 25px 0;
-  color: #999999;
-  border-bottom: 1px solid #e3e3e3;
-}
-/* line 31, ../compass/src/_about.sass */
-body.information .about ul.summary {
-  list-style: none;
-  max-width: 785px;
-}
-/* line 35, ../compass/src/_about.sass */
-body.information .about ul.summary:hover li {
-  color: #666666;
-}
-/* line 37, ../compass/src/_about.sass */
-body.information .about ul.summary li {
-  display: inline;
-  line-height: 1.5;
-  -moz-transition-property: color;
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  font-size: 1.25em;
-}
-/* line 43, ../compass/src/_about.sass */
-body.information .about ul.summary li h2 {
-  color: #5f2a00;
-  line-height: 1.3;
-  margin-bottom: 5px;
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  font-size: 24px;
-}
-/* line 50, ../compass/src/_about.sass */
-body.information .about ul.links {
-  list-style: none;
-  padding-top: 10px;
-  display: block;
-}
-/* line 54, ../compass/src/_about.sass */
-body.information .about ul.links li {
-  display: inline-block;
-}
-/* line 56, ../compass/src/_about.sass */
-body.information .about ul.links li a {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background-image: url("/images/info-btns.png");
-  background-repeat: none;
-  margin-right: 5px;
-}
-/* line 64, ../compass/src/_about.sass */
-body.information .about ul.links li.linkedin a {
-  background-position: 0 0;
-}
-/* line 66, ../compass/src/_about.sass */
-body.information .about ul.links li.linkedin a:hover {
-  background-position: 0 -22px;
-}
-/* line 68, ../compass/src/_about.sass */
-body.information .about ul.links li.twitter a {
-  background-position: -22px 0;
-}
-/* line 70, ../compass/src/_about.sass */
-body.information .about ul.links li.twitter a:hover {
-  background-position: -22px -22px;
-}
-/* line 73, ../compass/src/_about.sass */
-body.information .about ul.links li.contact a {
-  background-position: -44px 0;
-}
-/* line 75, ../compass/src/_about.sass */
-body.information .about ul.links li.contact a:hover {
-  background-position: -44px -22px;
-}
-/* line 78, ../compass/src/_about.sass */
-body.information section.testimonials {
-  display: block;
-  width: 465px;
-  float: left;
-}
-/* line 82, ../compass/src/_about.sass */
-body.information section.testimonials span.quote {
-  font-family: "museo-slab", Rockwell, Georgia, sans-serif;
-  font-size: 40px;
-  line-height: 28px;
-  color: #dddddd;
-  float: left;
-  margin-right: 3px;
-}
-/* line 90, ../compass/src/_about.sass */
-body.information section.testimonials span.quote.close {
-  display: inline-block;
-  float: none;
-  margin-top: 4px;
-  line-height: 0;
-}
-/* line 95, ../compass/src/_about.sass */
-body.information section.testimonials ul.testimonials {
-  list-style: none;
-  min-height: 10em;
-  line-height: 1.4;
-  margin-left: 15px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  font-size: 18px;
-  *zoom: 1;
-}
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-body.information section.testimonials ul.testimonials:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-/* line 105, ../compass/src/_about.sass */
-body.information section.testimonials ul.testimonials li {
-  color: #666666;
-}
-/* line 107, ../compass/src/_about.sass */
-body.information section.testimonials ul.testimonials div {
-  text-align: right;
-  font-size: 13px;
-  font-style: italic;
-  color: #999999;
-  margin-top: 4px;
-}
-/* line 115, ../compass/src/_about.sass */
-body.information section.contact {
-  width: 385px;
-  float: left;
-}
+body.information h4.section-header { font-family: "museo-slab", Rockwell, Georgia, sans-serif; font-size: 18px; color: #0094c0; margin-bottom: 5px; }
+body.information section.photo { float: left; clear: both; width: 225px; margin-right: 20px; }
+body.information section.photo img.me { display: block; width: 215px; border: 5px solid white; -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -o-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+body.information .about { border-bottom: 1px solid #dddddd; margin: 0 20px 20px 0; padding: 0 20px 25px 0; color: #999999; border-bottom: 1px solid #e3e3e3; }
+body.information .about ul.summary { list-style: none; max-width: 785px; }
+body.information .about ul.summary:hover li { color: #666666; }
+body.information .about ul.summary li { display: inline; line-height: 1.5; -moz-transition-property: color; -webkit-transition-property: color; -o-transition-property: color; transition-property: color; -moz-transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; font-size: 1.25em; }
+body.information .about ul.summary li h2 { color: #5f2a00; line-height: 1.3; margin-bottom: 5px; font-family: "museo-slab", Rockwell, Georgia, sans-serif; font-size: 24px; }
+body.information .about ul.links { list-style: none; padding-top: 10px; display: block; }
+body.information .about ul.links li { display: inline-block; }
+body.information .about ul.links li a { text-indent: -119988px; overflow: hidden; text-align: left; display: inline-block; width: 22px; height: 22px; background-image: url("/images/info-btns.png"); background-repeat: none; margin-right: 5px; }
+body.information .about ul.links li.linkedin a { background-position: 0 0; }
+body.information .about ul.links li.linkedin a:hover { background-position: 0 -22px; }
+body.information .about ul.links li.twitter a { background-position: -22px 0; }
+body.information .about ul.links li.twitter a:hover { background-position: -22px -22px; }
+body.information .about ul.links li.contact a { background-position: -44px 0; }
+body.information .about ul.links li.contact a:hover { background-position: -44px -22px; }
+body.information section.testimonials { display: block; width: 465px; float: left; }
+body.information section.testimonials span.quote { font-family: "museo-slab", Rockwell, Georgia, sans-serif; font-size: 40px; line-height: 28px; color: #dddddd; float: left; margin-right: 3px; }
+body.information section.testimonials span.quote.close { display: inline-block; float: none; margin-top: 4px; line-height: 0; }
+body.information section.testimonials ul.testimonials { list-style: none; min-height: 10em; line-height: 1.4; margin-left: 15px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: lighter; font-size: 18px; *zoom: 1; }
+body.information section.testimonials ul.testimonials:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+body.information section.testimonials ul.testimonials li { color: #666666; }
+body.information section.testimonials ul.testimonials div { text-align: right; font-size: 13px; font-style: italic; color: #999999; margin-top: 4px; }
+body.information section.contact { width: 385px; float: left; }
 
 /*480px */
-@media only screen and (max-width: 480px);
 /*768px */
-@media only screen and (min-width: 768px);
 /*992px */
-@media only screen and (min-width: 992px);
 /*1382px */
-@media only screen and (min-width: 1382px);
 /*2x */
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2);

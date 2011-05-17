@@ -2,7 +2,7 @@ title: Information
 -
 content:
 <ul class="summary">
-  <li><h2>I am an @job-title that loves problem-solving.</h2></li> 
+  <li><h2>I am an @job-title who loves problem-solving.</h2></li> 
   <li>I believe that great design comes not just from a thorough understanding of visual and interactive elements,</li> 
   <li>but that it depends on a solid understanding of contextual application as well.</li> 
   <li>And while I can get excited about everything from icons and breaking grids to user flows and design patterns,</li> 

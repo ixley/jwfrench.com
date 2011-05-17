@@ -43,16 +43,16 @@ html.embed
         border: 1px solid #ccc
         +border-radius(5px)
         color: #666
-        +linear-gradient(color-stops(#fff 20%, #dfdfdf))
+        background: linear-gradient(#fff 20%, #dfdfdf)
         &:hover
           color: #333
         &:active
           padding: 5px 15px
-          +linear-gradient(color-stops(#fafafa 10%, #ddd))      
+          background: linear-gradient(#fafafa 10%, #ddd)
           
       input:invalid, textarea:invalid
         border-radius: 1px
-        +box-shadow(none)
+        +single-box-shadow(none)
         
       #errorLi
         +border-radius(0)

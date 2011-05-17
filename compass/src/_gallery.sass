@@ -53,13 +53,13 @@
     color: #ccc
     top: 0
     left: 0
-    +box-shadow(rgba(0,0,0,.1),1px,1px,2px)
+    +single-box-shadow(rgba(0,0,0,.1),1px,1px,2px)
     &:hover
       background-color: #ccc
       color: #fff
     &:active
       top: 1px
-      +box-shadow(rgba(0,0,0,.1),0,0,2px)
+      +single-box-shadow(rgba(0,0,0,.1),0,0,2px)
     &.selected
       background-color: #999
       color: #fff
@@ -75,7 +75,7 @@
   .csstransitions & ul:hover .element:hover
     +opacity(1)
   .element
-    +box-shadow(rgba(0,0,0,.08),0,1px,2px)
+    +single-box-shadow(rgba(0,0,0,.08),0,1px,2px)
     margin: 0 15px 15px 0
     float: left
     display: inline-block
@@ -88,7 +88,7 @@
     height: auto
 
     &:hover
-      +box-shadow(rgba(0,45,45,.5), 0, 1px, 7px)
+      +single-box-shadow(rgba(0,45,45,.5), 0, 1px, 7px)
       .text
     section.description
       position: relative
