@@ -1,0 +1,51 @@
+header#header {
+  height: auto; }
+  header#header h2.title {
+    margin: 0 0 15px 0;
+    float: none;
+    display: block;
+    height: auto; }
+    header#header h2.title a {
+      width: 100%;
+      height: auto;
+      background-position: 17px 12px;
+      padding: 15px 0; }
+      header#header h2.title a span.text {
+        display: block;
+        padding: 0 20px 0 70px; }
+  header#header #navigation {
+    display: block;
+    margin: 0 20px 0 12px;
+    height: auto;
+    font-size: 16px; }
+
+footer#footer {
+  margin-left: 20px; }
+
+body.projects-index .intro, body.projects-index #options, body.projects-index .artboard {
+  margin-left: 20px; }
+body.projects-index ul.projects {
+  text-align: center; }
+
+body.project #content {
+  padding: 0 20px; }
+  body.project #content a.back-btn {
+    display: none; }
+  body.project #content .description {
+    width: 100%; }
+  body.project #content #page-nav {
+    display: none; }
+  body.project #content #media .image img {
+    max-width: 100%;
+    height: auto; }
+
+body.information section.about {
+  margin-right: 0;
+  padding-right: 0; }
+body.information section.photo {
+  display: none; }
+body.information section.testimonials {
+  width: 100%;
+  float: none; }
+  body.information section.testimonials ul.testimonials {
+    min-height: 14em; }

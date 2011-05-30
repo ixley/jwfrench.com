@@ -1,3 +1,4 @@
+$left-margin: 20px
 
 header#header
   height: auto
@@ -6,17 +7,30 @@ header#header
     float: none
     display: block
     height: auto
-    background: pink
     a
       width: 100%
       height: auto
       background-position: 17px 12px
-      padding-left: 70px
+      padding: 15px 0
+      span.text
+        display: block
+        padding: 0 20px 0 70px
   #navigation
     display: block
-    margin: 0 20px 20px 12px
+    margin: 0 20px 0 12px
     height: auto
     font-size: 16px
+footer#footer
+  margin-left: $left-margin
+
+// Projects index page
+body.projects-index
+  .intro, #options, .artboard
+    margin-left: $left-margin
+  ul.projects
+    text-align: center
+    
+
 
       
     
@@ -24,13 +38,30 @@ header#header
 body.project
   #content
     padding: 0 20px
-    a.back-btn
+    a.back-btn, #page-nav
       display: none
+    &.project
+      margin-bottom: 30px
     .description
       width: 100%
-    
     #media
       .image
         img
           max-width: 100%
           height: auto
+          
+  .project-nav
+    margin-left: $left-margin
+          
+body.information
+  section.about
+    margin-right: 0
+    padding-right: 0
+  section.photo
+    display: none
+  section.testimonials
+    width: 100%
+    float: none
+    ul.testimonials
+      min-height: 14em
+      
