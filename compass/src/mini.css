@@ -29,15 +29,17 @@ body.projects-index ul.projects {
 
 body.project #content {
   padding: 0 20px; }
-  body.project #content a.back-btn {
+  body.project #content a.back-btn, body.project #content #page-nav {
     display: none; }
+  body.project #content.project {
+    margin-bottom: 30px; }
   body.project #content .description {
     width: 100%; }
-  body.project #content #page-nav {
-    display: none; }
   body.project #content #media .image img {
     max-width: 100%;
     height: auto; }
+body.project .project-nav {
+  margin-left: 20px; }
 
 body.information section.about {
   margin-right: 0;
