@@ -8,6 +8,7 @@ content:
   <li>And while I can get excited about everything from icons and breaking grids to user flows and design patterns,</li> 
   <li>I ultimately want to contribute to projects with valuable, real-world applications.</li>
 </ul>
+<p><em>I am happily employed at WellnessFX and not looking to take on any additional projects.</em></p>
 -
 testimonials:
 <ul class="testimonials">
