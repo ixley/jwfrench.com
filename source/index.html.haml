@@ -2,20 +2,27 @@
 title: Jeff French · Product Designer
 ---
 
+#wrapper
+  %header#header
+    %img.mug{srcset: "/images/global/mug-60.jpg 1x, /images/global/mug-60@2x.jpg 2x", source: "/images/global/mug-60.jpg"}
+      / =image_tag("images/global/mug-60.jpg", class: "mug")
 
-.container
-  %header
     %h1 Jeff French
-    %p.description
-      Digital product designer, engaged world citizen,  asker of questions.
-    %nav
+    %p.blurb
+      %span Digital product designer,
+      %span engaged world citizen,
+      %span  asker of questions.
+    %nav.main-nav
       %ul
         %li
-          =link_to 'Projects', 'projects'
-      
-  %h1 Digital product designer. Done.
+          =link_to 'About', "#"
+        %li
+          =link_to 'Projects', '#'
+        
+  .main
+    %h1 Digital product designer. Done.
 
-  %p.intro
-    The primary mission of WellnessFX is to help people better understand and improve their health. By providing access to blood tests and helping to explain and contextualize test results, we’re taking that first step to helping people make better sense of their health. 
-  %p
-    WellnessFX had already taken the first step of raising a low bar within the industry by providing better visualizations and presentations for personal blood test results. People that used the service were emphatic about how much they loved the clarity and simplicity of their test results. We were displaying test results with various risk and reference ranges provided by the testing labs, but it was becoming increasingly difficult to present a more meaningful health standard for results.
+    %p.intro
+      The primary mission of WellnessFX is to help people better understand and improve their health. By providing access to blood tests and helping to explain and contextualize test results, we’re taking that first step to helping people make better sense of their health. 
+    %p
+      WellnessFX had already taken the first step of raising a low bar within the industry by providing better visualizations and presentations for personal blood test results. People that used the service were emphatic about how much they loved the clarity and simplicity of their test results. We were displaying test results with various risk and reference ranges provided by the testing labs, but it was becoming increasingly difficult to present a more meaningful health standard for results.

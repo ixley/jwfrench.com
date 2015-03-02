@@ -3,23 +3,72 @@
 // @import url(http://fonts.googleapis.com/css?family=Neuton:400,700,400italic);
 @import "normalize";
 // @import "bootstrap";
-@import "grid-settings"; // customizations for neat - (import before)
 
 $site-bg-color: #eee;
 
 @import "bourbon";
+@import "base/grid-settings"; // customizations for neat - (import before)
 @import "neat";
 @import "base/base"; // from Bitters
-
-
 
 
 body {
   background: $site-bg-color;
 }
 
-// move
-
-.container {
-  padding: 20px;
+#wrapper {
+  margin: 0 auto;
+  height: 100%;
+  width: 75%;
+  margin-left: 25%;
+  max-width: 38rem;
 }
+
+header#header {
+  // layout
+  position: fixed;
+  top: 0;
+  $header-width: 25%;
+  width: $header-width;
+  margin-left: -($header-width);
+  padding: 20px;
+  height: 100%;
+  border-right: 1px solid darken($site-bg-color, 5%);
+  text-align: center;
+  // styling
+  .mug {
+    border-radius: 10em;
+    box-shadow: 0 1px 3px rgba(#000, .15);
+  }
+  h1 {
+    font-size: 1.2rem;
+    // font-weight: normal;
+  }
+  .blurb {
+    font-size: .9rem;
+    font-style: italic;
+    line-height: 1.3;
+    color: #777;
+    span {
+      white-space: nowrap;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% { 
+    opacity: 0; 
+    transform: translate3d(0, 1em, 0);
+  }
+  100% { 
+    opacity: 1;
+    transform: none;
+  }
+}
+.main {
+  padding: 1.5rem;
+  height: 100%;
+  animation: fadeInUp 1s;
+}
+
+

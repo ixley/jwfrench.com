@@ -2,4 +2,4 @@
 //= require segment
 
 //= require turbolinks
-
+//= require picturefill
