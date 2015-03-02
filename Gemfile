@@ -7,7 +7,12 @@ gem 'middleman', '~>3.3.10'
 # Live-reloading plugin
 gem 'middleman-livereload', '~> 3.1.0'
 
+gem "turbolinks", require: false
 
-gem 'bootstrap-sass', git: 'git://github.com/ixley/bootstrap-sass.git', tag: 'v3.3.3-ms', :require => false
+gem 'modernizr-rails', require: false
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'
+# gem 'bootstrap-sass', git: 'git://github.com/ixley/bootstrap-sass.git', tag: 'v3.3.3-ms', :require => false
 gem 'middleman-autoprefixer'
 gem 'uglifier'
