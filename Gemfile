@@ -7,7 +7,9 @@ gem 'middleman', '~>3.3.10'
 # Live-reloading plugin
 gem 'middleman-livereload', '~> 3.1.0'
 
-gem 'turbolinks', require: false
+gem 'turbolinks', '~> 2.5.3', require: false
+gem 'nprogress-rails', require: false
+gem 'jquery-rails', require: false
 
 gem 'modernizr-rails', require: false
 gem 'bourbon'
