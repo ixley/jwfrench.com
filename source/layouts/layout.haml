@@ -2,4 +2,7 @@
 %html
   = partial "layouts/head"
   %body{:class => page_classes}
-    = yield
+    #wrapper
+      = partial "layouts/header"
+      .main
+        = yield

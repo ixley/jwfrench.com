@@ -24,6 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
   // font-size: $base-font-size;
+  font-weight: normal;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
@@ -59,6 +60,9 @@ a {
     background-repeat: repeat-x;
     background-position: 0 95%;
     background-size: 100% 1px;
+  }
+  &.img__link {
+    background: none;
   }
 }
 

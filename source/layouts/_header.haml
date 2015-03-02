@@ -1,0 +1,17 @@
+%header#header
+  %a.img__link{href: '/'}
+    %img.mug{srcset: "/images/global/mug-60.jpg 1x, /images/global/mug-60@2x.jpg 2x", source: "/images/global/mug-60.jpg"}
+    / =image_tag("images/global/mug-60.jpg", class: "mug")
+
+    %h1 Jeff French
+  %p.blurb
+    %span Digital product designer,
+    %span engaged world citizen,
+    %span  asker of questions.
+  %nav.main-nav
+    %ul
+      %li
+        =link_to 'About', '/about'
+      %li
+        =link_to 'Projects', '/projects'
+      
