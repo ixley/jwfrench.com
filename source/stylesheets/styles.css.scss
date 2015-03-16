@@ -10,6 +10,13 @@ $site-bg-color: #eee;
 @import "neat";
 @import "base/base"; // from Bitters
 
+@import "vendor/responsive-nav";
+
+
+
+html.turbolinks-progress-bar::before {
+  height: 2px !important;
+}
 
 body {
   background: $site-bg-color;
@@ -18,40 +25,28 @@ body {
 #wrapper {
   margin: 0 auto;
   height: 100%;
-  width: 75%;
-  margin-left: 25%;
+  width: 100%;
   max-width: 38rem;
 }
 
-header#header {
-  // layout
-  position: fixed;
-  top: 0;
-  $header-width: 25%;
-  width: $header-width;
-  margin-left: -($header-width);
-  padding: 20px;
-  height: 100%;
-  border-right: 1px solid darken($site-bg-color, 5%);
-  text-align: center;
-  // styling
-  .mug {
-    border-radius: 10em;
-    box-shadow: 0 1px 3px rgba(#000, .15);
-  }
-  h1 {
-    font-size: 1.2rem;
-    color: #555;
-    // font-weight: normal;
-  }
-  .blurb {
-    font-size: .9rem;
-    font-style: italic;
-    line-height: 1.3;
-    color: #777;
-    span {
-      white-space: nowrap;
-    }
+// #header
+.header__mug {
+  border-radius: 10em;
+  box-shadow: 0 1px 3px rgba(#000, .15);
+}
+.header__name {
+  font-size: 1.2rem;
+  color: #555;
+  // font-weight: normal;
+}
+.header__blurb {
+  font-size: .9rem;
+  font-style: italic;
+  line-height: 1.3;
+  color: #777;
+  display: none; // hide until larger
+  span {
+    white-space: nowrap;
   }
 }
 
@@ -71,4 +66,91 @@ header#header {
   animation: fadeInUp 1s;
 }
 
+
+
+
+// ================ Horizontal Nav
+
+$horizontal-nav-height: 50px;
+
+#wrapper {
+  padding-top: $horizontal-nav-height;
+}
+#header {
+  border: 1px solid darken($site-bg-color, 5%);
+  position: fixed;
+  top: 0;
+  // overridden for vertical
+  width: 100%;
+  border-width: 0 0 1px 0;
+  padding: 10px 20px;
+  height: $horizontal-nav-height;
+}
+
+
+@media (max-width: $header-breakpoint - 1){
+  .header__name {
+    float: left;
+  }
+  .header__mug {
+    display: none;
+  }
+}
+
+// ================ Sidebar Nav
+
+@media (min-width: $header-breakpoint){
+  #wrapper {
+    width: 75%;
+    margin-left: 25%;
+  }
+  #header {
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    $header-width: 25%;
+    width: $header-width;
+    margin-left: -($header-width);
+    border-width: 0 1px 0 0;
+  }
+  .header__blurb {
+    display: block;
+  }
+}
+@media (min-width: $screen-lg-min){
+  #header {
+    $header-width: 15em;
+    width: $header-width;
+    margin-left: -($header-width);
+  }
+}
+
+
+
+@media (max-width: $nav-breakpoint - 1){
+  a.nav-toggle {
+    float: right;
+  }
+  .main-nav {
+    display: block;
+    background: $site-bg-color;
+    padding: 10px 20px;
+    margin: -10px -20px;
+    box-shadow: 0 1px 5px rgba(#000, .2);
+    li {
+      text-align: center;
+    }
+
+  }
+}
+@media (min-width: $nav-breakpoint) and (max-width: $header-breakpoint){
+  .main-nav {
+    float: right;
+    li {
+      width: auto;
+      margin-left: 1.5em;
+      display: inline-block;
+    }
+  }
+}
 

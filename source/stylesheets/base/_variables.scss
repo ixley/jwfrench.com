@@ -1,6 +1,8 @@
 // Typography
 
 $neuton: "Neuton", Book Antiqua, Cambria, serif;
+$vollkorn: "Vollkorn", Book Antiqua, Cambria, serif;
+$libre-baskerville: "Libre Baskerville", serif;
 
 $base-font-family: $neuton;
 $heading-font-family: $base-font-family;
@@ -19,6 +21,8 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
+$site-bg-color: #eee;
+
 $blue: #477dca;
 
 $gray-darker: #333;
@@ -41,3 +45,13 @@ $base-border: 1px solid $base-border-color;
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Layout
+
+$screen-ms-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$header-breakpoint: $screen-sm-min;
+
+$nav-breakpoint: $screen-ms-min;
