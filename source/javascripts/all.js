@@ -6,6 +6,8 @@
 //= require_tree .
 //= require segment
 
+//= require jquery.lazyloadxt.js
+
 
 Turbolinks.enableProgressBar();
 
