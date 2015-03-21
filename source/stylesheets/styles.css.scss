@@ -179,3 +179,12 @@ a.nav__toggle {
   }
 }
 
+
+.lazy-hidden {
+  background: #fff url('/images/global/spinner.gif') no-repeat 50% 50%;
+  // opacity: 0;
+}
+// .lazy-loaded {
+//   transition: opacity 0.3s;
+//   opacity: 1;
+// }
