@@ -5,13 +5,12 @@
 
 //= require_tree .
 //= require segment
-//= require responsive-nav
-
-// require picturefill // probably don't need this...
 
 
 Turbolinks.enableProgressBar();
 
+
+// require picturefill // probably don't need this...
 
 // require nprogress
 // require nprogress-turbolinks

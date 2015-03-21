@@ -47,22 +47,24 @@ a {
     outline: none;
   }
   // Gradient link underlines
-  $bg-color: $site-bg-color;
-  html.no-js &, 
-  html.no-cssgradients & {
-    text-decoration: underline;
-  }
-  // html.cssgradients &  { // add modernizr
-  & {
-    text-decoration: none;
-    text-shadow: 2px 1px 0 $bg-color, -2px 0 0 $bg-color;
-    background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
-    background-repeat: repeat-x;
-    background-position: 0 95%;
-    background-size: 100% 1px;
-  }
-  &.img__link {
-    background: none;
+  #main & { // restrict to #main content area
+    $bg-color: $site-bg-color;
+    html.no-js &, 
+    html.no-cssgradients & {
+      text-decoration: underline;
+    }
+    // html.cssgradients &  { // add modernizr
+    & {
+      text-decoration: none;
+      text-shadow: 2px 1px 0 $bg-color, -2px 0 0 $bg-color;
+      background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
+      background-repeat: repeat-x;
+      background-position: 0 95%;
+      background-size: 100% 1px;
+    }
+    &.img__link {
+      background: none;
+    }
   }
 }
 

@@ -8,10 +8,11 @@
     %span Digital product designer,
     %span engaged world citizen,
     %span  asker of questions.
-  %nav.main-nav.nav-collapse
-    %ul
+  
+  %nav.main-nav
+    %a.nav__toggle{href: '#'} Menu
+    %ul{"data-state" => "closed"}
       %li
         =link_to 'About', '/about'
       %li
         =link_to 'Projects', '/projects'
-      

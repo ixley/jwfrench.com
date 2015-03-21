@@ -37,6 +37,7 @@ body {
 .header__name {
   font-size: 1.2rem;
   color: #555;
+  margin-bottom: 10px;
   // font-weight: normal;
 }
 .header__blurb {
@@ -60,7 +61,7 @@ body {
     transform: none;
   }
 }
-.main {
+#main {
   padding: 1.5rem;
   height: 100%;
   animation: fadeInUp 1s;
@@ -78,17 +79,23 @@ $horizontal-nav-height: 50px;
 }
 #header {
   border: 1px solid darken($site-bg-color, 5%);
+  background-color: $site-bg-color;
+  z-index: 100;
   position: fixed;
   top: 0;
+  transition: height .2s ease-in-out;
   // overridden for vertical
   width: 100%;
   border-width: 0 0 1px 0;
   padding: 10px 20px;
-  height: $horizontal-nav-height;
+  min-height: $horizontal-nav-height;
 }
 
 
 @media (max-width: $header-breakpoint - 1){
+  #header {
+    box-shadow: 0 1px 5px rgba(#000, .1);
+  }
   .header__name {
     float: left;
   }
@@ -126,23 +133,41 @@ $horizontal-nav-height: 50px;
 }
 
 
-
+a.nav__toggle {
+  display: none;
+}
+// horizontal header, dropdown nav
 @media (max-width: $nav-breakpoint - 1){
-  a.nav-toggle {
+  a.nav__toggle {
     float: right;
+    display: inline-block;
   }
   .main-nav {
-    display: block;
-    background: $site-bg-color;
-    padding: 10px 20px;
-    margin: -10px -20px;
-    box-shadow: 0 1px 5px rgba(#000, .2);
-    li {
-      text-align: center;
+    ul {
+      display: block;
+      clear: both;
+      background: $site-bg-color;
+      padding: 10px 0;
+      margin: 0 -20px -10px;
+      &[data-state=closed] {
+        display: none;
+      }
+      &[data-state=open] {
+        display: inherit;
+      }
     }
-
+    li {
+      a {
+        display: block; 
+        text-align: center;
+        border-top: 1px solid #ddd;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+    }
   }
 }
+// horizontal header, inline nav
 @media (min-width: $nav-breakpoint) and (max-width: $header-breakpoint){
   .main-nav {
     float: right;
