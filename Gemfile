@@ -9,6 +9,7 @@ gem 'middleman-livereload', '~> 3.1.0'
 
 gem 'turbolinks', '~> 2.5.3', require: false
 gem 'nprogress-rails', require: false
+gem 'jquery-turbolinks', require: false
 gem 'jquery-rails', require: false
 
 gem 'modernizr-rails', require: false

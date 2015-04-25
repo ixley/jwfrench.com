@@ -1,0 +1,55 @@
+body.projects_index {
+  #main section {
+    margin-bottom: 2rem;
+  }
+  .page-heading {
+    font-size: 3rem;
+    color: darken($gray-lighter, 5%);
+    margin: -.5rem 0 .5rem;
+
+  }
+  .section-heading {
+    font-size: .6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: $gray;
+    font-family: "Helvetica Neue", sans-serif;
+
+  }
+  .case-studies {
+    li {
+      @include micro-clearfix;
+      margin-bottom: .5rem;
+    }
+    .post-thumb {
+      float: left;
+      margin-right: 15px;
+      background-color: $gray-lighter;
+      border-radius: 3px;
+    }
+    .post-info {
+      margin-left: 135px;
+    }
+    .post-title {
+      font-size: 2rem;
+      line-height: 1.2;
+      color: $gray-dark;
+    }
+    .post-description {
+      font-style: italic;
+      color: $gray;
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+  }
+}
+
+body.projects {
+  p.intro {
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: .8;
+    margin-bottom: 1.8em;
+  }
+}

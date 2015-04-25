@@ -2,15 +2,16 @@
 
 @import "normalize";
 
-$site-bg-color: #eee;
+$site-bg-color: lighten(#eee, 10%);
 
+@import "mixins";
 @import "nprogress";
 @import "bourbon";
 @import "base/grid-settings"; // customizations for neat - (import before)
 @import "neat";
 @import "base/base"; // from Bitters
 
-@import "vendor/responsive-nav";
+@import "sections/projects";
 
 
 
@@ -37,8 +38,7 @@ body {
 .header__name {
   font-size: 1.2rem;
   color: #555;
-  margin-bottom: 10px;
-  // font-weight: normal;
+  margin-bottom: 0;
 }
 .header__blurb {
   font-size: .9rem;
@@ -62,7 +62,7 @@ body {
   }
 }
 #main {
-  padding: 1.5rem;
+  padding: .5rem 1.5rem 1.5rem;
   height: 100%;
   animation: fadeInUp 1s;
 }
@@ -72,7 +72,7 @@ body {
 
 // ================ Horizontal Nav
 
-$horizontal-nav-height: 50px;
+$horizontal-nav-height: 55px;
 
 #wrapper {
   padding-top: $horizontal-nav-height;
@@ -88,13 +88,13 @@ $horizontal-nav-height: 50px;
   width: 100%;
   border-width: 0 0 1px 0;
   padding: 10px 20px;
-  min-height: $horizontal-nav-height;
+  height: $horizontal-nav-height;
 }
 
 
 @media (max-width: $header-breakpoint - 1){
   #header {
-    box-shadow: 0 1px 5px rgba(#000, .1);
+    box-shadow: 0 1px 10px rgba(#000, .05);
   }
   .header__name {
     float: left;
@@ -120,6 +120,9 @@ $horizontal-nav-height: 50px;
     margin-left: -($header-width);
     border-width: 0 1px 0 0;
   }
+  .header__name {
+    margin-bottom: .5rem;
+  }
   .header__blurb {
     display: block;
   }
@@ -138,6 +141,10 @@ a.nav__toggle {
 }
 // horizontal header, dropdown nav
 @media (max-width: $nav-breakpoint - 1){
+  #header {
+    min-height: $horizontal-nav-height;
+    height: auto;
+  }
   a.nav__toggle {
     float: right;
     display: inline-block;
@@ -181,10 +188,10 @@ a.nav__toggle {
 
 
 .lazy-hidden {
-  background: #fff url('/images/global/spinner.gif') no-repeat 50% 50%;
-  // opacity: 0;
+  // background: #fff url('/images/global/spinner.gif') no-repeat 50% 50%;
+  opacity: 0;
 }
-// .lazy-loaded {
-//   transition: opacity 0.3s;
-//   opacity: 1;
-// }
+.lazy-loaded {
+  transition: opacity 0.3s;
+  opacity: 1;
+}

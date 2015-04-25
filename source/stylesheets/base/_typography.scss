@@ -4,13 +4,6 @@ html {
 }
 
 
-p.intro {
-  font-style: italic;
-  font-size: 1.2rem;
-  opacity: .8;
-  margin-bottom: 1.8em;
-}
-
 
 body {
   @include font-feature-settings("kern", "liga", "pnum");
@@ -37,6 +30,7 @@ a {
   color: $action-color;
   text-decoration: none;
   transition: color 0.1s linear;
+  cursor: pointer;
   &:active,
   &:focus,
   &:hover {
@@ -47,7 +41,7 @@ a {
     outline: none;
   }
   // Gradient link underlines
-  #main & { // restrict to #main content area
+  #main p & { // restrict to #main content area
     $bg-color: $site-bg-color;
     html.no-js &, 
     html.no-cssgradients & {
