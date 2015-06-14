@@ -1,0 +1,107 @@
+---
+title: Navigation
+description: ---
+
+---
+
+%h1.page-heading What's In a Nav Bar?
+
+%p.intro
+  This case study looks at the design process I led to streamline and improve our in-app messaging and navigation.
+%p
+  WellnessFX offers a handful of integrated, but distinct services that have been combined and configured in a variety of ways for different types of users. 
+%p
+  The people that sign in to the app are doing so for a handful of different reasons, with different prompts and goals, and often with differing services available to them. In order to help orient each person to their next task, I looked for ways to address them directly, with concise and noticeable prompts, and that wouldn’t be distracting otherwise.
+
+%figure
+  %img{"data-src" => "/images/projects/navigation/service-overview.png"}
+  %figcaption An overview of the services WellnessFX provides (with some variants)
+%h2.section-heading # Add More Section Headings to Group Content    
+%p
+  Initially, the services WellnessFX provided had almost no variation and almost everyone that signed up for our service went through a very similar experience. As we expanded to offer a wider variety of services and partner with different organizations that had distinct needs, our product experience became a much more custom experience. While this felt like a move in the right direction, conveying different experiences to our diversifying users became much more complex. I decided to focus on one of the most integral areas of the app, and ended up rethinking the main navigation and integrating simple in-app messaging. 
+%p
+  The web app was originally designed with horizontal nav bars&mdash;a fine choice for earlier needs&mdash;but the incremental addition of new navigation items and sections eventually devolved into a messy and sometimes confusing experience. Additionally, we relied on a checklist-style component (that was internally and unceremoniously dubbed the ‘action bar’) to tell signed-in members what they needed to do next. This solution became increasingly unscalable and brittle as new conditions and contexts were added, so I looked for ways to clean up the experience and rethink functionality.
+%figure
+  %img{"data-src" => "/images/projects/navigation/site-map.png"}
+  %figcaption
+    Mapping out navigation and prompts for primary flows
+
+%p
+  After having some conversations with other team members to make sure I was focussing on the right things, I sketched some ideas and conceptualized a few possible solutions to inform users what actions they needed to take next from anywhere within the app. 
+
+%h2.section-heading # [Add More Section Headings to Group Content]
+
+%figure
+  %img{"data-src" => "/images/projects/navigation/exploration.png"}
+  %figcaption
+    Early 'medium fidelity' explorations
+
+%p
+  The solutions didn’t all hinge on integrating messaging into the navigation bar, but after reviewing and critiquing various options with other team members, I zeroed in on integrating messaging for “what’s next” into a restructured vertical navigation bar. This direction allowed for: 
+%ul
+  %li
+    regrouping primary and secondary navigation items into more intuitive groups, to both orient users to our wider suite of services, and provide a subtle hierarchy based on the relative significance of different sections
+  %li
+    more clearly structuring navigation variations for different types of users, some of whom have the ability to view navigation items for or ‘as’ other users(!)
+  %li
+    providing actionable context for any signed-in user about what they need to (or can) do next from anywhere in the app
+%p
+  In parallel, I began to:
+%ul
+  %li
+    outline the primary messaging for each key flow or step that members should be prompted with
+  %li
+    explore regrouping and restructuring elements in the main navigation
+  %li
+    consider how to nest and contextualize various options for user types, particularly when certain users have the ability to view options for other users, or have options associated with different roles
+
+%figure
+  %img{"data-src" => "/images/projects/navigation/nav-and-notifications.png"}
+  %figcaption
+    Exploring various concepts for prompts along with different user roles
+%figure
+  %img{"data-src" => "/images/projects/navigation/prompts.png"}
+  %figcaption
+    Grouping and mapping out all prompts
+
+%h2.section-heading # [Add More Section Headings to Group Content]
+
+%p
+  Because of the complexity of information, I found that outlining structures with lists and spreadsheets, and then assembling rough layouts in Sketch, was much faster than starting with pencil and paper. Jumping quickly to a ‘medium fidelity’ stage of design allowed me experiment with visual components with more polish than barebones wireframes, without having to invest in the full detail of high fidelity comps.
+
+
+
+%h2.section-heading # [Add Section Heading Here]
+
+%p [---------Needs more---------]
+
+%p
+  Our web application is not built to be responsive (we have a separate iPhone app instead). As we move forward though, optimizing for screen sizes inclusive of tablets is a priority I embraced as an important design consideration, and part of the reason I opted for a vertical navigation that scaled well and could be hidden off canvas when necessary.
+
+%p
+  I continued mapping out variations and structures until I had identified not just all of the primary cases, but the troublesome edge cases as well. 
+%p
+  %em [more finalized designs]
+%p
+  While I went through most of my design iterations and explorations in Sketch, rather than map out all the final details in static comps, I transitioned to the browser to finalize state and interaction details. 
+
+  I prototyped interactive behavior for collapsing and revealing the navigation panel, mapped out layout behaviors for existing sub-navigation areas, and designed a set of custom icons for the main navigation items.
+
+  %figure
+    %img{"data-src" => "/images/projects/navigation/icons.png"}
+    %figcaption
+      New icons
+
+%p
+  Outcome:
+  Because of the wide-reaching nature of this redesign, we decided to roll it out in phases and gate the new design to various users selectively. As of the time of writing this, the full rollout has not been completed, but we have plans to test specific design goals for certain populations to measure the ‘success’ of [certain goals].
+  more specific note on testing
+
+%p
+  process??
+  One of the things I particularly enjoy about projects like this one is the ability to approach a wide-reaching prompt with top-down design. It doesn’t work for all projects, but it’s perfectly suited to ones like this.
+
+
+
+  / %img{"data-src" => "http://lorempixel.com/600/400/city/9", width: "600", height: "600"}
+

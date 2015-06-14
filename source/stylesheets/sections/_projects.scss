@@ -35,6 +35,7 @@ body.projects_index {
       font-size: 2rem;
       line-height: 1.2;
       color: $gray-dark;
+      margin: 0;
     }
     .post-description {
       font-style: italic;
@@ -45,11 +46,37 @@ body.projects_index {
   }
 }
 
+
+// Project pages
+
 body.projects {
-  p.intro {
-    font-style: italic;
-    font-size: 1.2rem;
-    opacity: .8;
-    margin-bottom: 1.8em;
+  .page-heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  article {
+    p.intro {
+      font-style: italic;
+      font-size: 1.2rem;
+      opacity: .8;
+      margin-bottom: 1.8em;
+    }
+    ul {
+      padding-left: 2em;
+      margin-bottom: 1em;
+      list-style: circle;
+    }
+    li {
+      margin-bottom: .5em;
+    }
+    figure {
+      margin-bottom: 1em;
+    }
+    figcaption {
+      font-style: italic;
+      font-size: .8em;
+      color: $gray;
+      text-align: center;
+    }
   }
 }

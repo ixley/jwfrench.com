@@ -9,11 +9,7 @@
 //= require jquery.lazyloadxt.js
 
 
-
-
 // require picturefill // probably don't need this...
-
-
 
 
 //= require turbolinks
