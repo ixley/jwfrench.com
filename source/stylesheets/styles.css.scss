@@ -25,10 +25,15 @@ body {
 }
 
 #wrapper {
-  margin: 0 auto;
   height: 100%;
   width: 100%;
+  padding-top: $horizontal-nav-height;
+  margin: 0 auto;
   max-width: 38rem;
+  @media (min-width: $header-breakpoint){
+    width: 75%;
+    margin-left: 25%;
+  }
 }
 
 
