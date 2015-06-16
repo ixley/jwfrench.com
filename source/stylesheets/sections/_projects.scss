@@ -26,10 +26,10 @@ body.projects_index {
       float: left;
       margin-right: 15px;
       background-color: $gray-lighter;
-      border-radius: 3px;
+      border-radius: 300px;
     }
     .post-info {
-      margin-left: 135px;
+      margin-left: 115px; // image width + 15px
     }
     .post-title {
       font-size: 2rem;

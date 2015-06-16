@@ -14,3 +14,32 @@
     %ul{"data-state" => "closed"}
       = link_to_page("About", "/about")
       = link_to_page("Projects", "/projects")
+
+  %ul.elsewhere-nav
+    %li
+      %a.external-link{href: 'http://twitter.com/ixley'}
+        %i.fa.fa-twitter
+        %span Twitter
+    %li
+      %a.external-link{href: 'https://www.linkedin.com/in/jefffrench'}
+        %i.fa.fa-linkedin
+        %span LinkedIn
+
+    %li
+      %a.external-link{href: 'https://medium.com/@ixley'}
+        %i.fa.fa-medium
+        %span Medium
+    %li
+      %a.external-link{href: 'mailto:jfrench@ixley.com'}
+        %i.fa.fa-envelope
+        %span Email
+
+
+:javascript
+  $('a.external-link').each(function() {
+    $(this).click(function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      window.open(this.href, '_blank');
+    });
+  });        
