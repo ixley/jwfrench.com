@@ -46,11 +46,24 @@ configure :development do
 end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  # def is_page_selected(page)
+  #   current_page.url == page ? {class: 'active'} : {}
+  # end
+
+  def link_to_page name, url
+    path = request.path
+    current = path =~ Regexp.new('^' + url[1..-1] + '.*\.html')
+
+    if path == 'index.html'
+      current = true
+    end
+
+    class_name = current ? ' class="is-active"' : ''
+
+    "<li#{class_name}><a href=\"#{url}\">#{name}</a></li>"
+  end
+end
 
 set :scss_dir, 'stylesheets'
 

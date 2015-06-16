@@ -12,7 +12,5 @@
   %nav.main-nav
     %a.nav__toggle{href: '#'} Menu
     %ul{"data-state" => "closed"}
-      %li
-        =link_to 'About', '/about'
-      %li
-        =link_to 'Projects', '/projects'
+      = link_to_page("About", "/about")
+      = link_to_page("Projects", "/projects")
