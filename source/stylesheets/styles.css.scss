@@ -104,6 +104,14 @@ $horizontal-nav-height: 55px;
   }
 }
 
+.main-nav {
+  a {
+    padding: 3px 5px;
+  }
+  li.is-active a {
+    color: mix($wine, $blue, 70%);
+  }
+}
 // ================ Sidebar Nav
 
 @media (min-width: $header-breakpoint){
@@ -180,12 +188,11 @@ a.nav__toggle {
     float: right;
     li {
       width: auto;
-      margin-left: 1.5em;
+      margin-left: 1.25em;
       display: inline-block;
     }
   }
 }
-
 
 .lazy-hidden {
   // background: #fff url('/images/global/spinner.gif') no-repeat 50% 50%;
