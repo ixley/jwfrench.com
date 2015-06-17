@@ -79,9 +79,12 @@ body.projects {
     text-align: center;
   }
   figcaption {
+    padding-top: .5em;
+    border-top: 1px solid $gray-lighter;
     font-style: italic;
     font-size: .8em;
     color: $gray;
     text-align: center;
+
   }
 }

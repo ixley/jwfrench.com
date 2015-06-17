@@ -1,8 +1,6 @@
 // Typography
 
 $neuton: "Neuton", Book Antiqua, Cambria, serif;
-$vollkorn: "Vollkorn", Book Antiqua, Cambria, serif;
-$libre-baskerville: "Libre Baskerville", serif;
 
 $base-font-family: $neuton;
 $heading-font-family: $base-font-family;
@@ -21,7 +19,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$site-bg-color: #eee;
+$site-bg-color: lighten(#eee, 20%);
 
 $blue: #477dca;
 $wine: #be0067;

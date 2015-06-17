@@ -6,52 +6,54 @@ description: Reducing complexity while adding new information
 
 %h1.page-heading Scoring Health
 
+
 %p.intro
-  The goal of this project was to integrate numerical scoring into blood test results, to help provide more relativity among important biomarkers as well as make it easier to see what mattered most. The main challenge was to introduce a new layer of information without adding clutter, and make results easier to understand.
+  The goal of this project was to integrate numerical scoring into blood test results and provide better emphasis for important health indicators. The main challenge was to introduce this new layer of information without adding clutter, and make it simpler to make sense of results.
 
 %h2.section-heading Background
 
 %p
   The primary mission of WellnessFX is to help people better understand and improve their health. By providing access to blood tests and helping to explain and contextualize test results, we’re taking that first step to helping people make better sense of their health. 
 %p
-  WellnessFX had already taken the first step of raising a low bar within the industry by providing better visualizations and presentations for personal blood test results. People that used the service have been emphatic about how much they loved the clarity and simplicity of their test results. Test results are displayed with various risk and reference ranges (as provided by the testing labs), but it was becoming increasingly difficult to present a more meaningful contextual standard for test results.
-%p
-  [-----image: compare old-school printout vs chart-----]
-
-
-%h2.section-heading Scoring Health -> The Goal
-
+  WellnessFX has already taken the first step of raising a low bar within the industry by providing better visualizations and presentations for personal blood test results. People that have used the service are emphatic about how much they love the clarity and simplicity of their test results. 
 %figure
-  %img{"data-src" => "/images/projects/scoring/score-components.png"}
-  %figcaption
-    Components of test results
+  %figcaption [-----image: compare old-school printout vs chart-----]
+
+
+%h2.section-heading Making Health Information More Meaningful
+
+%p
+  It's common to display test results with their associated risk range or reference range (as provided by the testing labs), but this information still offers very little context for relevance to health. Furthermore, WellnessFX's goal is to provide a more progressive standard for health, not simply uphold the status quo. Emphasis on these lab provided ranges, in part, made it more difficult to present a more meaningful  standard for test results.
 
 %p 
-  With so much information to digest, the goal was to present health information in a way that is meaningful and simple to understand. My task was to design a visual system that would preserve existing lab test information, but provide a more prominent ‘health score’ for select biomarkers and health areas as a way to convey more meaning about members’ test results. The hypothesis was that assigning certain test markers with a numerical (100 point) score would allow people to get an immediate sense of whether test results should be cause for concern. If you see that your LDL Particle Count is 873 nmol/L, it would probably take a little digging to understand what the relative health context is, but seeing a score of 89/100 (where 100 denotes the lowest associated risk), along with an associated color, is easier to understand at a high level. And of course, the additional details and contextual explanations are still there for users to explore further if they want.
+  With so much information available, the goal is to make health information both meaningful and approachable. My task was to design a visual system that would preserve existing lab test information, and also provide a more prominent ‘health score’ for select biomarkers and health areas, in order to convey more meaning about members’ test results. 
+  %p
+    The hypothesis was that assigning certain test markers with a numerical (100 point) score would help give people an immediate sense of which test results to pay attention to first. If you see that your LDL Particle Count is 873 nmol/L, it would probably take a little digging to understand what the relative health context is. Seeing an associated score of 89/100 (where 100 denotes the lowest associated risk), matched with a corresponding color, is easier to understand at a high level. And of course, the additional details and contextual explanations are still there for users to explore further if they want.
 %figure
   %img{"data-src" => "/images/projects/scoring/contextualized-value.png"}
   %figcaption
-    ---
+    Adding 
 
 %h2.section-heading Solving the problem
 
-%h3 Repurposing Colors
+%h3 Fixing Misrepresentative Information First
 
 %p 
-  Lab designated risk ranges and reference ranges are presented as 2 or 3 range types – High Risk, Moderate Risk, and Optimal (for risk ranges), and Normal and Abnormal (for more agnostic reference ranges). Because all ranges were being colored with the same color set, the first task was to distinguish between markers that could be assigned a standardized health risk, and those that were more contextual and couldn’t be given a representative health score as easily. 
-
+  Along with test results, labs provide risk ranges and reference ranges. Risk ranges can be categorized by High Risk, Moderate Risk, and Low Risk (or Optimal), and the more agnostic reference ranges are often Normal and some form of Non-normal (like High or Low). Because both the risk ranges and reference ranges were being colored with the same red, orange, and green, it gave the misleading implication that they had the same health significance. This created a misleading impression that non-normal ranges are necessarily bad (which they're not). By using more neutral colors for them, the results remain more faithful to the significance they're meant to convey.
+  
 %figure
   %img{"data-src" => "/images/projects/scoring/ranges.png"}
   %figcaption
     Clarifying meaning with color
 
-%p
-  Rendering 'Normal' and 'Non-normal' reference ranges with the same colors as those for 'Optimal' and 'High Risk' created a misleading impression that non-normal ranges are necessarily bad (which they're not). By using more neutral colors for them, the results remain more faithful to the significance they're meant to convey.
 
 %h2.section-heading Prototyping with real data
 
 %p
-  Due to the complexity and variation of data sets and combinations, I still began with static visual comps, but then with the help of our engineering team, we quickly moved to create dynamic versions that we could preview with real sample data. While prototyping with ‘dummy’ data or static screens is often sufficient, this was a case when it was particularly helpful to see designs rendered with actual user data. Being able to see a wide variety of actual test results helped expose a number of edge cases and less common scenarios (that are harder to guess at) so that we could refine how we presented certain pieces of information. For example, I initially tried using a fluid range of values so that each score value was represented by a unique color. When we generated cases representing uncommon displays, I realized how much less intuitive certain colors became in relation to each other. The additional detail might be justified in more focused contexts, but becomes confusing at an overview level, so I scaled the values back to limited color ranges here.
+  Due to the complexity and variation of data sets and combinations, I still began with static visual comps, but then with the help of our engineering team, we quickly moved to create dynamic versions that we could preview with real sample data. While prototyping with ‘dummy’ data or static screens is often sufficient, this was a case when it was particularly helpful to see designs rendered with actual user data. Being able to see a wide variety of actual test results helped expose a number of edge cases and less common scenarios (that are harder to guess at) so that we could refine how we presented certain pieces of information. 
+
+  %p
+    For example, I initially tried using a fluid range of values so that each score value was represented by a unique color. When we generated cases representing uncommon displays, I realized how much less intuitive certain colors became in relation to each other. The additional detail can be justified in more focused contexts, but becomes confusing at an overview level, so I scaled the values back to limited color ranges here.
 
 %figure
   %img{"data-src" => "/images/projects/scoring/color-count.png"}
@@ -62,19 +64,18 @@ description: Reducing complexity while adding new information
 
 %p
   Introducing something as significant as scores about one’s health has a variety of experience implications for our members, so we conducted focused user tests with existing members to gather feedback during the design process. I helped to identify test criteria for our research and we got a lot of great feedback about what things people found helpful as well as things they found confusing. We were subsequently able to adjust designs and our rollout strategy to accommodate these learnings. 
+%p
+  One thing we realized was that many people found the additional information valuable, but felt that the additional numbers were overwhelming alongside many others. To address this, I tucked the score away and left the coded color visible. On hover, the numerical score will slide out, but only while is focusing on it.
 
 %figure
   %img{"data-src" => "/images/projects/scoring/hide-detail.png"}
   %figcaption
     Reduce clutter by hiding numerical score values until the user hovers
 
+%h2.section-heading A More Nuanced Detail View
 
-
-%h2.section-heading Outcome and Next Steps
 %p
-  This feature was unfortunately delayed due to some external factors, but is something the team is still excited to release in the near future. In order to assure a smoother release, this is something that we plan to roll out to select segments of our member population incrementally, in order to be even more confident about the changes we are introducing. 
-%p
-  There were also a handful of issues that we flagged during the design process, that weren’t scoped for this round that warrant future attention, such as providing better visual support for colorblind users. Even though color is not the only indicator of meaning in these visuals, it is significant enough that colorblind users should be provided comparable ways to scan and make sense of the color-encoded information.
+  In addition to the adjustments for the summary views—recoloring specific markers for their Health Score, and neutralizing color for those without a risk range or score, I also updated the detail view to display score as a prominent color, while keeping reference ranges accessible.
 
 %figure
   %img{"data-src" => "/images/projects/scoring/marker-detail.png"}
@@ -82,3 +83,9 @@ description: Reducing complexity while adding new information
     A detail view of results displaying values, lab reference ranges, and WellnessFX scoring
 
 
+%h3.section-heading 
+  %em Status
+%p
+  %em This feature was unfortunately delayed due to some external factors, but is something the team is still excited to release in the near future. In order to ensure a smoother release, this feature will be rolled out to select segments of our member population incrementally.
+%p
+  %em There were also a handful of issues that we flagged during the design process, that weren’t scoped for this round but warrant future attention, such as providing better visual support for colorblind users.

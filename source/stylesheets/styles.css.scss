@@ -2,14 +2,16 @@
 
 @import 'normalize';
 
-$site-bg-color: lighten(#eee, 20%);
+@import "base/variables";
 
 @import 'mixins';
 @import 'nprogress';
 @import 'bourbon';
-@import 'base/grid-settings'; // customizations for neat - (import before)
+@import 'base/grid-settings'; // customizations for neat - (import before Neat)
 @import 'neat';
 @import 'base/base'; // from Bitters
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 @import 'sections/projects';
 @import 'sections/header';
