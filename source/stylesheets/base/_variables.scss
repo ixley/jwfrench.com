@@ -19,7 +19,6 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$site-bg-color: lighten(#eee, 20%);
 
 $blue: #477dca;
 $wine: #be0067;
@@ -31,6 +30,10 @@ $gray-light: #ccc;
 $gray-lighter: #eee;
 $gray-pale: #f8f8f8;
 $gray-border: #ddd;
+
+$link-color: $blue;
+$site-bg-color: lighten(#eee, 20%);
+$highlight-color: $wine;
 
 // Font Colors
 $base-background-color: #fff;

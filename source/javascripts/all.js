@@ -7,6 +7,7 @@
 //= require segment
 
 //= require jquery.lazyloadxt.js
+//= require jquery.lazyloadxt.srcset.js
 
 
 // require picturefill // probably don't need this...
