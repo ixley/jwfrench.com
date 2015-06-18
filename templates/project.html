@@ -1,0 +1,27 @@
+  :html_head
+  <body class="@slug project if @body_class do @body_class endif">
+    :header
+    <div id="content" class="project">
+      <a href="@root_path/projects" class="back-btn"><span class="arrow">&uarr;</span>All</a>
+      <div class="description">
+        <div class="header">
+          <h2 class="hed">@title</h2>
+           if @client do <h4 class="client dek"><em>for</em> @client</h4>endif
+           if @role do <h5 class="role">@role</h5> endif
+           if @in-house do <span class="role in-house">In-house Designer</span>endif
+        </div>
+        @content
+      </div>
+      <div id="page-nav" class="navigation">
+        if $siblings do
+          :previous-page
+          :next-page
+        endif
+      </div>
+      :media
+    </div>
+    <div class="project-nav">
+      <h4 class="section-header">All Projects</h4>
+      :projects-list
+    </div>
+  :footer

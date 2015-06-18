@@ -1,0 +1,61 @@
+@import compass/utilities
+@import compass/layout
+@import compass/css3
+@import typography
+@import html5-boilerplate
+@import mixins
+@import constants
+
+html.embed
+  background: transparent
+  body#public
+    padding: 15px
+    header
+      padding: 3px
+      border: none
+      h2
+        font:
+          family: $museo
+          size: 18px
+        color: $blue
+          
+    form
+      li
+        padding: 2px
+        &.focused
+          background-color: transparent
+        span.req
+          display: none !important
+      input.text, textarea.textarea
+        border: 1px solid #ddd
+        background: #fff
+        padding: 3px
+      textarea.textarea
+        width: 370px
+        min-width: inherit
+        max-width: inherit
+        margin-bottom: 10px
+      
+      input.submit
+        font-size: 14px
+        font-family: $museo
+        padding: 4px 15px 6px
+        border: 1px solid #ccc
+        +border-radius(5px)
+        color: #666
+        background: linear-gradient(#fff 20%, #dfdfdf)
+        &:hover
+          color: #333
+        &:active
+          padding: 5px 15px
+          background: linear-gradient(#fafafa 10%, #ddd)
+          
+      input:invalid, textarea:invalid
+        border-radius: 1px
+        +single-box-shadow(none)
+        
+      #errorLi
+        +border-radius(0)
+        border: none
+        text-align: left
+        background: transparent !important

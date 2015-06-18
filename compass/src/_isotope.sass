@@ -1,0 +1,39 @@
+/* Start: Recommended Isotope styles
+/**** Isotope Filtering ***
+
+.isotope-item
+  z-index: 2
+
+.isotope-hidden.isotope-item
+  pointer-events: none
+  z-index: 1
+
+/**** Isotope CSS3 transitions ***
+
+.isotope
+  +transition-duration(.8s)
+  .isotope-item
+    +transition-duration(.8s)
+    -webkit-transition-property: -webkit-transform, opacity, box-shadow
+    -moz-transition-property: -moz-transform, opacity, box-shadow
+    transition-property: transform, opacity, box-shadow
+  -webkit-transition-property: height, width
+  -moz-transition-property: height, width
+  transition-property: height, width
+  /* End: Recommended Isotope styles
+  /**** disabling Isotope CSS3 transitions ***
+  &.no-transition
+    +transition-duration(0s)
+    .isotope-item
+      +transition-duration(0s)
+  /* disable CSS transitions for containers with infinite scrolling
+  &.infinite-scrolling
+    -webkit-transition: none
+    -moz-transition: none
+    transition: none
+
+
+/* required for containers to inherit vertical size from window
+html, body
+  height: 100%
+

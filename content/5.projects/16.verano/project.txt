@@ -1,0 +1,8 @@
+title: 'Verano' Photo Series
+-
+content: 
+A series of summer tryptichs I printed as 4x6 images and distributed around the city as a public art project.
+-
+role: Personal
+-
+data-related: misc

@@ -1,0 +1,10 @@
+title: StoneHouse Digital
+-
+content: 
+While working with StoneHouse Digital, I helped redesign their portfolio site to highlight some of their prominent work and the services they offered. To make the site a little more dynamic and playful, we created different themed skins based on the time of day and a custom icon set to showcase the services offered.
+-
+role: Web Design
+-
+data-related: web
+-
+in-house: x

@@ -1,0 +1,136 @@
+
+
+
+.projects-index
+  h2
+    color: #333
+  .intro
+    margin-left: $left-margin
+    font:
+      family: $museo
+      size: 24px
+    padding-bottom: 20px
+    border-bottom: 1px solid $light-gray
+    margin-bottom: 15px
+    margin-right: 20px
+    ul
+      list-style: none
+      margin: 0
+      color: #666
+    li
+      display: inline-block
+      color: #ccc
+    h2
+      color: $brown
+
+
+
+#options
+  margin-left: $left-margin
+  h5
+    margin-right: 5px
+    color: #999
+    font:
+      family: $georgia
+      style: italic
+    display: inline-block
+  ul
+    display: inline-block
+    margin: 0 20px 10px 0
+  li
+    display: inline-block
+    margin-right: 3px
+    margin-bottom: 5px
+  a
+    cursor: pointer
+    text-decoration: none
+    display: inline-block
+    text-transform: uppercase
+    font-size: 10px
+    position: relative
+    padding: 5px 7px
+    background-color: #eee
+    color: #ccc
+    top: 0
+    left: 0
+    +single-box-shadow(rgba(0,0,0,.1),1px,1px,2px)
+    &:hover
+      background-color: #ccc
+      color: #fff
+    &:active
+      top: 1px
+      +single-box-shadow(rgba(0,0,0,.1),0,0,2px)
+    &.selected
+      background-color: #999
+      color: #fff
+
+.gallery
+  margin: 5px 5px 15px ($left-margin - 5px)
+  padding: 5px
+  position: relative
+  overflow: hidden
+  +pie-clearfix
+  .csstransitions & ul:hover .element
+    +opacity(.5)
+  .csstransitions & ul:hover .element:hover
+    +opacity(1)
+  .element
+    +single-box-shadow(rgba(0,0,0,.08),0,1px,2px)
+    margin: 0 15px 15px 0
+    float: left
+    display: inline-block
+    overflow: hidden
+    position: relative
+    background: #fff
+    color: #222
+    padding: 0
+    +width(3)
+    height: auto
+
+    &:hover
+      +single-box-shadow(rgba(0,45,45,.5), 0, 1px, 7px)
+      .text
+    section.description
+      position: relative
+      margin: 0
+    a
+      display: block
+      position: relative
+      text-decoration: none
+    .thumb
+      display: block
+      width: 100%
+      position: relative
+      top: 0
+      left: 0
+      +has-layout
+    .text
+      position: relative
+      display: block
+      bottom: 0
+      left: 0
+      right: 0
+      padding: 10px 7px 5px
+      h4.title
+        margin-bottom: 3px
+        color: #999
+        display: inline-block
+      span.in-house
+        margin-left: 4px
+        display: inline-block
+        text-align: right
+        padding: 2px 4px
+        color: #fff
+        font-size: 11px
+        background-color: #c6d4e0
+      .client
+        color: #999
+        margin: -2px 0 3px
+        em
+          font-family: $georgia
+      .role
+        text-transform: uppercase
+        font-size: 10px
+        color: #ccc
+        margin-top: 2px
+  

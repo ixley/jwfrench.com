@@ -1,0 +1,9 @@
+foreach $next_sibling do
+  <a href="@url" class="next-project"><span class="arrow">&raquo;</span>Next
+    <span class="title">
+      if @short do @short endif
+      if !@short do @title endif
+      if @client do for @client endif 
+      </span>
+  </a>
+endforeach

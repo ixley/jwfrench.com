@@ -1,0 +1,12 @@
+title: Iron DJ
+-
+short: Iron DJ
+-
+date:
+-
+content: 
+Iron DJ was an event centered around a DJ competition that focused more on the musical aspect of DJing rather than the technical skills that are usually highlighted in DJ battles. The competition was created to be a play on the popular show Iron Chef and the client wanted something professional but still playful. The original request was for a graphic of a cleaver chopping through a turntable, but after submitting alternative concepts, the client was excited to go with an icon of a paired cleaver and turntable cartridge.
+-
+role: Logo & Print Collateral
+-
+data-related: identity print

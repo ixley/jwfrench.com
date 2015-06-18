@@ -1,0 +1,14 @@
+title: Partnership for a McCain-Free Whitehouse
+-
+client: MoveOn.org
+-
+short: McCain-Free Whitehouse
+-
+date:
+-
+content: 
+For this mini-site, MoveOn wanted a simple parody website for their humorous campaign. The stark and evocative design speaks to the urgency of the message and how to get educated and take action to keep your parents from voting for McCain.
+-
+role: Web Design
+-
+data-related: web featured

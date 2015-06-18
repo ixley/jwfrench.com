@@ -1,0 +1,85 @@
+body
+  background: #fff url("/images/body-bg.png") center top repeat
+
+header
+  height: 50px
+  position: relative
+  display: block
+  padding-bottom: 5px
+  margin-bottom: 20px
+  +clearfix
+  
+  .title 
+    float: left
+    margin-right: 15px
+    margin-bottom: 15px
+    a
+      background: #fff url("/images/x-icn.png") 25px 12px no-repeat
+      +single-box-shadow(rgba(0,0,0,.1),1px,1px,2px)
+      display: inline-block
+      padding: 15px 25px 15px 80px
+      height: 20px
+      font:
+        family: $museo
+        weight: 300
+        size: 18px
+      color: #999
+      text-decoration: none
+      .highlight
+        color: #ff9600
+      &:hover
+        .highlight
+          color: $orange
+      &:active
+        padding: 16px 25px 14px 80px
+        +single-box-shadow(rgba(0,0,0,.1),0,0,2px)
+        background-position: 25px 13px
+        height: 21px
+        
+#navigation
+  display: block
+  height: 50px
+  margin: 18px 0 20px $left-margin
+  li
+    display: inline-block
+    margin-right: 5px
+    line-height: 1
+    vertical-align: bottom
+  a
+    text-decoration: none
+    font-weight: bold
+    display: inline-block
+    position: relative
+    padding: 5px 7px
+    color: #aaa
+    top: 0
+    left: 0
+    &:hover
+      color: #666
+
+
+#content
+  clear: both
+  +clearfix
+  padding-bottom: 4em
+
+footer#footer
+  border-top: 1px solid $light-gray
+  color: #ccc
+  font-size: 11px
+  margin: 0 20px 0 $left-margin
+  ul.navigation
+    padding: 10px 0 10px 3px
+    margin: 0
+    li
+      display: inline-block
+      
+      
+.js #jsnotice
+  display: none
+.no-js #jsnotice
+  display: block
+  padding: 15px 15px 15px ($left-margin)
+  background: #fff
+  border-top: 1px solid $light-gray
+  border-bottom: 1px solid $light-gray
