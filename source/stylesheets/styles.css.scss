@@ -4,7 +4,7 @@
 
 @import "base/variables";
 
-@import 'mixins';
+@import 'mixins/mixins';
 @import 'nprogress';
 @import 'bourbon';
 @import 'base/grid-settings'; // customizations for neat - (import before Neat)
