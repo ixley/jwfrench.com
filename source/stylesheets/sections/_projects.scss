@@ -55,6 +55,24 @@ body.projects {
     margin-bottom: 1rem;
   }
 }
+.project-intro-heading {
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .1em;
+  font-weight: bold;
+  color: $wine;
+}
+@media (min-width: 768px){
+  .project-challenge,
+  .project-role {
+    width: 50%;
+    float: left;
+    padding-right: 1.5em;
+    @include micro-clearfix;
+  }
+}
+
+
 .case-study {
   .section-heading {
     font-weight: bold;
