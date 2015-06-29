@@ -9,14 +9,5 @@
 //= require jquery.lazyloadxt.js
 //= require jquery.lazyloadxt.srcset.js
 
-
-// require picturefill // probably don't need this...
-
-
 //= require turbolinks
 Turbolinks.enableProgressBar();
-
-
-// require nprogress
-// require nprogress-turbolinks
-// NProgress.configure({ showSpinner: false });
