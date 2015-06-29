@@ -83,6 +83,8 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
+  # Use relative links for GH pages
+  set :relative_links, true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
