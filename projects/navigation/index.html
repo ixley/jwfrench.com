@@ -6,12 +6,12 @@
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Navigation</title>
-    <link href="../../stylesheets/styles-aed5341d.css" rel="stylesheet" type="text/css" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" type="text/css" />
-    <script src="../../javascripts/all-9a6fb0ca.js" type="text/javascript"></script>
+    <link href="../../stylesheets/styles-57a44776.css" rel="stylesheet" type="text/css" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" type="text/css" />
+    <script src="../../javascripts/all-9a6fb0ca.js" type="text/javascript"></script><script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js" type="text/javascript"></script><script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/jQuery.headroom.min.js" type="text/javascript"></script>
   </head>
   <body class='projects projects_navigation projects_navigation_index'>
     <div id='wrapper'>
-      <header id='header'>
+      <header class='site-header'>
         <a class='img__link' href='/'>
           <img class='header__mug' source='/images/global/mug-60-a035359f.jpg' srcset='/images/global/mug-60-a035359f.jpg 1x, /images/global/mug-60@2x-3767b34b.jpg 2x'>
           <!-- =image_tag("images/global/mug-60@2x.jpg", class: "header__mug", width: "60", height: "60") -->
@@ -59,26 +59,41 @@
       <div id='main'>
         <article class='case-study'>
           <h1 class='page-heading'>Restructuring Navigation and Wayfinding</h1>
-          <p class='intro'>
-            This case study looks at the design process I led to streamline and improve the in-app messaging and navigation for WellnessFX.
-          </p>
+          <div class='project-intro'>
+            <div class='project-challenge'>
+              <h2 class='project-intro-heading'>The Challenge</h2>
+              <p>
+                Make it clear to signed-in users about what they need to do next, and improve overall navigation.
+              </p>
+            </div>
+            <div class='project-role'>
+              <h2 class='project-intro-heading'>My Role</h2>
+              <p>
+                I led the initial exploration to define the initial scope of this project, along with multiple design reviews throughout the process. I detailed out all state variations, designed a custom set of icons for the new navigation, and built prototypes (with production-friendly code).
+              </p>
+            </div>
+          </div>
           <h2 class='section-heading'>Taking Stock of Cluttered Configurations</h2>
           <p>
-            WellnessFX offers a handful of integrated, but distinct services that have been combined and configured in a variety of ways for different types of users.
+            WellnessFX offers a handful of integrated, but distinct services, that have been combined and configured in a variety of ways for different types of users.
           </p>
           <figure>
             <img data-src='/images/projects/navigation/service-overview-46bccf2c.png'>
             <figcaption>An overview of the different services and their variants that WellnessFX provides</figcaption>
           </figure>
           <p>
-            When people sign in to the app, they are doing so for any number of different reasons, based on different prompts and goals, and often with differing services available to them. In order to help orient each person to their next task, I looked for ways to address each person with concise and noticeable prompts that wouldn’t be distracting otherwise.
+            When people sign in to the app, they are doing so for any number of different reasons, based on different prompts and goals, and often with differing services available to them. In order to help orient each person to their next task, I looked for ways to address each person with concise and noticeable prompts that wouldn’t be otherwise distracting.
           </p>
           <h2 class='section-heading'>Customization Calls for More Flexibility</h2>
           <p>
-            Initially, the services WellnessFX provided had almost no variation and almost everyone that signed up for our service went through a very similar experience. As we expanded to offer a wider variety of services and partner with different organizations that had distinct needs, our product experience became a more customized experience. As such, conveying different experiences to our diversifying users became much more complex. After considering some different venues, I narrowed in on rethinking the main navigation and simplifying in-app messaging.
+            Initially, the services WellnessFX provided had almost no variation and almost everyone that signed up for the service went through a very similar experience. As the company expanded to offer a wider variety of services and partnered with different organizations with distinct needs, the product experience became much more customized. As such, it became more complex to present different experiences to a diversifying set of users. After considering some different venues, I narrowed in on rethinking the main navigation and simplifying in-app messaging.
           </p>
           <p>
-            The web app was originally designed with a horizontal top navigation&mdash;a fine choice for earlier needs&mdash;but the incremental addition of new sections eventually turned the nav into a messy and sometimes confusing experience. We also relied on a checklist-style component (on a single page of the app) to tell members what they needed to do next. This solution became increasingly unscalable and brittle as new conditions and contexts were added, so I looked for ways to clean up the experience and rethink functionality.
+            The web app was originally designed with a horizontal top navigation—a fine choice for earlier needs—but the incremental addition of new sections eventually turned the nav into a messy and sometimes confusing experience. We also relied on a checklist-style component (on a single page of the app) to tell members what they needed to do next. This solution became increasingly unscalable and brittle as new conditions and contexts were added, so I looked for ways to clean up the experience and rethink functionality.
+          </p>
+          <h2 class='section-heading'>Mapping Key Areas and Functionality</h2>
+          <p>
+            In order to clean up the navigation hierarchy, I mapped all key areas and flows of the application and explored different configurations and groupings.
           </p>
           <figure>
             <img data-src='/images/projects/navigation/site-map-bf651d2e.png'>
@@ -87,14 +102,8 @@
             </figcaption>
           </figure>
           <p>
-            After having some conversations with other team members to make sure I was focussing on the right things, I sketched some ideas and conceptualized a few possible solutions to inform users what actions they needed to take next from anywhere within the app.
+            I initiated discussions with different team members first to make sure I was focussing on the right things, and then began sketching concepts to address ways to inform users about what actions they needed to take from anywhere within the app.
           </p>
-          <figure>
-            <img data-src='/images/projects/navigation/exploration-2e923288.png'>
-            <figcaption>
-              Early 'medium fidelity' concepts
-            </figcaption>
-          </figure>
           <h2 class='section-heading'>Validating Concepts and Exploring Solutions</h2>
           <p>
             My solutions didn’t all hinge on integrating messaging into the navigation bar, but after reviewing and critiquing various options with other team members, I zeroed in on integrating messaging for “what’s next” into a restructured vertical navigation bar. This direction allowed for:
@@ -124,9 +133,22 @@
               consider how to nest and contextualize various options for user types, particularly when certain users have the ability to view options for other users, or have options associated with different roles
             </li>
           </ul>
-          <h2 class='section-heading'>Designing with Spreadsheets First</h2>
+          <h2 class='section-heading'>Designing from Spreadsheets</h2>
           <p>
-            Because of the complexity of information, I found that outlining structures with lists and spreadsheets, and then assembling rough layouts in Sketch, was much faster than starting with pencil and paper. Jumping quickly to a ‘medium fidelity’ stage of design allowed me experiment with visual components with more polish than barebones wireframes, without having to invest in the full detail of high fidelity comps.
+            Because of the complexity of information, I found that outlining structures with lists and spreadsheets, and then assembling rough layouts in Sketch, was much faster than starting with pencil and paper. Jumping quickly to a ‘medium fidelity’ stage of design allowed me experiment with visual components with more polish than barebones wireframes, without having to invest in the full detail of high fidelity comps. Below are a various containers and formats I explored to convey users about important next steps.
+          </p>
+          <figure>
+            <img data-src='/images/projects/navigation/exploration-2e923288.png'>
+            <figcaption>
+              Early 'medium fidelity' concepts
+            </figcaption>
+          </figure>
+          <h2 class='section-heading'>Shaping Up Solutions</h2>
+          <p>
+            Once I explored a variety of ideas and compared strengths and weaknesses with different cases, I settled on a vertical navigation bar that could include a simple module with prompts for users across the site.
+          </p>
+          <p>
+            By switching to a vertical navigation design, we could better support different user types (some of which have more complex navigation structures than the standard user), and still allowed us to maintain a consistent navigation hierarchy.
           </p>
           <figure>
             <img data-src='/images/projects/navigation/nav-and-notifications-b96852b2.png'>
@@ -134,35 +156,28 @@
               Exploring various concepts for prompts along with different user roles
             </figcaption>
           </figure>
-          <h2 class='section-heading'>Shaping Up Solutions</h2>
-          <p>[---------Needs more---------]</p>
+          <h2 class='section-heading'>Guiding Users With Next Steps</h2>
           <p>
-            Our web application is not built to be responsive (we have a separate iPhone app instead). As we move forward though, optimizing for screen sizes inclusive of tablets is a priority I embraced as an important design consideration, and part of the reason I opted for a vertical navigation that scaled well and could be hidden off canvas when necessary.
-          </p>
-          <p>
-            I continued mapping out variations and structures until I had identified not just all of the primary cases, but the troublesome edge cases as well.
-          </p>
-          <p>
-            [-------more finalized designs / link to prototype?-------]
-          </p>
-          <p>
-            While I went through most of my design iterations and explorations in Sketch, rather than map out all the final details in static comps, I transitioned to the browser to finalize state and interaction details.
-          </p>
-          <p>
-            I prototyped interactive behavior for collapsing and revealing the navigation panel, mapped out layout behaviors for existing sub-navigation areas, and designed a set of custom icons for the main navigation items.
+            When users sign in, they are typically interested in accomplishing a specific set of tasks and that’s it. While there is room for exploration, this is not Facebook. I identified all of the primary actions associated with our main services, and mapped them into concise messages with simple calls to action. Required actions stay visible until a user completes the task, while other suggestions can be dismissed.
           </p>
           <figure>
-            <img data-src='/images/projects/navigation/icons-ac606c98.png'>
+            <p class='codepen' data-default-tab='result' data-height='185' data-slug-hash='oggbMQ' data-theme-id='0' data-user='ixley'>
+              See the Pen
+              <a href='http://codepen.io/ixley/pen/oggbMQ/'>Prompt hover behavior</a>
+              by Jeff French (<a href='http://codepen.io/ixley'>@ixley</a>) on
+              <a href='http://codepen.io'>CodePen</a>.
+            </p>
+            <script async='' src='//assets.codepen.io/assets/embed/ei.js'></script>
             <figcaption>
-              New icons
+              Messages are short and descriptive, with clear prompts on hover (hover behavior only)
             </figcaption>
           </figure>
-          <h2 class='section-heading'>Outcome</h2>
+          <h2 class='section-heading'>Sorting Actions By Importance and User Type</h2>
           <p>
-            Because of the wide-reaching nature of this redesign, we decided to roll it out in phases and gate the new design to various users selectively. As of the time of writing this, the full rollout has not been completed, but we have plans to test specific design goals for certain populations to measure the ‘success’ of [certain goals].
+            The primary focus of the navigation is to serve the needs of members who have accounts with personal health data, but there are also various user types with administrative privileges that needed consideration. I went through all use cases for each user type and organized configurations for each type’s navigation accordingly. I continued mapping out variations and structures until I had identified not just all of the primary cases, but the troublesome edge cases as well.
           </p>
           <p>
-            <em>more specific note on testing?</em>
+            <em>A standard member’s configuration (left) shows all primary services and supporting sections. Practitioners, who provide health consultations to members, can see certain sections of members’ accounts (middle), and Admins have a whole host of sections available to them (right).</em>
           </p>
           <figure>
             <img data-src='/images/projects/navigation/nav-variations-69d69aeb.png'>
@@ -170,10 +185,25 @@
               A few configurations of the navigation for different user types
             </figcaption>
           </figure>
+          <h2 class='section-heading'>Coding for Details and Interaction</h2>
           <p>
-            [-------???-----]
-            <br>
-            <!-- %img{"data-src" => "http://lorempixel.com/600/400/city/9", width: "600", height: "600"} -->
+            Optimizing for tablet-sized screens is a priority I embraced as an important design consideration, and part of the reason I opted for a vertical navigation (that could scale and be hidden off-canvas when necessary). In order to explore and establish appropriate responsive behavior, I created an interactive prototype to continue design work. With layouts, configurations and styles established, moving to code allowed me to experiment with interactive elements, account for behavior at different sizes, and finesse details with some production-friendly code. It also allowed me to identify a couple inconsistencies that would have been difficult to catch without designing in the browser. While the code for my prototype was not built to be a final version, crafting markup and CSS to the same conventions and quality it ultimately needs to adhere to helps to streamline the implementation process and reduce redundant work.
+          </p>
+          <p>
+            <em>I prototyped interactive behavior for collapsing and revealing the navigation panel, mapped out layout behaviors for existing sub-navigation areas, and designed a set of custom icons for the main navigation items.</em>
+          </p>
+          <figure>
+            <img data-src='/images/projects/navigation/icons-ac606c98.png'>
+            <figcaption>
+              New icons
+            </figcaption>
+          </figure>
+          <h2 class='section-heading'>Testing in Production</h2>
+          <p>
+            Gathering user feedback and testing designs is usually something that’s helpful to do early on in the design process, but for this project, we chose to build first and gather feedback from users by rolling the new designs out incrementally. Postponing gathering feedback can sometimes be risky, but due to the integral nature of a navigation system and the relatively low risk of user rejection, we felt this was an appropriate decision. The things we wanted to validate—like seeing how well users could identify and complete tasks they needed to—would have been much more difficult and less authentic with design mockups than their own user accounts with real tasks at hand.
+          </p>
+          <p>
+            We decided to roll it out in phases and gate the new design to various users selectively. As of the publication of this post, the full rollout has not been completed, but we have plans to test specific design goals for certain populations to measure the success of select goals.
           </p>
         </article>
       </div>
@@ -189,6 +219,7 @@
         toggleState('.main-nav ul', 'closed', 'open');
         e.preventDefault();
       };
+      $("header").headroom();
     </script>
     <script>
       $('a.external-link').each(function() {

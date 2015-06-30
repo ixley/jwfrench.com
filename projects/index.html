@@ -6,12 +6,12 @@
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Jeff French. Designer, Question-asker</title>
-    <link href="../stylesheets/styles-aed5341d.css" rel="stylesheet" type="text/css" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" type="text/css" />
-    <script src="../javascripts/all-9a6fb0ca.js" type="text/javascript"></script>
+    <link href="../stylesheets/styles-57a44776.css" rel="stylesheet" type="text/css" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" type="text/css" />
+    <script src="../javascripts/all-9a6fb0ca.js" type="text/javascript"></script><script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js" type="text/javascript"></script><script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/jQuery.headroom.min.js" type="text/javascript"></script>
   </head>
   <body class='projects projects_index'>
     <div id='wrapper'>
-      <header id='header'>
+      <header class='site-header'>
         <a class='img__link' href='/'>
           <img class='header__mug' source='/images/global/mug-60-a035359f.jpg' srcset='/images/global/mug-60-a035359f.jpg 1x, /images/global/mug-60@2x-3767b34b.jpg 2x'>
           <!-- =image_tag("images/global/mug-60@2x.jpg", class: "header__mug", width: "60", height: "60") -->
@@ -76,21 +76,14 @@
               <a href='/projects/navigation'>
                 <img class='post-thumb' data-src='/images/projects/nav-thumb@2x-cb107ddb.png' height='100' width='100'>
                 <div class='post-info'>
-                  <h3 class='post-title'>What’s in a Nav Bar?</h3>
+                  <h3 class='post-title'>Navigation Redesign</h3>
                   <p class='post-description'>Helping to unobtrusively guide users with next steps</p>
                 </div>
               </a>
             </li>
             <li>
-              <img class='post-thumb' data-src='/images/projects/scoring-thumb@2x-a204b647.png' height='100' width='100'>
-              <div class='post-info'>
-                <a class='post-title' href='/projects/activity-tracking'>Activity Tracking: Just the Basics</a>
-                <p class='post-description'>Defining the essentials for a custom activity tracker</p>
-              </div>
-            </li>
-            <li>
               <a class='post-title external-link' href='https://medium.com/@ixley/openoakland-logo-redesign-7994a3318721'>
-                <img class='post-thumb' data-src='/images/projects/openoakland-thumb@2x-4c1b0cb6.png' height='100' width='100'>
+                <img class='post-thumb' data-src='/images/projects/openoakland-thumb@2x-4d374491.png' height='100' width='100'>
                 <div class='post-info'>
                   <h3 class='post-title'>OpenOakland Logo Redesign</h3>
                   <p class='post-description'>Designing the visual identity of a community-led, civic tech organization</p>
@@ -117,6 +110,7 @@
         toggleState('.main-nav ul', 'closed', 'open');
         e.preventDefault();
       };
+      $("header").headroom();
     </script>
     <script>
       $('a.external-link').each(function() {
