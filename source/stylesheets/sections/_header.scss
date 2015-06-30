@@ -20,6 +20,7 @@
   }
 }
 
+// Fade in page content on load
 @keyframes fadeInUp {
   0% { 
     opacity: 0; 
@@ -37,8 +38,6 @@
 }
 
 
-
-
 // ================ Horizontal Nav
 
 .site-header {
@@ -53,6 +52,7 @@
   border-width: 0 0 1px 0;
   padding: 10px 20px;
   height: $horizontal-nav-height;
+  transition: height 300ms, padding 300ms;
 }
 
 
@@ -94,6 +94,18 @@
   }
   .header__blurb {
     display: block;
+  }
+  // Headroom - hide nav elements on scroll down
+  .header__mug,
+  .header__name,
+  .header__blurb,
+  .main-nav,
+  .elsewhere-nav {
+    transition: opacity 600ms;
+    opacity: 1;
+    .headroom--dim & {
+      opacity: 0;
+    }
   }
 }
 @media (min-width: $screen-lg-min){
@@ -145,6 +157,11 @@ a.nav__toggle {
 }
 // horizontal header, inline nav
 @media (min-width: $nav-breakpoint) and (max-width: $header-breakpoint){
+  .site-header.headroom--dim  {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
   .main-nav {
     float: right;
     li {

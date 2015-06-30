@@ -10,4 +10,23 @@
     toggleState('.main-nav ul', 'closed', 'open');
     e.preventDefault();
   };
-  $("header").headroom();
+
+  $(".site-header").headroom({
+    // vertical offset in px before element is first unpinned
+    offset : 30,
+    // scroll tolerance in px before state changes
+    tolerance : 20,
+    // or scroll tolerance per direction
+    tolerance : {
+        down : 5,
+        up : 10
+    },
+    // css classes to apply
+    classes : {
+        initial : "headroom",
+        pinned : "headroom--visible",
+        unpinned : "headroom--dim",
+        top : "headroom--top",
+        notTop : "headroom--not-top"
+    }
+  });

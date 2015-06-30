@@ -9,5 +9,9 @@
 //= require jquery.lazyloadxt.js
 //= require jquery.lazyloadxt.srcset.js
 
+//= require headroom.js
+//= require jQuery.headroom.js
+
 //= require turbolinks
 Turbolinks.enableProgressBar();
+
