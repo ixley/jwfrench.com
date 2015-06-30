@@ -3,7 +3,10 @@ html {
   font-size: 20px; // larger for Neuton
 }
 
-
+// ::selection {
+//   background-color: $highlight-color;
+//   color: #fff;
+// }
 
 body {
   @include font-feature-settings("liga", "pnum");
@@ -20,7 +23,8 @@ h1, h2, h3, h4, h5, h6 {
   // font-size: $base-font-size;
   font-weight: normal;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  // margin: 0 0 ($heading-line-height * 1em / 2);
+  margin: 0 0 .25em;
 }
 
 p {

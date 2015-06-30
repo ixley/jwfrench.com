@@ -47,3 +47,7 @@ body {
   transition: opacity 0.3s;
   opacity: 1;
 }
+
+i.fa span { // font-awesome
+  @include hide-the-text;
+}
