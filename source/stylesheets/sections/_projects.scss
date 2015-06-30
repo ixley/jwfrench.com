@@ -6,7 +6,6 @@ body.projects_index {
     font-size: 3rem;
     color: darken($gray-lighter, 5%);
     margin: -.5rem 0 .5rem;
-
   }
   .section-heading {
     font-size: .6rem;
@@ -24,13 +23,20 @@ body.projects_index {
       margin-bottom: 1rem;
     }
     .post-thumb {
-      float: left;
-      margin-right: 15px;
-      // background-color: $gray-lighter;
-      // border-radius: 3px;
+      display: block;
+      margin: 0 auto;
+      @include mappy-bp(mid-small){
+        float: left;
+        margin-right: 15px;
+      }
     }
     .post-info {
-      margin-left: 115px; // image width + 15px
+      @include mappy-bp(max mid-small){
+        text-align: center;
+      }
+      @include mappy-bp(mid-small){
+        margin-left: 115px; // image width + 15px
+      }
     }
     .post-title {
       font-size: 2rem;

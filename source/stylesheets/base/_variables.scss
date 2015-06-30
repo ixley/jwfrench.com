@@ -50,6 +50,15 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 
 // Layout
 
+$breakpoints: (
+  'small'     : 320px,
+  'mid-small' : 480px,
+  'med'       : 640px,
+  'large'     : 920px,
+  'wide'      : 1200px,
+  'mega'      : 1400px,
+);
+
 $screen-ms-min: 480px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
