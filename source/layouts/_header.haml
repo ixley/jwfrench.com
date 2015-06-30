@@ -1,7 +1,6 @@
 %header.site-header
   %a{href: '/'}
-    %img.header__mug{srcset: "/images/global/mug-60.jpg 1x, /images/global/mug-60@2x.jpg 2x", source: "/images/global/mug-60.jpg"}
-    / =image_tag("images/global/mug-60@2x.jpg", class: "header__mug", width: "60", height: "60")
+    =image_set_tag 'global/mug-60.jpg', {'global/mug-60@2x.jpg' => '2x'}, sizes: '60px', class: 'header__mug'
     %h1.header__name Jeff French
   %p.header__blurb
     %span Digital product designer,
