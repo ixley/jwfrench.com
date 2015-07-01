@@ -20,21 +20,26 @@
   }
 }
 
-// Fade in page content on load
-@keyframes fadeInUp {
-  0% { 
-    opacity: 0; 
-    transform: translate3d(0, 1em, 0);
+.elsewhere-nav {
+  display: none;
+  @include mappy-bp($header-breakpoint){
+    display: block;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    a {
+      padding: 3px;
+      color: $gray;
+      &:hover {
+        color: $blue;
+      }
+    }
+    span {
+      @include hide-the-text;
+    }
   }
-  100% { 
-    opacity: 1;
-    transform: none;
-  }
-}
-#main {
-  padding: .5rem 1.5rem 1.5rem;
-  height: 100%;
-  animation: fadeInUp 1s;
 }
 
 
@@ -55,8 +60,15 @@
   transition: height 300ms, padding 300ms;
 }
 
+.site-container {
+  width: 100%;
+  max-width: 38rem;
+  min-height: 100%;
+  padding-top: $horizontal-nav-height;
+  margin: 0 auto;
+}
 
-@media (max-width: $header-breakpoint - 1){
+@include mappy-bp(max $header-breakpoint){
   .site-header {
     box-shadow: 0 1px 10px rgba(#000, .05);
   }
@@ -77,51 +89,12 @@
     color: mix($highlight-color, $link-color, 70%);
   }
 }
-// ================ Sidebar Nav
-
-@media (min-width: $header-breakpoint){
-  .site-header {
-    padding: 20px;
-    height: 100%;
-    text-align: center;
-    $header-width: 25%;
-    width: $header-width;
-    margin-left: -($header-width);
-    border-width: 0 1px 0 0;
-  }
-  .header__name {
-    margin-bottom: .5rem;
-  }
-  .header__blurb {
-    display: block;
-  }
-  // Headroom - hide nav elements on scroll down
-  .header__mug,
-  .header__name,
-  .header__blurb,
-  .main-nav,
-  .elsewhere-nav {
-    transition: opacity 600ms;
-    opacity: 1;
-    .headroom--dim & {
-      opacity: 0;
-    }
-  }
-}
-@media (min-width: $screen-lg-min){
-  .site-header {
-    $header-width: 15em;
-    width: $header-width;
-    margin-left: -($header-width);
-  }
-}
-
 
 a.nav__toggle {
   display: none;
 }
-// horizontal header, dropdown nav
-@media (max-width: $nav-breakpoint - 1){
+// Horizontal Header, Dropdown Nav
+@include mappy-bp(max $nav-breakpoint){
   .site-header {
     min-height: $horizontal-nav-height;
     height: auto;
@@ -155,8 +128,8 @@ a.nav__toggle {
     }
   }
 }
-// horizontal header, inline nav
-@media (min-width: $nav-breakpoint) and (max-width: $header-breakpoint){
+// Horizontal Header, Inline Nav
+@include mappy-bp($nav-breakpoint $header-breakpoint){
   .site-header.headroom--dim  {
     height: 0;
     padding: 0;
@@ -173,25 +146,52 @@ a.nav__toggle {
 }
 
 
+// ================ Sidebar Nav
 
-.elsewhere-nav {
-  display: none;
-  @media (min-width: $header-breakpoint){
-    display: block;
+@include mappy-bp($header-breakpoint){
+  $header-width: 15/53 * 100%;
+  .site-container {
+    width: 38/53 * 100%;
+    margin-left: $header-width;
+  }
+  .site-header {
+    padding: 20px;
+    height: 100%;
     text-align: center;
-    li {
-      display: inline-block;
-      margin: 0 5px;
-    }
-    a {
-      padding: 3px;
-      color: $gray;
-      &:hover {
-        color: $blue;
-      }
-    }
-    span {
-      @include hide-the-text;
+    width: $header-width;
+    max-width: 15em;
+    margin-left: -($header-width);
+    border-width: 0 1px 0 0;
+    // Headroom - hide nav elements on scroll down
+    transition: opacity 600ms;
+    opacity: 1;
+    &.headroom--dim {
+      opacity: 0;
     }
   }
+  .header__name {
+    margin-bottom: .5rem;
+  }
+  .header__blurb {
+    display: block;
+  }
 }
+@include mappy-bp(1060px) {
+  .site-container {
+    margin-right: 0;
+    margin-left: 15em;
+  }
+  .site-header {
+    $header-width: 15em;
+    width: $header-width;
+    margin-left: -($header-width);
+  }
+}
+@include mappy-bp(1360px){ // (38em + (2 * 15em)) * 20px
+  .site-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+

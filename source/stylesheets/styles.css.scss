@@ -25,18 +25,6 @@ body {
   background: $site-bg-color;
 }
 
-#wrapper {
-  height: 100%;
-  width: 100%;
-  padding-top: $horizontal-nav-height;
-  margin: 0 auto;
-  max-width: 38rem;
-  @media (min-width: $header-breakpoint){
-    width: 75%;
-    margin-left: 25%;
-  }
-}
-
 
 .lazy-hidden {
   // background: #fff url('/images/global/spinner.gif') no-repeat 50% 50%;
@@ -49,4 +37,24 @@ body {
 
 i.fa span { // font-awesome
   @include hide-the-text;
+}
+
+
+// TODO: move this declaration
+
+// Fade in page content on load
+@keyframes fadeInUp {
+  0% { 
+    opacity: 0; 
+    transform: translate3d(0, 1em, 0);
+  }
+  100% { 
+    opacity: 1;
+    transform: none;
+  }
+}
+#main {
+  padding: .5rem 1.5rem 1.5rem;
+  height: 100%;
+  animation: fadeInUp 1s;
 }
