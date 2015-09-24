@@ -114,3 +114,55 @@ body.projects {
 
   }
 }
+
+
+
+// Article Footer Nav
+
+.article-footer-nav {
+  margin: 4rem -1.5rem -1.5rem;
+  border-top: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.article-footer-nav__link--prev ,
+.article-footer-nav__link--next {
+  width: 50%;
+  height: 6em;
+  padding: 1rem 1rem 2rem;
+  transition: background-color $default-hover-transition-time;
+  &:hover {
+    background-color: $gray-lighter;
+  }
+}
+.article-footer-nav__link--next {
+  border-left: 1px solid $gray-border;
+}
+
+.article-footer-nav__title {
+  &::before {
+    display: block;
+    color: $gray;
+    font-size: 14px;
+    line-height: 1em;
+    font-style: italic;
+    letter-spacing: .01em;
+    content: 'Next Project';
+  }
+  .article-footer-nav__link--prev & {
+    text-align: left;
+    &::before {
+      content: 'Previous Project';
+    }
+  }
+  .article-footer-nav__link--next & {
+    text-align: right;
+    .article-footer-nav__title {
+      &::before {
+        content: 'Next Project';
+      }
+    }
+  }
+}
