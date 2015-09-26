@@ -54,7 +54,7 @@ helpers do
   def link_to_page name, url
     path = request.path
     current = path =~ Regexp.new('^' + url[1..-1] + '.*\.html')
-    if path == 'index.html' and name == 'about'
+    if url == current_page.url
       current = true
     end
     class_name = current ? ' class="is-active"' : ''

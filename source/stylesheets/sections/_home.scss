@@ -1,0 +1,40 @@
+
+
+.intro-section {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.case-studies-section .section-heading {
+  font-size: .6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: $gray;
+  font-family: "Helvetica Neue", sans-serif;
+  margin-bottom: .5rem;
+}
+.case-studies--boxes {
+  .case-study {
+    float: left;
+    max-width: 300px;
+    padding: 1em;
+    margin: 0 20px 20px 0;
+    text-align: center;
+    background-color: #fff;
+    transition: box-shadow $default-hover-transition-time * 2;
+    &:hover {
+      box-shadow: 0 1px 8px rgba(#000, .1);
+    }
+  }
+  .case-study__info {
+    line-height: 1.2;
+  }
+  .case-study__title {
+    font-size: 1.8rem;
+    color: $gray-dark;
+  }
+  .case-study__description {
+    color: $gray;
+  }
+}

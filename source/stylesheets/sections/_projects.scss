@@ -17,41 +17,6 @@ body.projects_index {
     margin-bottom: .5rem;
 
   }
-  .case-studies {
-    li {
-      @include micro-clearfix;
-      margin-bottom: 1rem;
-    }
-    .post-thumb {
-      display: block;
-      margin: 0 auto;
-      @include mappy-bp(mid-small){
-        float: left;
-        margin-right: 15px;
-      }
-    }
-    .post-info {
-      @include mappy-bp(max mid-small){
-        text-align: center;
-      }
-      @include mappy-bp(mid-small){
-        margin-left: 115px; // image width + 15px
-      }
-    }
-    .post-title {
-      font-size: 2rem;
-      line-height: 1.2;
-      color: $gray-dark;
-      margin: 0;
-    }
-    .post-description {
-      font-style: italic;
-      color: $gray;
-      font-size: 1.1rem;
-      line-height: 1.2;
-      margin: 0;
-    }
-  }
 }
 
 
@@ -115,7 +80,44 @@ body.projects {
   }
 }
 
+// Generalized Case Study Style
 
+
+.case-studies--list {
+  .case-study {
+    @include micro-clearfix;
+    margin-bottom: 1rem;
+  }
+  .case-study__thumb {
+    display: block;
+    margin: 0 auto;
+    @include mappy-bp(mid-small){
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  .case-study__info {
+    @include mappy-bp(max mid-small){
+      text-align: center;
+    }
+    @include mappy-bp(mid-small){
+      margin-left: 115px; // image width + 15px
+    }
+  }
+  .case-study__title {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: $gray-dark;
+    margin: 0;
+  }
+  .case-study__description {
+    font-style: italic;
+    color: $gray;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin: 0;
+  }
+}
 
 // Article Footer Nav
 
@@ -126,6 +128,17 @@ body.projects {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+}
+.article-footer-nav__link--single {
+  width: 100%;
+  height: 6em;
+  padding: 1rem 1rem 2rem;
+  transition: background-color $default-hover-transition-time;
+  text-align: center;
+  &:hover {
+    background-color: $gray-lighter;
+  }
+
 }
 .article-footer-nav__link--prev ,
 .article-footer-nav__link--next {
@@ -142,10 +155,11 @@ body.projects {
 }
 
 .article-footer-nav__title {
+  font-size: 1.2em;
   &::before {
     display: block;
     color: $gray;
-    font-size: 14px;
+    font-size: .7em;
     line-height: 1em;
     font-style: italic;
     letter-spacing: .01em;
@@ -165,4 +179,10 @@ body.projects {
       }
     }
   }
+}
+
+.article-footer-nav__description {
+  color: $gray;
+  font-style: italic;
+  font-size: .8em;
 }
