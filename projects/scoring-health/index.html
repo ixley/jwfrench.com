@@ -7,7 +7,7 @@
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Scoring Health</title>
-    <link href="../../stylesheets/styles-af633788.css" rel="stylesheet" type="text/css" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/styles-09dffee7.css" rel="stylesheet" type="text/css" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" type="text/css" />
     <script src="../../javascripts/all-6e9dc6c7.js" type="text/javascript"></script>
   </head>
   <body class='projects projects_scoring-health projects_scoring-health_index'>
@@ -15,7 +15,9 @@
       <header class='site-header'>
         <a href='/'>
           <img sizes="60px" class="header__mug" srcset="../../images/global/mug-60@2x-3767b34b.jpg 2x" width="60" height="60" src="../../images/global/mug-60-a035359f.jpg" />
-          <h1 class='header__name'>Jeff French</h1>
+          <h1 class='header__name'>
+            Jef<span class='blink'>f</span> French
+          </h1>
         </a>
         <p class='header__blurb'>
           <span>Digital product designer,</span>
@@ -81,7 +83,7 @@
             One of the simplest, but most impactful ways WellnessFX does this is by providing better visualizations and presentations of personal blood test results. People that have used the service are emphatic about how much they love the clarity and simplicity of their test results.
           </p>
           <figure>
-            <img data-src='/images/projects/scoring/compare-printout-1fec198a.jpg'>
+            <img data-src='/images/projects/scoring/compare-printout-dd0a5356.jpg'>
             <figcaption>
               Typical lab printout vs. WellnessFX visualizations
             </figcaption>
@@ -97,7 +99,7 @@
             Our hypothesis was that assigning certain tests (or biomarkers) with a numerical (100 point) score and a correlating color, would help give people an immediate sense of which test results to pay attention to first. If you see that your LDL Particle Count is 873 nmol/L, it would probably take a little digging to understand what the relative health context is. Seeing an associated score of 89/100 (where 100 denotes the lowest associated risk), matched with a corresponding color (green in this case), is easier to make sense of. And of course, the additional details and contextual explanations are still there for users to explore further if they want.
           </p>
           <figure>
-            <img data-src='/images/projects/scoring/contextualized-value-1393bcbb.png'>
+            <img data-src='/images/projects/scoring/contextualized-value-8da78722.png'>
             <figcaption>
               Adding context with a score value and color
             </figcaption>
@@ -107,7 +109,7 @@
             Along with test results, labs provide risk ranges and reference ranges. Risk ranges are typically grouped as High Risk, Moderate Risk, and Low Risk, and the more agnostic reference ranges are often Normal and some form of Non-normal (like High or Low). Because both the risk ranges and reference ranges were being colored with the same red, orange, and green, it gave the misleading implication that they had the same health significance and created the impression that non-normal ranges are necessarily bad (which they're not). By using more neutral colors for them, the results remain more faithful to the significance they're meant to convey.
           </p>
           <figure>
-            <img data-src='/images/projects/scoring/ranges-36491722.png'>
+            <img data-src='/images/projects/scoring/ranges-fa4dba5c.png'>
             <figcaption>
               Clarifying meaning with color
             </figcaption>
@@ -125,7 +127,7 @@
             One thing we discovered was that while people found the additional information valuable, many felt that the additional numbers were overwhelming when presented all together. To address this, I tucked the score away and left the coded color visible. The color still aids quick scanning, and the numerical score only slides out when a user mouses over to focus on it.
           </p>
           <figure>
-            <img data-src='/images/projects/scoring/hide-detail-92051437.png'>
+            <img data-src='/images/projects/scoring/hide-detail-d9de5b13.png'>
             <figcaption>
               Reduce clutter by hiding numerical score values until the user hovers
             </figcaption>
@@ -135,7 +137,7 @@
             I initially tried using a fluid spectrum of values so that each score value was represented by a unique color. I thought that the increased fidelity would help convey more meaning. When we generated cases representing uncommon combinations though, I realized how much less intuitive certain colors became in relation to each other. The additional detail can be justified in more focused contexts, but becomes confusing when viewing different results next to each other, so I scaled the values back to limited color ranges here.
           </p>
           <figure>
-            <img data-src='/images/projects/scoring/color-count-75b16062.png'>
+            <img data-src='/images/projects/scoring/color-count-a605a4a2.png'>
             <figcaption>
               Balancing detail with readability
             </figcaption>
@@ -155,11 +157,11 @@
             This was particularly exciting design challenge to tackle due to the complexity and potential impact. While this feature was delayed due to external factors, it’s something the team is still excited to release. In order to ensure a smooth release, it will be rolled out to select segments of our member population incrementally, with time to collect additional feedback. There were also things we learned during the design process that weren’t scoped for this round but we plan to address in the future, such as creating colorblind-friendly versions, and more transparency of scoring algorithms.
           </p>
           <div class='article-footer-nav'>
-            <a class='article-footer-nav__link--prev external-link' href='https://medium.com/@ixley/openoakland-logo-redesign-7994a3318721'>
-              <div class='article-footer-nav__title'>OpenOakland Logo Redesign</div>
-            </a>
-            <a class='article-footer-nav__link--next' href='navigation'>
+            <a class='article-footer-nav__link--single' href='navigation'>
               <div class='article-footer-nav__title'>Navigation Redesign</div>
+              <div class='article-footer-nav__description'>
+                Helping to unobtrusively guide users with next steps
+              </div>
             </a>
           </div>
         </article>
