@@ -55,7 +55,7 @@ a {
     // html.cssgradients &  { // add modernizr
     & {
       text-decoration: none;
-      text-shadow: 2px 1px 0 $bg-color, -2px 0 0 $bg-color;
+      text-shadow: 2px 0 0 $bg-color, -2px 0 0 $bg-color;
       background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
       background-repeat: repeat-x;
       background-position: 0 95%;
