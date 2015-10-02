@@ -1,0 +1,14 @@
+$oo-sea-green: #21b890;
+body.projects-openoakland-logo {
+  .page-open {
+    height: 300px;
+    margin-top: calc(-#{$horizontal-nav-height} - .5rem);
+    margin-right: -$main-side-padding;
+    margin-bottom: .5rem;
+    margin-left: -$main-side-padding;
+    background-color: $oo-sea-green;
+    text-align: center;
+  }
+  .page-open__logo {
+  }
+}

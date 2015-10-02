@@ -1,7 +1,7 @@
 !!!
 %html
   = partial "layouts/head"
-  %body{:class => page_classes}
+  %body{:class => page_classes.dasherize}
     .site-container
       = partial "layouts/header"
       #main
