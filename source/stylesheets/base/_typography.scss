@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: $heading-line-height;
   // margin: 0 0 ($heading-line-height * 1em / 2);
   margin: 0 0 .25em;
+  letter-spacing: -.005em;
 }
 
 p {

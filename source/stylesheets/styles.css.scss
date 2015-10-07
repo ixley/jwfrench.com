@@ -56,6 +56,10 @@ i.fa span { // font-awesome
   }
 }
 #main {
+  @include mappy-bp(max $header-breakpoint){
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
   padding: $main-top-padding $main-side-padding $main-side-padding;
   height: 100%;
   animation: fadeInUp 1s;
