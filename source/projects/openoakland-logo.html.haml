@@ -1,12 +1,12 @@
 ---
 title: OpenOakland Logo Redesign
-description: Redesigning the visual identity of a community-led, civic innovation organization
+description: Designing the visual identity of a community-led, civic tech organization
 
 ---
--# .page-open
--#   %img{"data-src" => "/images/projects/openoakland/brandmark.png", class: 'page-open__logo'}
-%h1.page-heading OpenOakland Logo Redesign
-%p.page-subheading Redesigning the visual identity of a community-led, civic innovation organization
+.project__header
+  %h1.project__heading #{current_page.data.title}
+  %p.project__subheading #{current_page.data.description}
+
 
 .project-intro
   .project-challenge
@@ -19,13 +19,11 @@ description: Redesigning the visual identity of a community-led, civic innovatio
     %p
       I led the initial exploration to define the initial scope of this project, along with multiple design reviews throughout the process. I detailed out all state variations, designed a custom set of icons for the new navigation, and built prototypes (with production-friendly code).
 
-  .organization-overview
-    %p 
-      %strong
-        =link_to('OpenOakland', 'https://www.openoakland.org')
-      is a nonprofit civic innovation organization that brings together coders, designers, data geeks, journalists, and city staff to collaborate on solutions to improve the lives of Oaklanders. We are part of Code for America’s 
-      =link_to('Brigade', 'https://www.openoakland.org')
-      program and hold frequent events for community, local government and tech folks to work together.
+  
+  %blockquote.organization-overview
+    %strong
+      =link_to('OpenOakland', 'https://www.openoakland.org', class: 'external-link')
+    is a nonprofit civic innovation organization that brings together coders, designers, data geeks, journalists, and city staff to collaborate on solutions to improve the lives of Oaklanders. We are part of Code for America’s Brigade program and hold frequent events for community, local government and tech folks to work together.
 
 
 %h2.section-heading Background

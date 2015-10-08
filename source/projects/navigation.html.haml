@@ -1,10 +1,12 @@
 ---
-title: Navigation
-description: ---
+title: Navigation Redesign
+description: Helping to unobtrusively guide users to next steps
 
 ---
 
-%h1.page-heading Restructuring Navigation and Wayfinding
+.project__header
+  %h1.project__heading #{current_page.data.title}
+  %p.project__subheading #{current_page.data.description}
 
 .project-intro
   .project-challenge

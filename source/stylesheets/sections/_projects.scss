@@ -2,7 +2,7 @@ body.projects-index {
   #main section {
     margin-bottom: 2rem;
   }
-  .page-heading {
+  .project__heading {
     font-size: 3rem;
     color: darken($gray-lighter, 5%);
     margin: -.5rem 0 .5rem;
@@ -23,9 +23,17 @@ body.projects-index {
 // Project pages
 
 body.projects {
-  .page-heading {
+  .project__header {
+    margin-bottom: 2rem;
+  }
+  .project__heading {
     font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .project__subheading {
+    color: $gray;
+    font-style: italic;
+    font-size: 1.2rem;
   }
 }
 .project-intro-heading {
@@ -35,16 +43,6 @@ body.projects {
   font-weight: bold;
   color: $wine;
 }
-// @media (min-width: 768px){
-//   .project-challenge,
-//   .project-role {
-//     width: 50%;
-//     float: left;
-//     padding-right: 1.5em;
-//     @include micro-clearfix;
-//   }
-// }
-
 
 .case-study {
   .section-heading {
@@ -76,7 +74,10 @@ body.projects {
     font-size: .8em;
     color: $gray;
     text-align: center;
-
+  }
+  blockquote {
+    font-style: italic;
+    color: $gray;
   }
 }
 
