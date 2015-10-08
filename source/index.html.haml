@@ -9,32 +9,4 @@ title: Jeff French · Product Designer
 %section.case-studies-section
   %h2.section-heading
     Featured Case Studies
-  %ul.case-studies.case-studies--list
-    %li.case-study
-      -# .case-study__tags Information Design
-      %a{href: "/projects/scoring-health"}
-        %img.case-study__thumb{"data-src" => "/images/projects/scoring-thumb@2x.png", width: "100", height: "100"}
-        .case-study__info
-          %h3.case-study__title Scoring Health
-          %p.case-study__description Simplifying important information without removing the details
-    %li.case-study
-      %a{href: "/projects/navigation"}
-        -# .case-study__tags Web App Navigation
-        %img.case-study__thumb{"data-src" => "/images/projects/nav-thumb@2x.png", width: "100", height: "100"}
-        .case-study__info
-          %h3.case-study__title Navigation Redesign
-          %p.case-study__description Helping to unobtrusively guide users to next steps
-    %li.case-study
-      %a.case-study__link{href:"/projects/openoakland-logo"}
-        %img.case-study__thumb{"data-src" => "/images/projects/openoakland-thumb@2x.png", width: "100", height: "100"}
-        .case-study__info
-          %h3.case-study__title OpenOakland Logo Redesign
-          %p.case-study__description Designing the visual identity of a community-led, civic tech organization
-
-
-
-    -#%li.case-study
-      %img.case-study__thumb{"data-src" => "/images/projects/scoring-thumb@2x.png", width: "100", height: "100"}
-      .case-study__info
-        %a.case-study__title{href: "/projects/activity-tracking"} Activity Tracking: Just the Basics
-        %p.case-study__description Defining the essentials for a custom activity tracker
+  = partial "projects/case-studies-nav"
