@@ -2,12 +2,12 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem 'middleman', '~>3.3.10'
+gem 'middleman'
 
 # Live-reloading plugin
-gem 'middleman-livereload', '~> 3.1.0'
+gem 'middleman-livereload'
 
-gem 'turbolinks', '~> 2.5.3', require: false
+gem 'turbolinks', require: false
 gem 'nprogress-rails', require: false
 gem 'jquery-turbolinks', require: false
 gem 'jquery-rails', require: false
@@ -16,7 +16,7 @@ gem 'modernizr-rails', require: false
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
-gem 'font-awesome-sass', '~> 4.3.0'
+gem 'font-awesome-sass'
 
 # gem 'bootstrap-sass', git: 'git://github.com/ixley/bootstrap-sass.git', tag: 'v3.3.3-ms', :require => false
 gem 'middleman-autoprefixer'
