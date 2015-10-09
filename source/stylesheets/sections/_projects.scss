@@ -85,6 +85,7 @@ body.projects {
 
 
 .case-studies--list {
+  margin-bottom: 3rem;
   .case-study {
     @include micro-clearfix;
     margin-bottom: 1rem;
@@ -103,12 +104,12 @@ body.projects {
       text-align: center;
     }
     @include mappy-bp(mid-small){
-      margin-left: 115px; // image width + 15px
+      margin-left: 170px; // image width + 15px
     }
   }
   .case-study__title {
     font-size: 2rem;
-    line-height: 1.2;
+    line-height: 1;
     color: $gray-dark;
     margin: 0;
   }
