@@ -64,8 +64,10 @@
   width: 100%;
   max-width: 38rem;
   min-height: 100%;
-  padding-top: $horizontal-nav-height;
   margin: 0 auto;
+  @include mappy-bp(max $header-breakpoint){
+    padding-top: $horizontal-nav-height;
+  }
 }
 
 @include mappy-bp(max $header-breakpoint){
@@ -179,15 +181,15 @@ a.nav__toggle {
 @include mappy-bp(1060px) {
   .site-container {
     margin-right: 0;
-    margin-left: 15em;
+    margin-left: 12em;
   }
   .site-header {
-    $header-width: 15em;
+    $header-width: 12em;
     width: $header-width;
     margin-left: -($header-width);
   }
 }
-@include mappy-bp(1360px){ // (38em + (2 * 15em)) * 20px
+@include mappy-bp(1240px){ // (38em + (2 * 12em)) * 20px
   .site-container {
     width: 100%;
     margin: 0 auto;

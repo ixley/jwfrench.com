@@ -60,7 +60,10 @@ i.fa span { // font-awesome
     padding-right: 1rem;
     padding-left: 1rem;
   }
-  padding: $main-top-padding $main-side-padding $main-side-padding;
+  padding-top: $main-top-padding;
+  padding-right: $main-side-padding;
+  padding-bottom: $main-side-padding;
+  padding-left: $main-side-padding;
   height: 100%;
   animation: fadeInUp 1s;
 }
