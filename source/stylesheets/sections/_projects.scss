@@ -34,6 +34,12 @@ body.projects {
     color: $gray;
     font-style: italic;
     font-size: 1.2rem;
+    margin-bottom: .2em;
+  }
+  .project__organization {
+    font-style: italic;
+    color: $gray-light;
+    font-size: .8rem;
   }
 }
 .project-intro-heading {
