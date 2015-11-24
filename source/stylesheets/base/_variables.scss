@@ -2,11 +2,12 @@
 
 $neuton: "Neuton", Book Antiqua, Cambria, serif;
 
-$base-font-family: $neuton;
-$heading-font-family: $base-font-family;
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: $neuton;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 16px;
+$heading-font-size: 20px;
 
 // Line height
 $base-line-height: 1.5;

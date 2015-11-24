@@ -28,18 +28,23 @@ body.projects {
   }
   .project__heading {
     font-size: 3.5rem;
-    margin-bottom: 0;
+    margin-bottom: .1em;
   }
   .project__subheading {
     color: $gray;
+    font-family: $heading-font-family;
+    line-height: $heading-line-height * 1.05;
     font-style: italic;
     font-size: 1.2rem;
     margin-bottom: .2em;
   }
   .project__organization {
-    font-style: italic;
-    color: $gray-light;
-    font-size: .8rem;
+    display: inline-block;
+    color: $gray;
+    font-size: .6rem;
+    padding: 2px 8px;
+    // background-color: mix($background-color, #000, 2%);
+    border-radius: 2px;
   }
 }
 .project-intro-heading {
@@ -51,8 +56,13 @@ body.projects {
 }
 
 .case-study {
+  + .case-studies-nav__section {
+    margin-top: 6rem;
+  }
   .section-heading {
     font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
   .intro {
     font-style: italic;
@@ -70,6 +80,8 @@ body.projects {
     margin-bottom: .5em;
   }
   blockquote {
+    font-family: $heading-font-family;
+    font-size: 1rem;
     font-style: italic;
     color: $gray;
   }
@@ -78,7 +90,7 @@ body.projects {
 // Generalized Case Study Style
 
 
-.case-studies--list {
+.case-studies-nav--list {
   margin-bottom: 3rem;
   .case-study {
     @include micro-clearfix;
@@ -94,6 +106,7 @@ body.projects {
     }
   }
   .case-study__info {
+    font-family: $heading-font-family;
     @include mappy-bp(max mid-small){
       text-align: center;
     }
@@ -116,6 +129,16 @@ body.projects {
   }
 }
 
+.additional-projects-nav {
+  font-family: $heading-font-family;
+  li {
+    font-size: 1rem;
+    &.is-active a { // TODO: clean up, make better global rule
+      color: mix($highlight-color, $link-color, 70%);
+    }
+  }
+}
+
 // Article Footer Nav
 
 .article-footer-nav {
@@ -125,6 +148,8 @@ body.projects {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  font-family: $heading-font-family;
+  font-size: 1rem;
 }
 .article-footer-nav__link--single {
   width: 100%;

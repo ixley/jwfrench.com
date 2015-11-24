@@ -1,0 +1,22 @@
+---
+title: Readable Terms
+description: Taking a crack at 'legalese'
+footer_project_nav: true
+---
+
+.project__header
+  %h1.project__heading #{current_page.data.title}
+  -# %p.project__subheading #{current_page.data.description}
+  -# %p.project__organization Lead Designer at WellnessFX
+
+
+%h2.section-heading Say What?
+%section
+  %p
+    Legal agreements get a bad rap for a good reason. They dictate an increbibly important set of terms, but are painfully dense. We can do better. With the goal of greater transparency, I took a couple of WellnessFX’s primary user agreements, and paired each section with a concise summary in plain, easy to understand English.
+
+%figure
+  =image_set_tag 'projects/legal-agreements/tos-updated.png', {'projects/legal-agreements/tos-updated-2x.png' => '2x'}
+  -# %img{"data-src" => "/images/projects/legal-agreements/tos-updated-2x.png"}
+  %figcaption
+    Cutting through the jargon

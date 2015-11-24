@@ -1,27 +1,8 @@
 
-// .site-header
-.header__mug {
-  border-radius: 10em;
-  box-shadow: 0 1px 3px rgba(#000, .15);
-}
-.header__name {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 0;
-}
-.header__blurb {
-  font-size: .9rem;
-  font-style: italic;
-  line-height: 1.3;
-  color: #777;
-  display: none; // hide until larger
-  span {
-    white-space: nowrap;
-  }
-}
 
 .elsewhere-nav {
   display: none;
+  font-size: 1rem;
   @include mappy-bp($header-breakpoint){
     display: block;
     text-align: center;
@@ -43,7 +24,34 @@
 }
 
 
-// ================ Horizontal Nav
+// ================ Nav
+
+// Base nav styles
+
+.header__name {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0;
+}
+.header__blurb {
+  font-family: $heading-font-family;
+}
+
+// Horizontal only
+@include mappy-bp(max $header-breakpoint){
+  .site-header {
+    box-shadow: 0 1px 10px rgba(#000, .05);
+  }
+  .header__name {
+    float: left;
+  }
+  .header__mug {
+    display: none;
+  }
+  .header__blurb {
+    display: none; // hide until larger
+  }
+}
 
 .site-header {
   border: 1px solid darken($site-bg-color, 5%);
@@ -62,7 +70,7 @@
 
 .site-container {
   width: 100%;
-  max-width: 38rem;
+  max-width: 38rem; // make dynamic with .site-header
   min-height: 100%;
   margin: 0 auto;
   @include mappy-bp(max $header-breakpoint){
@@ -70,20 +78,30 @@
   }
 }
 
-@include mappy-bp(max $header-breakpoint){
-  .site-header {
-    box-shadow: 0 1px 10px rgba(#000, .05);
+// Sidebar nav
+@include mappy-bp($header-breakpoint){
+  .header__mug {
+    border-radius: 10em;
+    box-shadow: 0 1px 3px rgba(#000, .15);
   }
   .header__name {
-    float: left;
+    float: none;
   }
-  .header__mug {
-    display: none;
+  .header__blurb {
+    font-size: .9rem;
+    font-style: italic;
+    line-height: 1.3;
+    color: #777;
+    span {
+      white-space: nowrap;
+    }
   }
 }
 
 .main-nav {
   margin-bottom: 2em;
+  font-family: $heading-font-family;
+  font-size: 1rem;
   a {
     padding: 3px 5px;
   }
@@ -181,10 +199,10 @@ a.nav__toggle {
 @include mappy-bp(1060px) {
   .site-container {
     margin-right: 0;
-    margin-left: 12em;
+    margin-left: 15rem;
   }
   .site-header {
-    $header-width: 12em;
+    $header-width: 15rem;
     width: $header-width;
     margin-left: -($header-width);
   }

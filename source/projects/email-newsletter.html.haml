@@ -1,0 +1,27 @@
+---
+title: Email Newsletter Templates
+description: --
+footer_project_nav: true
+---
+
+.project__header
+  %h1.project__heading #{current_page.data.title}
+  %p.project__subheading #{current_page.data.description}
+  -# %p.project__organization Lead Designer at WellnessFX
+
+
+%h2.section-heading [Heading]
+
+%p
+  [Description]
+
+
+%figure
+  =image_set_tag 'projects/email-newsletter/practitioner-newsletter.jpg', {'projects/email-newsletter/practitioner-newsletter-2x.jpg' => '2x'}
+  %figcaption
+
+
+%figure
+  =image_set_tag 'projects/email-newsletter/newsletter-email.jpg', {'projects/email-newsletter/newsletter-email-2x.jpg' => '2x'}
+  -# %figcaption
+

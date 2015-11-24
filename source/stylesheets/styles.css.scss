@@ -18,11 +18,11 @@
 @import 'sections/projects-openoakland';
 @import 'sections/header';
 
-
-html.turbolinks-progress-bar::before {
-  height: 2px !important;
+html {
+  &.turbolinks-progress-bar::before {
+    height: 2px !important;
+  }
 }
-
 body {
   background: $site-bg-color;
 }
