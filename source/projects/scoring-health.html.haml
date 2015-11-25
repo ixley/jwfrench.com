@@ -23,7 +23,8 @@ role: Lead Designer at WellnessFX
   One of the simplest, but most impactful ways WellnessFX does this is by providing better visualizations and presentations of personal blood test results. People that have used the service are emphatic about how much they love the clarity and simplicity of their test results.
 
 %figure
-  %img{"data-src" => "/images/projects/scoring/compare-printout.jpg"}
+  =image_set_tag 'projects/scoring/compare-printout.jpg', {'projects/scoring/compare-printout-2x.jpg' => '2x'}
+  -# %img{"data-src" => "/images/projects/scoring/compare-printout.jpg"}
   %figcaption
     Typical lab printout vs. WellnessFX visualizations
 
@@ -38,7 +39,8 @@ role: Lead Designer at WellnessFX
 %p
   Our hypothesis was that assigning certain tests (or biomarkers) with a numerical (100 point) score and a correlating color, would help give people an immediate sense of which test results to pay attention to first. If you see that your LDL Particle Count is 873 nmol/L, it would probably take a little digging to understand what the relative health context is. Seeing an associated score of 89/100 (where 100 denotes the lowest associated risk), matched with a corresponding color (green in this case), is easier to make sense of. And of course, the additional details and contextual explanations are still there for users to explore further if they want.
 %figure
-  %img{"data-src" => "/images/projects/scoring/contextualized-value.png"}
+  =image_set_tag 'projects/scoring/contextualized-value.png', {'projects/scoring/contextualized-value-2x.png' => '2x'}
+  -# %img{"data-src" => "/images/projects/scoring/contextualized-value.png"}
   %figcaption
     Adding context with a score value and color
 
@@ -49,7 +51,8 @@ role: Lead Designer at WellnessFX
   Along with test results, labs provide risk ranges and reference ranges. Risk ranges are typically grouped as High Risk, Moderate Risk, and Low Risk, and the more agnostic reference ranges are often Normal and some form of Non-normal (like High or Low). Because both the risk ranges and reference ranges were being colored with the same red, orange, and green, it gave the misleading implication that they had the same health significance and created the impression that non-normal ranges are necessarily bad (which they're not). By using more neutral colors for them, the results remain more faithful to the significance they're meant to convey.
   
 %figure
-  %img{"data-src" => "/images/projects/scoring/ranges.png"}
+  =image_set_tag 'projects/scoring/ranges.png', {'projects/scoring/ranges-2x.png' => '2x'}
+  -# %img{"data-src" => "/images/projects/scoring/ranges.png"}
   %figcaption
     Clarifying meaning with color
 
@@ -70,7 +73,8 @@ role: Lead Designer at WellnessFX
   One thing we discovered was that while people found the additional information valuable, many felt that the additional numbers were overwhelming when presented all together. To address this, I tucked the score away and left the coded color visible. The color still aids quick scanning, and the numerical score only slides out when a user mouses over to focus on it.
 
 %figure
-  %img{"data-src" => "/images/projects/scoring/hide-detail.png"}
+  =image_set_tag 'projects/scoring/hide-detail.png', {'projects/scoring/hide-detail-2x.png' => '2x'}
+  -# %img{"data-src" => "/images/projects/scoring/hide-detail.png"}
   %figcaption
     Reduce clutter by hiding numerical score values until the user hovers
 
@@ -80,7 +84,8 @@ role: Lead Designer at WellnessFX
   I initially tried using a fluid spectrum of values so that each score value was represented by a unique color. I thought that the increased fidelity would help convey more meaning. When we generated cases representing uncommon combinations though, I realized how much less intuitive certain colors became in relation to each other. The additional detail can be justified in more focused contexts, but becomes confusing when viewing different results next to each other, so I scaled the values back to limited color ranges here.
 
 %figure
-  %img{"data-src" => "/images/projects/scoring/color-count.png"}
+  =image_set_tag 'projects/scoring/color-count.png', {'projects/scoring/color-count-2x.png' => '2x'}
+  -# %img{"data-src" => "/images/projects/scoring/color-count.png"}
   %figcaption
     Balancing detail with readability
 
@@ -90,7 +95,8 @@ role: Lead Designer at WellnessFX
   In addition to making adjustments for the summary views—recoloring specific markers for Health Scores, and neutralizing color for those without a risk range or score—I also updated the detail view to display score as a prominent color, while keeping reference ranges accessible. In the example case below, the marker results are graphed with a neutral reference range (on the left side of the chart), and a WellnessFX score (on the right). This example represents an unusual case by combining a score assigning value with a neutral reference range, but it illustrates the new ability to shift away from relying exclusively on lab ranges and begin introducing more progressive standards for health.
 
 %figure
-  %img{"data-src" => "/images/projects/scoring/marker-detail.png"}
+  =image_set_tag 'projects/scoring/marker-detail.png', {'projects/scoring/marker-detail-2x.png' => '2x'}
+  -# %img{"data-src" => "/images/projects/scoring/marker-detail.png"}
   %figcaption
     A detail view of results displaying values, lab reference ranges, and WellnessFX scoring
 
