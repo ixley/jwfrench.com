@@ -7,6 +7,11 @@ body.projects-index {
     color: darken($gray-lighter, 5%);
     margin: -.5rem 0 .5rem;
   }
+}
+
+// Project Nav
+// ==========================
+.project-nav {
   .section-heading {
     font-size: .6rem;
     font-weight: bold;
@@ -14,10 +19,11 @@ body.projects-index {
     letter-spacing: .1rem;
     color: $gray;
     font-family: "Helvetica Neue", sans-serif;
-    margin-bottom: .5rem;
-
+    margin: 1em 0;
   }
 }
+
+
 
 
 // Project pages
@@ -43,7 +49,7 @@ body.projects {
     color: $gray;
     font-size: .6rem;
     padding: 2px 8px;
-    // background-color: mix($background-color, #000, 2%);
+    background-color: #f1f1f1;
     border-radius: 2px;
   }
 }
@@ -56,13 +62,13 @@ body.projects {
 }
 
 .case-study {
-  + .case-studies-nav__section {
+  + .project-nav {
     margin-top: 6rem;
   }
   .section-heading {
     font-weight: bold;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .intro {
     font-style: italic;
