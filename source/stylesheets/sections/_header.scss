@@ -197,12 +197,12 @@ a.nav__toggle {
   }
 }
 @include mappy-bp(1060px) {
+  $header-width: 13rem;
   .site-container {
     margin-right: 0;
-    margin-left: 15rem;
+    margin-left: $header-width;
   }
   .site-header {
-    $header-width: 15rem;
     width: $header-width;
     margin-left: -($header-width);
   }
