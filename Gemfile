@@ -16,7 +16,7 @@ gem 'modernizr-rails', require: false
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.5'
 
 # gem 'bootstrap-sass', git: 'git://github.com/ixley/bootstrap-sass.git', tag: 'v3.3.3-ms', :require => false
 gem 'middleman-autoprefixer'
