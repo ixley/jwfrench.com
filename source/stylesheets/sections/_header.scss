@@ -3,7 +3,7 @@
 .elsewhere-nav {
   display: none;
   font-size: 1rem;
-  @include mappy-bp($header-breakpoint){
+  @include breakpoints($header-breakpoint){
     display: block;
     text-align: center;
     li {
@@ -38,7 +38,7 @@
 }
 
 // Horizontal only
-@include mappy-bp(max $header-breakpoint){
+@include breakpoints(max $header-breakpoint){
   .site-header {
     box-shadow: 0 1px 10px rgba(#000, .05);
   }
@@ -73,13 +73,13 @@
   max-width: 38rem; // make dynamic with .site-header
   min-height: 100%;
   margin: 0 auto;
-  @include mappy-bp(max $header-breakpoint){
+  @include breakpoints(max $header-breakpoint){
     padding-top: $horizontal-nav-height;
   }
 }
 
 // Sidebar nav
-@include mappy-bp($header-breakpoint){
+@include breakpoints($header-breakpoint){
   .header__mug {
     border-radius: 10em;
     box-shadow: 0 1px 3px rgba(#000, .15);
@@ -114,7 +114,7 @@ a.nav__toggle {
   display: none;
 }
 // Horizontal Header, Dropdown Nav
-@include mappy-bp(max $nav-breakpoint){
+@include breakpoints(max $nav-breakpoint){
   .site-header {
     min-height: $horizontal-nav-height;
     height: auto;
@@ -139,7 +139,7 @@ a.nav__toggle {
     }
     li {
       a {
-        display: block; 
+        display: block;
         text-align: center;
         border-top: 1px solid #ddd;
         padding: 10px 20px;
@@ -149,7 +149,7 @@ a.nav__toggle {
   }
 }
 // Horizontal Header, Inline Nav
-@include mappy-bp($nav-breakpoint $header-breakpoint){
+@include breakpoints($nav-breakpoint $header-breakpoint){
   .site-header.headroom--dim  {
     height: 0;
     padding: 0;
@@ -168,7 +168,7 @@ a.nav__toggle {
 
 // ================ Sidebar Nav
 
-@include mappy-bp($header-breakpoint){
+@include breakpoints($header-breakpoint){
   $header-width: 15/53 * 100%;
   .site-container {
     width: 38/53 * 100%;
@@ -196,7 +196,7 @@ a.nav__toggle {
     display: block;
   }
 }
-@include mappy-bp(1060px) {
+@include breakpoints(1060px) {
   $header-width: 13rem;
   .site-container {
     margin-right: 0;
@@ -207,11 +207,9 @@ a.nav__toggle {
     margin-left: -($header-width);
   }
 }
-@include mappy-bp(1240px){ // (38em + (2 * 12em)) * 20px
+@include breakpoints(1240px){ // (38em + (2 * 12em)) * 20px
   .site-container {
     width: 100%;
     margin: 0 auto;
   }
 }
-
-

@@ -106,17 +106,17 @@ body.projects {
     display: block;
     margin: 0 auto;
     border-radius: 2px;
-    @include mappy-bp(mid-small){
+    @include breakpoints(mid-small){
       float: left;
       margin-right: 15px;
     }
   }
   .case-study__info {
     font-family: $heading-font-family;
-    @include mappy-bp(max mid-small){
+    @include breakpoints(max mid-small){
       text-align: center;
     }
-    @include mappy-bp(mid-small){
+    @include breakpoints(mid-small){
       margin-left: 170px; // image width + 15px
     }
   }

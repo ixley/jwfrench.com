@@ -46,17 +46,17 @@ i.fa span { // font-awesome
 
 // Fade in page content on load
 @keyframes fadeInUp {
-  0% { 
-    opacity: 0; 
+  0% {
+    opacity: 0;
     transform: translate3d(0, 1em, 0);
   }
-  100% { 
+  100% {
     opacity: 1;
     transform: none;
   }
 }
 #main {
-  @include mappy-bp(max $header-breakpoint){
+  @include breakpoints(max $header-breakpoint){
     padding-right: 1rem;
     padding-left: 1rem;
   }
