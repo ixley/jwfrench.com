@@ -60,20 +60,22 @@ $breakpoints: (
   'mega'      : 1400px,
 );
 
+$max-container-width: 38rem;
+
+
 $screen-ms-min: 480px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
-$header-breakpoint: $screen-sm-min;
+// $header-breakpoint: $screen-sm-min;
 
 $nav-breakpoint: $screen-ms-min;
 $horizontal-nav-height: 55px;
 
 
 $main-top-padding: .5rem;
-$main-side-padding: 1.5rem;
+$main-side-padding: 1rem;
 
 // Transitions
 
 $default-hover-transition-time: .2s;
-

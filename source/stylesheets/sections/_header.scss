@@ -1,29 +1,4 @@
 
-
-.elsewhere-nav {
-  display: none;
-  font-size: 1rem;
-  @include breakpoints($header-breakpoint){
-    display: block;
-    text-align: center;
-    li {
-      display: inline-block;
-      margin: 0 5px;
-    }
-    a {
-      padding: 3px;
-      color: $gray;
-      &:hover {
-        color: $blue;
-      }
-    }
-    span {
-      @include hide-the-text;
-    }
-  }
-}
-
-
 // ================ Nav
 
 // Base nav styles
@@ -32,85 +7,47 @@
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 0;
-}
-.header__blurb {
-  font-family: $heading-font-family;
+  float: left;
 }
 
 // Horizontal only
-@include breakpoints(max $header-breakpoint){
-  .site-header {
-    box-shadow: 0 1px 10px rgba(#000, .05);
-  }
-  .header__name {
-    float: left;
-  }
-  .header__mug {
-    display: none;
-  }
-  .header__blurb {
-    display: none; // hide until larger
-  }
-}
+// @include breakpoints(max $header-breakpoint){
 
 .site-header {
-  border: 1px solid darken($site-bg-color, 5%);
-  background-color: $site-bg-color;
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  transition: height .2s ease-in-out;
-  // overridden for vertical
-  width: 100%;
-  border-width: 0 0 1px 0;
-  padding: 10px 20px;
-  height: $horizontal-nav-height;
-  transition: height 300ms, padding 300ms;
-}
-
-.site-container {
-  width: 100%;
-  max-width: 38rem; // make dynamic with .site-header
-  min-height: 100%;
+  &__container { // .site-header__container
+    border: 1px solid darken($site-bg-color, 5%);
+    background-color: $site-bg-color;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    transition: height .2s ease-in-out;
+    border-width: 0 0 1px 0;
+    width: 100%;
+    min-height: $horizontal-nav-height;
+    transition: height 300ms, padding 300ms;
+    box-shadow: 0 1px 10px rgba(#000, .05);
+  }
+  @include micro-clearfix;
   margin: 0 auto;
-  @include breakpoints(max $header-breakpoint){
-    padding-top: $horizontal-nav-height;
-  }
-}
-
-// Sidebar nav
-@include breakpoints($header-breakpoint){
-  .header__mug {
-    border-radius: 10em;
-    box-shadow: 0 1px 3px rgba(#000, .15);
-  }
-  .header__name {
-    float: none;
-  }
-  .header__blurb {
-    font-size: .9rem;
-    font-style: italic;
-    line-height: 1.3;
-    color: #777;
-    span {
-      white-space: nowrap;
-    }
+  max-width: $max-container-width;
+  padding: 10px $main-side-padding;
+  opacity: 1;
+  transition: opacity .2s;
+  transition-delay: .2s;
+  .headroom--dim & {
+    opacity: 0;
   }
 }
 
 .main-nav {
-  margin-bottom: 2em;
   font-family: $heading-font-family;
   font-size: 1rem;
-  a {
-    padding: 3px 5px;
-  }
   li.is-active a {
     color: mix($highlight-color, $link-color, 70%);
   }
 }
 
-a.nav__toggle {
+.nav-toggle {
   display: none;
 }
 // Horizontal Header, Dropdown Nav
@@ -119,11 +56,12 @@ a.nav__toggle {
     min-height: $horizontal-nav-height;
     height: auto;
   }
-  a.nav__toggle {
+  .nav-toggle {
     float: right;
     display: inline-block;
   }
   .main-nav {
+    margin-bottom: 1rem;
     ul {
       display: block;
       clear: both;
@@ -148,13 +86,8 @@ a.nav__toggle {
     }
   }
 }
-// Horizontal Header, Inline Nav
-@include breakpoints($nav-breakpoint $header-breakpoint){
-  .site-header.headroom--dim  {
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+
+@include breakpoints($nav-breakpoint){
   .main-nav {
     float: right;
     li {
@@ -165,51 +98,9 @@ a.nav__toggle {
   }
 }
 
-
-// ================ Sidebar Nav
-
-@include breakpoints($header-breakpoint){
-  $header-width: 15/53 * 100%;
-  .site-container {
-    width: 38/53 * 100%;
-    margin-left: $header-width;
-  }
-  .site-header {
-    padding: 20px;
-    height: 100%;
-    text-align: center;
-    width: $header-width;
-    max-width: 15rem;
-    margin-left: -($header-width);
-    border-width: 0 1px 0 0;
-    // Headroom - hide nav elements on scroll down
-    transition: opacity 600ms;
-    opacity: 1;
-    &.headroom--dim {
-      opacity: 0;
-    }
-  }
-  .header__name {
-    margin-bottom: .5rem;
-  }
-  .header__blurb {
-    display: block;
-  }
-}
-@include breakpoints(1060px) {
-  $header-width: 13rem;
-  .site-container {
-    margin-right: 0;
-    margin-left: $header-width;
-  }
-  .site-header {
-    width: $header-width;
-    margin-left: -($header-width);
-  }
-}
-@include breakpoints(1240px){ // (38em + (2 * 12em)) * 20px
-  .site-container {
-    width: 100%;
-    margin: 0 auto;
-  }
+// Horizontal Header, Inline Nav
+.js-headroom.headroom--dim  {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
 }

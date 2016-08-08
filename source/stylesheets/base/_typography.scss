@@ -51,9 +51,9 @@ a {
     outline: none;
   }
   // Gradient link underlines
-  #main p & { // restrict to #main content area
+  .content-container p & { // restrict to .content-container
     $bg-color: $site-bg-color;
-    html.no-js &, 
+    html.no-js &,
     html.no-cssgradients & {
       text-decoration: underline;
     }

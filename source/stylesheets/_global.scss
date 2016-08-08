@@ -1,0 +1,50 @@
+
+html {
+  &.turbolinks-progress-bar::before {
+    height: 2px !important;
+  }
+}
+body {
+  background: $site-bg-color;
+}
+
+
+.lazy-hidden {
+  // background: #fff url("/images/global/spinner.gif") no-repeat 50% 50%;
+  opacity: 0;
+}
+.lazy-loaded {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+i.fa span { // font-awesome
+  @include hide-the-text;
+}
+
+
+// TODO: move this declaration
+
+// Fade in page content on load
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 1em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.content-container {
+  width: 100%;
+  height: 100%;
+  max-width: $max-container-width;
+  min-height: 100%;
+  margin: $horizontal-nav-height auto 0;
+  padding-top: $main-top-padding;
+  padding-right: $main-side-padding;
+  padding-bottom: $main-side-padding;
+  padding-left: $main-side-padding;
+  animation: fadeInUp 1s;
+}

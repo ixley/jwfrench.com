@@ -1,69 +1,20 @@
-@charset 'utf-8';
+@charset "utf-8";
 
-@import 'normalize';
+@import "normalize";
 
 @import "base/variables";
 
-@import 'mixins/mixins';
-@import 'nprogress';
-@import 'bourbon';
-@import 'base/grid-settings'; // customizations for neat - (import before Neat)
-@import 'neat';
-@import 'base/base'; // from Bitters
+@import "mixins/mixins";
+@import "nprogress";
+@import "bourbon";
+@import "base/grid-settings"; // customizations for neat - (import before Neat)
+@import "neat";
+@import "base/base"; // from Bitters
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-@import 'sections/home';
-@import 'sections/projects';
-@import 'sections/projects-openoakland';
-@import 'sections/header';
-
-html {
-  &.turbolinks-progress-bar::before {
-    height: 2px !important;
-  }
-}
-body {
-  background: $site-bg-color;
-}
-
-
-.lazy-hidden {
-  // background: #fff url('/images/global/spinner.gif') no-repeat 50% 50%;
-  opacity: 0;
-}
-.lazy-loaded {
-  transition: opacity 0.3s;
-  opacity: 1;
-}
-
-i.fa span { // font-awesome
-  @include hide-the-text;
-}
-
-
-// TODO: move this declaration
-
-// Fade in page content on load
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 1em, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-#main {
-  @include breakpoints(max $header-breakpoint){
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  padding-top: $main-top-padding;
-  padding-right: $main-side-padding;
-  padding-bottom: $main-side-padding;
-  padding-left: $main-side-padding;
-  height: 100%;
-  animation: fadeInUp 1s;
-}
+@import "global";
+@import "sections/home";
+@import "sections/projects";
+@import "sections/projects-openoakland";
+@import "sections/header";

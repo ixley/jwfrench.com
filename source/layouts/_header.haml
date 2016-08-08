@@ -1,34 +1,11 @@
-%header.site-header
-  %a{href: '/'}
-    =image_set_tag 'global/mug-60.jpg', {'global/mug-60@2x.jpg' => '2x'}, sizes: '(min-width: 1em) 1em, 20px', class: 'header__mug'
-    %h1.header__name
-      Jeff French
-  %p.header__blurb
-    %span Digital product designer,
-    %span engaged world citizen,
-    %span asker of questions.
-  
-  %nav.main-nav
-    %a.nav__toggle{href: '#'} Menu
-    %ul{"data-state" => "closed"}
-      = link_to_page("About", "/about")
-      = link_to_page("Projects", "/projects")
+%header.site-header__container.js-headroom
+  .site-header
+    %a{href: '/'}
+      %h1.header__name
+        Jeff French
 
-  %ul.elsewhere-nav
-    %li
-      %a.external-link{href: 'http://twitter.com/ixley'}
-        %i.fa.fa-twitter
-        %span Twitter
-    %li
-      %a.external-link{href: 'https://www.linkedin.com/in/jefffrench'}
-        %i.fa.fa-linkedin
-        %span LinkedIn
-    %li
-      %a.external-link{href: 'https://medium.com/@ixley'}
-        %i.fa.fa-medium
-        %span Medium
-    %li
-      %a.external-link{href: 'mailto:jfrench@ixley.com'}
-        %i.fa.fa-envelope
-        %span Email
-
+    %nav.main-nav
+      %a.nav-toggle.js-nav-toggle__btn{href: '#'} Menu
+      %ul.js-nav-toggle__menu{"data-state" => "closed"}
+        = link_to_page("About", "/about")
+        = link_to_page("Projects", "/projects")

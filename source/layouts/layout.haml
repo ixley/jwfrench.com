@@ -4,11 +4,11 @@
   %body{:class => page_classes.dasherize}
     .site-container
       = partial "layouts/header"
-      #main
+      .content-container
         = yield
 
     = partial "layouts/footer"
-    
+
     :javascript
       $('a.external-link').each(function() {
         $(this).click(function(event) {
@@ -16,4 +16,4 @@
           event.stopPropagation();
           window.open(this.href, '_blank');
         });
-      });        
+      });
