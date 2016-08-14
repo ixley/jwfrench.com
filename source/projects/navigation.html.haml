@@ -3,11 +3,14 @@ title: Navigation Redesign
 description: Helping to unobtrusively guide users to next steps
 role: Lead Designer at WellnessFX
 ---
-  
+
+%figure
+  =image_set_tag 'projects/navigation/browser-preview.png', {'projects/navigation/browser-preview-2x.png' => '2x'}
+
 .project-intro
   .project-challenge
     %h2.project-intro-heading The Challenge
-    %p 
+    %p
       Make it clear to signed-in users about what they need to do next, and improve overall navigation.
 
   .project-role
@@ -22,7 +25,7 @@ role: Lead Designer at WellnessFX
 
 %figure
   =image_set_tag 'projects/navigation/service-overview.png', {'projects/navigation/service-overview-2x.png' => '2x'}
-  %figcaption An overview of the different services and their variants that WellnessFX provides 
+  %figcaption An overview of the different services and their variants that WellnessFX provides
 
 %p
   When people sign in to the app, they are doing so for any number of different reasons, based on different prompts and goals, and often with differing services available to them. In order to help orient each person to their next task, I looked for ways to address each person with concise and noticeable prompts that wouldn’t be otherwise distracting.
@@ -54,11 +57,11 @@ role: Lead Designer at WellnessFX
   My solutions didn’t all hinge on integrating messaging into the navigation bar, but after reviewing and critiquing various options with other team members, I zeroed in on integrating messaging for “what’s next” into a restructured vertical navigation bar. This direction allowed for:
 
 %ul
-  %li 
+  %li
     regrouping primary and secondary navigation items into more intuitive groups, to both orient users to our wider suite of services, and provide a subtle hierarchy based on the relative significance of different sections
-  %li 
+  %li
     more clearly structuring navigation variations for different types of users, some of whom have the ability to view navigation items for or ‘as’ other users(!)
-  %li 
+  %li
     providing actionable context for any signed-in user about what they need to (or can) do next from anywhere in the app
 
 %p
@@ -85,7 +88,7 @@ role: Lead Designer at WellnessFX
 
 %p
   Once I explored a variety of ideas and compared strengths and weaknesses with different cases, I settled on a vertical navigation bar that could include a simple module with prompts for users across the site.
-%p  
+%p
   By switching to a vertical navigation design, we could better support different user types (some of which have more complex navigation structures than the standard user), and still allowed us to maintain a consistent navigation hierarchy.
 
 %figure
@@ -96,7 +99,10 @@ role: Lead Designer at WellnessFX
 %h2.section-heading Guiding Users With Next Steps
 
 %p
-  When users sign in, they are typically interested in accomplishing a specific set of tasks and that’s it. While there is room for exploration, this is not Facebook. I identified all of the primary actions associated with our main services, and mapped them into concise messages with simple calls to action. Required actions stay visible until a user completes the task, while other suggestions can be dismissed.   
+  When users sign in, they are typically interested in accomplishing a specific set of tasks and that’s it. While there is room for exploration, this is not Facebook. I identified all of the primary actions associated with our main services, and mapped them into concise messages with simple calls to action. Required actions stay visible until a user completes the task, while other suggestions can be dismissed.
+
+:css
+  iframe[src*="codepen.io"] { width: 220px !important; }
 %figure
   %p.codepen{"data-default-tab" => "result", "data-height" => "185", "data-slug-hash" => "oggbMQ", "data-theme-id" => "0", "data-user" => "ixley"}
     See the Pen
@@ -141,7 +147,7 @@ role: Lead Designer at WellnessFX
 
 %h3
   %a{href: 'http://nav-prototype.ixley.com', target: 'prototype'} View the responsive prototype
-%p  
+%p
   %em This prototype was used to illustrate styling specifications as well as demo responsive behavior and select interactions
 
 
@@ -157,6 +163,5 @@ role: Lead Designer at WellnessFX
 .article-footer-nav
   %a.article-footer-nav__link--single{href: '/projects/openoakland-logo'}
     .article-footer-nav__title OpenOakland Logo Redesign
-    .article-footer-nav__description 
+    .article-footer-nav__description
       Designing the visual identity of a community-led, civic tech organization
-
