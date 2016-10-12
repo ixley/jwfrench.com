@@ -11,7 +11,7 @@
     <link href='/favicon-96x96-f9734c6c.png' rel='icon' sizes='96x96' type='image/png'>
     <link href='/favicon-16x16-f8062427.png' rel='icon' sizes='16x16' type='image/png'>
     <title>Jeff French · Product Designer</title>
-    <link href="stylesheets/styles-ac4d61e4.css" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" />
+    <link href="stylesheets/styles-5aaa3a2d.css" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" />
     <script src="javascripts/all-76d30205.js"></script>
     <script>
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
@@ -25,56 +25,26 @@
   </head>
   <body class='index'>
     <div class='site-container'>
-      <header class='site-header'>
-        <a href='/'>
-          <img sizes="(min-width: 1em) 1em, 20px" class="header__mug" srcset="images/global/mug-60@2x-3767b34b.jpg 2x" width="60" height="60" src="images/global/mug-60-a035359f.jpg" />
-          <h1 class='header__name'>
-            Jeff French
-          </h1>
-        </a>
-        <p class='header__blurb'>
-          <span>Digital product designer,</span>
-          <span>engaged world citizen,</span>
-          <span>asker of questions.</span>
-        </p>
-        <nav class='main-nav'>
-          <a class='nav__toggle' href='#'>Menu</a>
-          <ul data-state='closed'>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-          </ul>
-        </nav>
-        <ul class='elsewhere-nav'>
-          <li>
-            <a class='external-link' href='http://twitter.com/ixley'>
-              <i class='fa fa-twitter'></i>
-              <span>Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a class='external-link' href='https://www.linkedin.com/in/jefffrench'>
-              <i class='fa fa-linkedin'></i>
-              <span>LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a class='external-link' href='https://medium.com/@ixley'>
-              <i class='fa fa-medium'></i>
-              <span>Medium</span>
-            </a>
-          </li>
-          <li>
-            <a class='external-link' href='mailto:jfrench@ixley.com'>
-              <i class='fa fa-envelope'></i>
-              <span>Email</span>
-            </a>
-          </li>
-        </ul>
+      <header class='site-header__container js-headroom'>
+        <div class='site-header'>
+          <a href='/'>
+            <h1 class='header__name'>
+              Jeff French
+            </h1>
+          </a>
+          <nav class='main-nav'>
+            <a class='nav-toggle js-nav-toggle__btn' href='#'>Menu</a>
+            <ul class='js-nav-toggle__menu' data-state='closed'>
+              <li><a href="/about">About</a></li>
+              <li><a href="/projects">Projects</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <div id='main'>
+      <div class='content-container'>
         <section class='homepage-intro-section'>
           <p>
-            Full-stack product designer with WellnessFX, previously Change.org. Problem solving for web and mobile experiences.
+            Full-stack product designer. Problem solving for web and mobile experiences.
           </p>
         </section>
         <section class='project-nav'>
@@ -110,6 +80,15 @@
                   </div>
                 </a>
               </li>
+              <li class='case-study'>
+                <a class='case-study__link' href='/projects/we-vote'>
+                  <img class='case-study__thumb' height='150' src='/images/projects/we-vote-thumb-2x-378a74da.jpg' width='150'>
+                  <div class='case-study__info'>
+                    <h3 class='case-study__title'>Social Voting Guide</h3>
+                    <p class='case-study__description'>Harnessing social networks to help inform voters</p>
+                  </div>
+                </a>
+              </li>
             </ul>
           </div>
           <div class='additional-projects-nav__section'>
@@ -126,18 +105,18 @@
       </div>
     </div>
     <script>
-      var nav = document.querySelector('.nav__toggle');
+      var nav = document.querySelector('.js-nav-toggle__btn');
       var toggleState = function (elem, one, two) {
         var elem = document.querySelector(elem);
         elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
       };
       
       nav.onclick = function (e) {
-        toggleState('.main-nav ul', 'closed', 'open');
+        toggleState('.js-nav-toggle__menu', 'closed', 'open');
         e.preventDefault();
       };
       
-      $(".site-header").headroom({
+      $(".js-headroom").headroom({
         // vertical offset in px before element is first unpinned
         offset : 30,
         // scroll tolerance in px before state changes
