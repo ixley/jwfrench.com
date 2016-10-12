@@ -84,6 +84,9 @@ body.projects {
   }
   li {
     margin-bottom: .5em;
+    figure {
+      padding-right: 1.25rem; // offset to recenter images
+    }
   }
   blockquote {
     font-family: $heading-font-family;
