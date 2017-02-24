@@ -48,3 +48,24 @@ i.fa span { // font-awesome
   padding-left: $main-side-padding;
   animation: fadeInUp 1s;
 }
+
+.elsewhere-nav {
+  display: none;
+  font-size: 1rem;
+  display: block;
+  // text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  a {
+    padding: 3px;
+    color: $gray;
+    &:hover {
+      color: $blue;
+    }
+  }
+  span {
+    @include hide-the-text;
+  }
+}
