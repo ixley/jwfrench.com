@@ -1,39 +1,40 @@
 %section.project-nav
-  .case-studies-nav__section
-    %h2.section-heading
-      Featured Case Studies
-    %ul.case-studies-nav.case-studies-nav--list
-      %li.case-study
-        %a{href: "/projects/scoring-health"}
-          %img.case-study__thumb{"data-src" => "/images/projects/scoring-thumb-2x.jpg", width: "150", height: "150"}
-          .case-study__info
-            %h3.case-study__title Scoring Health
-            %p.case-study__description Simplifying important information without removing the details
-      %li.case-study
-        %a{href: "/projects/navigation"}
-          %img.case-study__thumb{"data-src" => "/images/projects/navigation-thumb-2x.jpg", width: "150", height: "150"}
-          .case-study__info
-            %h3.case-study__title Navigation Redesign
-            %p.case-study__description Helping to unobtrusively guide users to next steps
-      %li.case-study
-        %a.case-study__link{href:"/projects/openoakland-logo"}
-          %img.case-study__thumb{src: "/images/projects/openoakland-alt-thumb-2x.jpg", width: "150", height: "150"}
-          .case-study__info
-            %h3.case-study__title OpenOakland Logo Redesign
-            %p.case-study__description Designing the visual identity of a community-led, civic tech organization
+  .contain
+    .case-studies-nav__section
+      %h2.section-heading
+        Featured Case Studies
+      %ul.case-studies-nav.case-studies-nav--list
+        %li.case-study
+          %a{href: "/projects/scoring-health"}
+            %img.case-study__thumb{"data-src" => "/images/projects/scoring-thumb-2x.jpg", width: "150", height: "150"}
+            .case-study__info
+              %h3.case-study__title Scoring Health
+              %p.case-study__description Simplifying important health information
+        %li.case-study
+          %a{href: "/projects/navigation"}
+            %img.case-study__thumb{"data-src" => "/images/projects/navigation-thumb-2x.jpg", width: "150", height: "150"}
+            .case-study__info
+              %h3.case-study__title Navigation Redesign
+              %p.case-study__description Unobtrusively guiding users to their next task
+        %li.case-study
+          %a.case-study__link{href:"/projects/openoakland-logo"}
+            %img.case-study__thumb{src: "/images/projects/openoakland-thumb-2x.jpg", width: "150", height: "150"}
+            .case-study__info
+              %h3.case-study__title OpenOakland Logo Redesign
+              %p.case-study__description Designing the visual identity for a community-led, civic-tech organization
 
-      %li.case-study
-        %a.case-study__link{href:"/projects/we-vote"}
-          %img.case-study__thumb{src: "/images/projects/we-vote-thumb-2x.jpg", width: "150", height: "150"}
-          .case-study__info
-            %h3.case-study__title Social Voting Guide
-            %p.case-study__description Harnessing social networks to help inform voters
+        %li.case-study
+          %a.case-study__link{href:"/projects/we-vote"}
+            %img.case-study__thumb{src: "/images/projects/we-vote-thumb-2x.jpg", width: "150", height: "150"}
+            .case-study__info
+              %h3.case-study__title Social Voting Guide
+              %p.case-study__description Harnessing voters' trusted circles to increase voter engagement
 
 
-  .additional-projects-nav__section
-    %h2.section-heading
-      Other Projects
-    %ul.additional-projects-nav
-      = link_to_page("Readable Terms", "/projects/readable-terms")
-      = link_to_page("WellnessFX iPhone App", "/projects/iphone-app")
-      = link_to_page("Email Newsletter Templates", "/projects/email-newsletter")
+    .additional-projects-nav__section
+      %h2.section-heading
+        Other Projects
+      %ul.additional-projects-nav
+        = link_to_page("Readable Terms", "/projects/readable-terms")
+        = link_to_page("WellnessFX iPhone App", "/projects/iphone-app")
+        = link_to_page("Email Newsletter Templates", "/projects/email-newsletter")

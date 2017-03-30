@@ -51,7 +51,7 @@ a {
     outline: none;
   }
   // Gradient link underlines
-  .content-container p & { // restrict to .content-container
+  .page-content p & { // restrict to .page-content
     $bg-color: $site-bg-color;
     html.no-js &,
     html.no-cssgradients & {
@@ -90,9 +90,7 @@ picture {
 }
 
 figure {
-  margin-right: -.75rem;
   margin-bottom: 1.5em;
-  margin-left: -.75rem;
   text-align: center;
 }
 figcaption {

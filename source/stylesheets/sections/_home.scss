@@ -1,16 +1,16 @@
 
 
-.homepage-intro-section p {
-  font-family: $heading-font-family;
-  font-size: 2.2rem;
-  line-height: $heading-line-height;
-  font-style: italic;
-  color: $wine;
-  // p {
-  //   border-width: 3px 0;
-  //   border-style: solid;
-  //   padding: .25em 0 .5em;
-  // }
+.homepage-intro-section {
+  margin-top: -1rem; // offset parent padding
+  padding-top: $space-lg;
+  padding-bottom: $space-md;
+  p {
+    font-family: $heading-font-family;
+    font-size: 2.2rem;
+    line-height: $heading-line-height;
+    font-style: italic;
+    color: $wine;
+  }
 }
 
 .case-studies__section .section-heading {

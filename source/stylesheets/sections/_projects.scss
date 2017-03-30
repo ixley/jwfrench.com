@@ -1,5 +1,5 @@
 body.projects-index {
-  .content-container section {
+  .page-content section {
     margin-bottom: 2rem;
   }
   .project__heading {
@@ -31,6 +31,7 @@ body.projects-index {
 body.projects {
   .project__header {
     margin-bottom: 2rem;
+    text-align: center;
   }
   .project__heading {
     font-size: 3.5rem;
@@ -42,7 +43,7 @@ body.projects {
     line-height: $heading-line-height * 1.05;
     font-style: italic;
     font-size: 1.2rem;
-    margin-bottom: .2em;
+    margin-bottom: .4em;
   }
   .project__organization {
     display: inline-block;
@@ -50,18 +51,28 @@ body.projects {
     font-size: .6rem;
     padding: 2px 8px;
     background-color: #f1f1f1;
-    border-radius: 2px;
+    border-radius: 3px;
+  }
+  .project-nav {
+    margin-top: $space-xl;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
+  }
+  .article-footer-nav {
+    margin-top: $space-xxl;
+
   }
 }
-.project-intro-heading {
+
+.project__intro-heading {
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 1rem;
   letter-spacing: .1em;
   font-weight: bold;
   color: $wine;
 }
 
-.case-study {
+.project {
   + .project-nav {
     margin-top: 6rem;
   }
@@ -69,13 +80,7 @@ body.projects {
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 2rem;
-  }
-  .intro {
-    font-style: italic;
-    font-size: 1.2rem;
-    opacity: .8;
-    margin-bottom: 1.8em;
-    line-height: 1.3;
+    margin-bottom: 1rem;
   }
   ul {
     padding-left: 2em;
@@ -97,7 +102,30 @@ body.projects {
 }
 
 // Generalized Case Study Style
+// .projects-scoring-health {
+//   .project {
+//     position: relative;
+//   }
+//   .project__hero {
+//     width: 100vw;
+//     height: 350px;
+//     background-image: url('/images/projects/scoring/scoring-open-2x.png');
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     &::after {
+//       display: block;
+//       padding-bottom: 350px;
+//     }
+//   }
+// }
 
+.project__intro {
+
+}
 
 .case-studies-nav--list {
   margin-bottom: 3rem;
@@ -108,7 +136,7 @@ body.projects {
   .case-study__thumb {
     display: block;
     margin: 0 auto;
-    border-radius: 2px;
+    border-radius: 4px;
     @include breakpoints(mid-small){
       float: left;
       margin-right: 15px;
@@ -153,7 +181,6 @@ body.projects {
 .article-footer-nav {
   margin: 4rem -1.5rem -1.5rem;
   border-top: 1px solid $gray-lighter;
-  border-bottom: 1px solid $gray-lighter;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -162,8 +189,7 @@ body.projects {
 }
 .article-footer-nav__link--single {
   width: 100%;
-  height: 6em;
-  padding: 1rem 1rem 2rem;
+  padding: 2rem 1rem 3rem;
   transition: background-color $default-hover-transition-time;
   text-align: center;
   &:hover {
@@ -217,3 +243,9 @@ body.projects {
   font-style: italic;
   font-size: .8em;
 }
+
+
+// Scoring
+// .project__header {
+//   background: gray;
+// }

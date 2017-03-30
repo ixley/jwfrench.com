@@ -1,0 +1,63 @@
+// Unsorted helper classes
+
+// rem = 20px
+$container-width: 38rem;
+$container-width--narrow: 32rem;
+$container-width--wide: 42rem;
+
+%contain {
+  margin: 0 auto;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
+}
+.contain {
+  @extend %contain;
+  max-width: $container-width;
+  &--full {
+    @extend %contain;
+    // no max-width, similar to Bootstrap's .container-fluid
+  }
+  &--narrow {
+    @extend %contain;
+    max-width: $container-width--narrow;
+  }
+  &--wide {
+    @extend %contain;
+    max-width: $container-width--wide;
+  }
+  &__offset {
+    // apply offset for nested element to stretch to parent .container bounds
+    margin-right: -$container-padding;
+    margin-left: -$container-padding;
+    padding-right: $container-padding;
+    padding-left: $container-padding;
+  }
+}
+figure.contain,
+.contain > figure {
+  max-width: $container-width + 4rem;
+}
+.contain > .text {
+  max-width: $container-width--narrow;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.banner {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bg-lighter-gray {
+  background-color: #eee;
+}
+
+
+// Alignment
+
+.u-tr { text-align: right; }
+.u-tc { text-align: center; }
+.u-tl { text-align: left; }

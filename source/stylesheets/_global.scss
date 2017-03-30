@@ -36,23 +36,22 @@ i.fa span { // font-awesome
     transform: none;
   }
 }
-.content-container {
+
+.page-content {
   width: 100%;
   height: 100%;
-  max-width: $max-container-width;
   min-height: 100%;
-  margin: $horizontal-nav-height auto 0;
-  padding-top: $main-top-padding;
-  padding-right: $main-side-padding;
-  padding-bottom: $main-side-padding;
-  padding-left: $main-side-padding;
+  margin-top: $horizontal-nav-height;
+  padding-top: $page-content-top-padding;
   animation: fadeInUp 1s;
+
 }
 
 .elsewhere-nav {
   display: none;
   font-size: 1rem;
   display: block;
+  margin-bottom: 2rem;
   // text-align: center;
   li {
     display: inline-block;

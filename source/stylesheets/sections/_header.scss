@@ -30,8 +30,8 @@
   }
   @include micro-clearfix;
   margin: 0 auto;
-  max-width: $max-container-width;
-  padding: 10px $main-side-padding;
+  max-width: $container-width;
+  padding: 10px $container-padding;
   opacity: 1;
   transition: opacity .2s;
   transition-delay: .2s;
