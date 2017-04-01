@@ -1,15 +1,18 @@
 
-
+body.index {
+  background-color: $gray-lighter;
+}
 .homepage-intro-section {
   margin-top: -1rem; // offset parent padding
-  padding-top: $space-lg;
-  padding-bottom: $space-md;
+  padding-top: $space-xl;
+  padding-bottom: $space-xl;
   p {
     font-family: $heading-font-family;
     font-size: 2.2rem;
     line-height: $heading-line-height;
     font-style: italic;
     color: $wine;
+    margin: 0;
   }
 }
 

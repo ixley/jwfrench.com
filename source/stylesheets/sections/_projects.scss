@@ -127,41 +127,68 @@ body.projects {
 
 }
 
+@mixin nav-project-bg($bg-color){
+  background-color: $bg-color;
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
 .case-studies-nav--list {
   margin-bottom: 3rem;
   .case-study {
     @include micro-clearfix;
-    margin-bottom: 1rem;
-  }
-  .case-study__thumb {
-    display: block;
-    margin: 0 auto;
-    border-radius: 4px;
-    @include breakpoints(mid-small){
-      float: left;
-      margin-right: 15px;
+    padding: $space-lg 0;
+    background-color: $gray-darker;
+    color: #fff;
+    transition: background .2s;
+    &--scoring {
+      @include nav-project-bg(#682d70);
+      .case-study__background-img {
+        width: 120%;
+        max-width: 120%;
+        margin-left: -10%;
+      }
+      @include breakpoints($bootstrap-sm) {
+        .case-study__info {
+          margin-top: -$space-xxl;
+        }
+      }
+    }
+    &--navigation {
+      @include nav-project-bg(#0075f9);
+    }
+    &--openoakland {
+      @include nav-project-bg(#21b890);
+    }
+    &--wevote {
+      @include nav-project-bg(#2e4f61);
     }
   }
   .case-study__info {
     font-family: $heading-font-family;
-    @include breakpoints(max mid-small){
+    padding: $space-lg 0;
+    @include breakpoints(max $bootstrap-sm){
       text-align: center;
     }
     @include breakpoints(mid-small){
-      margin-left: 170px; // image width + 15px
+      // margin-left: 170px; // image width + 15px
     }
   }
   .case-study__title {
-    font-size: 2rem;
-    line-height: 1;
-    color: $gray-dark;
-    margin: 0;
+    font-size: .7rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: $base-font-family;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    color: #fff;
+    opacity: .7;
   }
   .case-study__description {
-    font-style: italic;
-    color: $gray;
-    font-size: 1.1rem;
-    line-height: 1.2;
+    font-size: 2rem;
+    line-height: 1;
+    color: #fff;
     margin: 0;
   }
 }
@@ -169,7 +196,7 @@ body.projects {
 .additional-projects-nav {
   font-family: $heading-font-family;
   li {
-    font-size: 1rem;
+    font-size: 1.2rem;
     &.is-active a { // TODO: clean up, make better global rule
       color: mix($highlight-color, $link-color, 70%);
     }

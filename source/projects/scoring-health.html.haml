@@ -58,7 +58,7 @@ role: Lead Designer at WellnessFX
       Adding context with a score value and color
 
 .contain--narrow
-  %h2.section-heading Fixing Misrepresentative Information First
+  %h2.section-heading Distinguishing Between 'Risk Ranges' and 'Reference Ranges'
 
   %p
     Along with test results, labs provide risk ranges and reference ranges. Risk ranges are typically grouped as High Risk, Moderate Risk, and Low Risk, and the more agnostic reference ranges are often Normal and some form of Non-normal (like High or Low). Because both the risk ranges and reference ranges were being colored with the same red, orange, and green, it gave the misleading implication that they had the same health significance and created the impression that non-normal ranges are necessarily bad (which they're not). By using more neutral colors for them, the results remain more faithful to the significance they're meant to convey.
@@ -81,7 +81,7 @@ role: Lead Designer at WellnessFX
   %p
     Introducing something as significant as scores about one’s health has a variety of experience implications for our members, so we conducted focused user tests with existing users to gather feedback during the design process. I helped to identify test criteria for our research and we got a lot of great feedback about what things people found helpful as well as things they found confusing. We were subsequently able to adjust designs and our rollout strategy to accommodate these learnings.
 
-  %h2.section-heading Contextualizing Score Display
+  %h2.section-heading Contextualizing with Color First
 
   %p
     One thing we discovered was that while people found the additional information valuable, many felt that the additional numbers were overwhelming when presented all together. To address this, I tucked the score away and left the coded color visible. The color still aids quick scanning, and the numerical score only slides out when a user mouses over to focus on it.
@@ -94,7 +94,7 @@ role: Lead Designer at WellnessFX
       Reduce clutter by hiding numerical score values until the user hovers
 
 .contain--narrow
-  %h2.section-heading When Additional Information is Unhelpful
+  %h2.section-heading Scaling Back Color Detail for Legibility
 
   %p
     I initially tried using a fluid spectrum of values so that each score value was represented by a unique color. I thought that the increased fidelity would help convey more meaning. When we generated cases representing uncommon combinations though, I realized how much less intuitive certain colors became in relation to each other. The additional detail can be justified in more focused contexts, but becomes confusing when viewing different results next to each other, so I scaled the values back to limited color ranges here.

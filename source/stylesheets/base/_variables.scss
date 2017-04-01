@@ -67,7 +67,7 @@ $space-xxl: 128px;
 $breakpoints: (
   'small'     : 320px,
   'mid-small' : 480px,
-  'med'       : 640px,
+  'medium'       : 640px,
   'large'     : 920px,
   'wide'      : 1200px,
   'mega'      : 1400px,
@@ -76,13 +76,13 @@ $breakpoints: (
 // $container-width: 38rem;
 
 
-$screen-ms-min: 480px;
-$screen-sm-min: 768px;
-$screen-md-min: 992px;
-$screen-lg-min: 1200px;
-// $header-breakpoint: $screen-sm-min;
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
 
-$nav-breakpoint: $screen-ms-min;
+
+$nav-breakpoint: 400px;
 $horizontal-nav-height: 55px;
 
 $page-content-top-padding: 1rem;
