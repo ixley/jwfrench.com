@@ -11,7 +11,7 @@
     <link href='/favicon-96x96-f9734c6c.png' rel='icon' sizes='96x96' type='image/png'>
     <link href='/favicon-16x16-f8062427.png' rel='icon' sizes='16x16' type='image/png'>
     <title>Social Voting Guide</title>
-    <link href="../../stylesheets/styles-6d390c09.css" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" />
+    <link href="../../stylesheets/styles-7f5f546e.css" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" />
     <script src="../../javascripts/all-76d30205.js"></script>
     <script>
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
@@ -36,104 +36,129 @@
             <a class='nav-toggle js-nav-toggle__btn' href='#'>Menu</a>
             <ul class='js-nav-toggle__menu' data-state='closed'>
               <li><a href="/about">About</a></li>
-              <li class="is-active"><a href="/projects">Projects</a></li>
+              <li><a href="//">Projects</a></li>
             </ul>
           </nav>
         </div>
       </header>
-      <div class='content-container'>
-        <article class='case-study'>
+      <div class='page-content'>
+        <article class='case-study project'>
+          <div class='project__hero'></div>
           <div class='project__header'>
-            <h1 class='project__heading'>Social Voting Guide</h1>
-            <p class='project__subheading'>Harnessing social networks to help inform voters</p>
-            <p class='project__organization'>Design for We Vote</p>
-          </div>
-          <figure>
-            <img srcset="../../images/projects/we-vote/candidate-card-open-2x-5996e7a5.png 2x" width="825" height="573" src="../../images/projects/we-vote/candidate-card-open-52e2b75d.png" />
-          </figure>
-          <div class='project-intro'>
-            <div class='project-challenge'>
-              <h2 class='project-intro-heading'>The Challenge</h2>
-              <p>
-                Quickly and clearly communicate to users whether the majority of their network supports or opposes a candidate.
-              </p>
-            </div>
-            <div class='project-role'>
-              <h2 class='project-intro-heading'>My Role</h2>
-              <p>
-                With the core functionality outlined, I worked to provide key elements with the appropriate emphasis in different contexts.
-              </p>
+            <div class='contain'>
+              <h1 class='project__heading'>Social Voting Guide</h1>
+              <p class='project__subheading'>Harnessing people's trusted networks to increase voter engagement</p>
+              <p class='project__organization'>Design for We Vote</p>
             </div>
           </div>
-          <h2 class='section-heading'>Starting from Wireframes</h2>
-          <p>
-            The basic functionality was already in place with wireframe-esque designs when I joined the project. My main goal was to help develop a modular and consistent way to make the information easily digestible.
-          </p>
-          <figure>
-            <img srcset="../../images/projects/we-vote/wireframe-2x-cad5a4f1.png 2x" width="750" height="343" src="../../images/projects/we-vote/wireframe-58adbc72.png" />
-            <figcaption>Basic functionality was already implemented with 'wireframe' design</figcaption>
-          </figure>
-          <h2 class='section-heading'>Comparing Similar Design Patterns</h2>
-          <p>There are a handful of existing patterns for displaying opinions in a user’s network. I started by identifying the cases Facebook, Youtube, and Brigade were solving for and highlighting what similarities and differences there were with what We Vote was trying to accomplish.</p>
-          <ul>
-            <li>
-              <p>
-                <em>Facebook has traditionally been all about ‘Likes’. With the recent introduction of alternative reactions, their focus is still about showing popularity of a post.</em>
-              </p>
-              <figure>
-                <img srcset="../../images/projects/we-vote/fb-clip-2x-e0b99983.png 2x" width="297" height="82" src="../../images/projects/we-vote/fb-clip-b05f5b89.png" />
-                <figcaption>Simple, intuitive. Doesn’t display a positive/negative dynamic.</figcaption>
-              </figure>
-            </li>
-            <li>
-              <p>
-                <em>Youtube allows for explicit positive and negative votes. The design still highlights positive votes (likes), and this metric is still second to total video plays.</em>
-              </p>
-              <figure>
-                <img srcset="../../images/projects/we-vote/yt-clip-2x-aaa6f663.png 2x" width="183" height="78" src="../../images/projects/we-vote/yt-clip-665b8ded.png" />
-                <figcaption>Reinforces 'positive' metrics.</figcaption>
-              </figure>
-            </li>
-            <li>
-              <p>
-                <em>Brigade is most similar to We Vote in presenting opinions being for or against cadidates, issues, and statements. They present the binary ‘for/against’ dynamic, but specifically refrain from displaying network opinions on an issue until you enter your own position (so as not to influence you). Once you do take a position, they show the percentage of the contingent you belong to, regardless of whether it’s the majority or minority.</em>
-              </p>
-              <figure>
-                <img srcset="../../images/projects/we-vote/brigade-clip-1-2x-0f158b08.png 2x" width="543" height="57" src="../../images/projects/we-vote/brigade-clip-1-7e1ed0b3.png" />
-                <img srcset="../../images/projects/we-vote/brigade-clip-2-2x-a1509529.png 2x" width="328" height="134" src="../../images/projects/we-vote/brigade-clip-2-9d11478a.png" />
-                <figcaption>Hides network position at first, then highlights your cohort, regardless of whether it's the majority or minority position</figcaption>
-              </figure>
-            </li>
-          </ul>
-          <h2 class='section-heading'>Trust your Network</h2>
-          <p>
-            After exploring a number of versions giving different emphasis to the user’s position in relation to their network’s position, we stuck with the decision to give emphasis to the user’s network position over their individual position.
-          </p>
-          <p>
-            Because each user creates their own network by choosing individuals and organizations to follow, the majority position is important to highlight. The user may ‘break’ from their network majority, but the network position is still given more emphasis in this view.
-          </p>
-          <figure>
-            <img srcset="../../images/projects/we-vote/card-before-2x-9fb8ce8b.png 2x" width="544" height="354" src="../../images/projects/we-vote/card-before-4922f978.png" />
-            <img srcset="../../images/projects/we-vote/card-after-2x-3f0e4be1.png 2x" width="544" height="354" src="../../images/projects/we-vote/card-after-b7e6385e.png" />
-            <figcaption>The user's network position is given prominence even if they select an opposing position.</figcaption>
-          </figure>
-          <p>
-            <em>*If you were looking closely, you might have noticed that the icons for the network position (arrows) are different than the icons below (thumbs up/down). Without going into too much detail here, this is to accommodate the fact that network positions are comprised of both explicit positions as well as softer 'ratings' that are more implicit.</em>
-          </p>
-          <h2 class='section-heading'>What's Next</h2>
-          <p>
-            As a volunteer-based open-source project, the product development currently consists of extremely small cycles of iteration. A few areas I've already flagged for future iteration are:
-          </p>
-          <ul>
-            <li>Displaying a more neutral/mixed dynamic when a network position is relatively even (40–60%).</li>
-            <li>Showing additional context for the network positions, including select comments and endorsements from organizations and friends.</li>
-            <li>And of course, continuing to gather user feedback.</li>
-          </ul>
+          <div class='contain'>
+            <figure>
+              <img srcset="../../images/projects/we-vote/candidate-card-open-2x-5996e7a5.png 2x" width="825" height="573" src="../../images/projects/we-vote/candidate-card-open-52e2b75d.png" />
+            </figure>
+          </div>
+          <div class='project__intro banner bg-lighter-gray'>
+            <div class='contain'>
+              <div class='row'>
+                <div class='col-sm'>
+                  <div class='project__challenge'>
+                    <h2 class='project__intro-heading'>The Challenge</h2>
+                    <p>
+                      Quickly and clearly communicate to users whether the majority of their network supports or opposes a candidate.
+                    </p>
+                  </div>
+                </div>
+                <div class='col-sm'>
+                  <div class='project__role'>
+                    <h2 class='project__intro-heading'>My Role</h2>
+                    <p>
+                      With the core functionality outlined, I worked to provide key elements with the appropriate emphasis in different contexts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='contain--narrow'>
+            <h2 class='section-heading'>Starting from Wireframes</h2>
+            <p>
+              The basic functionality was already in place with wireframe-esque designs when I joined the project. My main goal was to help develop a modular and consistent way to make the information easily digestible.
+            </p>
+          </div>
+          <div class='contain--wide'>
+            <figure>
+              <img srcset="../../images/projects/we-vote/wireframe-2x-cad5a4f1.png 2x" width="750" height="343" src="../../images/projects/we-vote/wireframe-58adbc72.png" />
+              <figcaption>Basic functionality was already implemented with 'wireframe' design</figcaption>
+            </figure>
+          </div>
+          <div class='contain--narrow'>
+            <h2 class='section-heading'>Comparing Similar Design Patterns</h2>
+            <p>There are a handful of existing patterns for displaying opinions in a user’s network. I started by identifying the cases Facebook, Youtube, and Brigade were solving for and highlighting what similarities and differences there were with what We Vote was trying to accomplish.</p>
+            <ul>
+              <li>
+                <p>
+                  <em>Facebook has traditionally been all about ‘Likes’. With the recent introduction of alternative reactions, their focus is still about showing popularity of a post.</em>
+                </p>
+                <figure>
+                  <img srcset="../../images/projects/we-vote/fb-clip-2x-e0b99983.png 2x" width="297" height="82" src="../../images/projects/we-vote/fb-clip-b05f5b89.png" />
+                  <figcaption>Simple, intuitive. Doesn’t display a positive/negative dynamic.</figcaption>
+                </figure>
+              </li>
+              <li>
+                <p>
+                  <em>Youtube allows for explicit positive and negative votes. The design still highlights positive votes (likes), and this metric is still second to total video plays.</em>
+                </p>
+                <figure>
+                  <img srcset="../../images/projects/we-vote/yt-clip-2x-aaa6f663.png 2x" width="183" height="78" src="../../images/projects/we-vote/yt-clip-665b8ded.png" />
+                  <figcaption>Reinforces 'positive' metrics.</figcaption>
+                </figure>
+              </li>
+              <li>
+                <p>
+                  <em>Brigade is most similar to We Vote in presenting opinions being for or against cadidates, issues, and statements. They present the binary ‘for/against’ dynamic, but specifically refrain from displaying network opinions on an issue until you enter your own position (so as not to influence you). Once you do take a position, they show the percentage of the contingent you belong to, regardless of whether it’s the majority or minority.</em>
+                </p>
+                <figure>
+                  <img srcset="../../images/projects/we-vote/brigade-clip-1-2x-0f158b08.png 2x" width="543" height="57" src="../../images/projects/we-vote/brigade-clip-1-7e1ed0b3.png" />
+                  <img srcset="../../images/projects/we-vote/brigade-clip-2-2x-a1509529.png 2x" width="328" height="134" src="../../images/projects/we-vote/brigade-clip-2-9d11478a.png" />
+                  <figcaption>Hides network position at first, then highlights your cohort, regardless of whether it's the majority or minority position</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class='contain--narrow'>
+            <h2 class='section-heading'>Trust your Network</h2>
+            <p>
+              After exploring a number of versions giving different emphasis to the user’s position in relation to their network’s position, we stuck with the decision to give emphasis to the user’s network position over their individual position.
+            </p>
+            <p>
+              Because each user creates their own network by choosing individuals and organizations to follow, the majority position is important to highlight. The user may ‘break’ from their network majority, but the network position is still given more emphasis in this view.
+            </p>
+          </div>
+          <div class='contain--full'>
+            <figure>
+              <img srcset="../../images/projects/we-vote/card-before-2x-9fb8ce8b.png 2x" width="544" height="354" src="../../images/projects/we-vote/card-before-4922f978.png" />
+              <img srcset="../../images/projects/we-vote/card-after-2x-3f0e4be1.png 2x" width="544" height="354" src="../../images/projects/we-vote/card-after-b7e6385e.png" />
+              <figcaption>The user's network position is given prominence even if they select an opposing position.</figcaption>
+            </figure>
+          </div>
+          <div class='contain--narrow'>
+            <p>
+              <em>*If you were looking closely, you might have noticed that the icons for the network position (arrows) are different than the icons below (thumbs up/down). Without going into too much detail here, this is to accommodate the fact that network positions are comprised of both explicit positions as well as softer 'ratings' that are more implicit.</em>
+            </p>
+            <h2 class='section-heading'>What's Next</h2>
+            <p>
+              As a volunteer-based open-source project, the product development currently consists of extremely small cycles of iteration. A few areas I've already flagged for future iteration are:
+            </p>
+            <ul>
+              <li>Displaying a more neutral/mixed dynamic when a network position is relatively even (40–60%).</li>
+              <li>Showing additional context for the network positions, including select comments and endorsements from organizations and friends.</li>
+              <li>And of course, continuing to gather user feedback.</li>
+            </ul>
+          </div>
           <div class='article-footer-nav'>
             <a class='article-footer-nav__link--single' href='/projects/scoring-health'>
               <div class='article-footer-nav__title'>Scoring Health</div>
               <div class='article-footer-nav__description'>
-                Reducing complexity while adding new information
+                Simplifying important health information
               </div>
             </a>
           </div>
@@ -171,8 +196,7 @@
             notTop : "headroom--not-top"
         }
       });
-    </script>
-    <script>
+      
       $('a.external-link').each(function() {
         $(this).click(function(event) {
           event.preventDefault();
