@@ -53,16 +53,11 @@ body.projects {
     background-color: #f1f1f1;
     border-radius: 3px;
   }
-  .project-nav {
-    margin-top: $space-xl;
-    padding-top: $space-xl;
-    padding-bottom: $space-xl;
-  }
   .article-footer-nav {
     margin-top: $space-xxl;
-
   }
 }
+
 
 .project__intro-heading {
   text-transform: uppercase;
@@ -74,7 +69,9 @@ body.projects {
 
 .project {
   + .project-nav {
-    margin-top: 6rem;
+    margin-top: $space-xl;
+    padding-top: $space-xl;
+    padding-bottom: $space-xl;
   }
   .section-heading {
     font-weight: bold;
