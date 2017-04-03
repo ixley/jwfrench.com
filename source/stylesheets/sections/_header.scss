@@ -23,8 +23,7 @@
     top: 0;
     transition: height .2s ease-in-out;
     width: 100%;
-    height: auto;
-    min-height: $horizontal-nav-height;
+    height: $horizontal-nav-height;
     transition: height 300ms, padding 300ms;
   }
   @include micro-clearfix;
@@ -74,6 +73,7 @@
       }
       &[data-state=open] {
         display: inherit;
+        box-shadow: 0 4px 4px rgba(#000, .1);
       }
     }
     li {
