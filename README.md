@@ -12,7 +12,7 @@ via Middleman GH pages
 rake build    # Compile all files into the build directory
 rake publish  # Build and publish to Github Pages
 ```
-To publish uncommitted changes:
+To publish uncommitted changes:n
 ```
 bundle exec rake publish ALLOW_DIRTY=true
 ```
