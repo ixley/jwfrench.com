@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
   // Copy Passthrough files without processing
   eleventyConfig.addPassthroughCopy("all.js");
   // eleventyConfig.addPassthroughCopy({ "./src/assets/js": "js" });
+  eleventyConfig.addPassthroughCopy("src/CNAME");
 
   // Copy favicons over
   eleventyConfig.addPassthroughCopy({ "./src/assets/favicon": "." });
