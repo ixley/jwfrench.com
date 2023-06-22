@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-    "build": "npx eleventy",
+    "build": "npx @11ty/eleventy",
     "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
   },
   "keywords": [],
@@ -14,9 +14,12 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "eleventy-plugin-rev": "^1.1.1",
+    "eleventy-sass": "^2.2.1",
     "sass": "^1.62.1"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^4.0.0",
     "@hotwired/turbo": "^7.3.0",
     "bourbon": "^7.3.0",
     "bourbon-neat": "^4.0.0",

@@ -1,4 +1,3 @@
-{% set assetHash = global.random() %}
 <!DOCTYPE html>
 
 {% block head %}
@@ -18,17 +17,18 @@
 
   <style>{% include "styles/critical.css" %}</style>
 
-   <link rel="stylesheet" href="/styles/styles.css?{{ assetHash }}"> 
+   <link rel="stylesheet" href="{{"/styles/styles.css" | url | bust }}"> 
+   
   {# Add facility for pages to declare an array of stylesheet paths #}
   {% if pageStylesheets %}
     {% for item in pageStylesheets %}
-      <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
+      <link rel="stylesheet" media="print" href="{{ item | rev }}" onload="this.media='all'" />
     {% endfor %}
   {% endif %}
 
 
   <title>
-    {{ title }} || "Jeff French. Designer, Question-asker"
+    {{ title }}  | Jeff French – Product Designer
   </title>
   <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic"> -->

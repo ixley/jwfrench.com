@@ -16,21 +16,7 @@ body.index {
     color: $highlight-color;
     // margin: 0;
   }
-  .tape {
-    position: relative;
-    background: linear-gradient(12deg, rgba(#ffab3d, 0.2), rgba(#d43efa, 0.2));
-    // box-shadow: 0 1px 2px rgba($gray-darker, 0.2);
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   // display: inline-block;
-    //   bottom: 0;
-    //   height: 10px;
-    //   width: 100%;
-    //   left: 0;
-    //   background: linear-gradient(12deg, rgba(#ffab3d, 0.2), rgba(#d43efa, 0.2));
-    // }
-  }
+
   p,
   li {
     font-size: 1.2rem;

@@ -1,8 +1,31 @@
 // const sass = require("sass"); // Dart Sass
+// const pluginRev = require("eleventy-plugin-rev");
+// const eleventySass = require("eleventy-sass");
+const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
   // let haml = require("hamljs");
   // eleventyConfig.setLibrary("haml", haml);
+
+  // eleventyConfig.addPlugin(pluginRev);
+  // eleventyConfig.addPlugin(eleventySass, {
+  //   rev: true,
+  // });
+  eleventyConfig.addFilter("bust", (url) => {
+    const [urlPart, paramPart] = url.split("?");
+    const params = new URLSearchParams(paramPart || "");
+    const relativeUrl =
+      urlPart.charAt(0) == "/" ? urlPart.substring(1) : urlPart;
+
+    try {
+      const fileStats = fs.statSync(relativeUrl);
+      const dateTimeModified = new DateTime(fileStats.mtime).toFormat("X");
+
+      params.set("v", dateTimeModified);
+    } catch (error) {}
+
+    return `${urlPart}?${params}`;
+  });
 
   // `file.html` instead of `file/index.html`
   eleventyConfig.addGlobalData("permalink", () => {
@@ -15,13 +38,12 @@ module.exports = function (eleventyConfig) {
 
   // Copy Passthrough files without processing
   eleventyConfig.addPassthroughCopy("all.js");
-  // eleventyConfig.addPassthroughCopy({ "./src/assets/js": "js" });
   eleventyConfig.addPassthroughCopy("src/CNAME");
-
-  // Copy favicons over
-  eleventyConfig.addPassthroughCopy({ "./src/assets/favicon": "." });
-  // Copy image directory
-  eleventyConfig.addPassthroughCopy({ "./src/assets/images": "/images" });
+  eleventyConfig.addPassthroughCopy({ "./src/assets/favicon": "." }); // Copy favicons over
+  eleventyConfig.addPassthroughCopy({ "./src/assets/images": "/images" }); // Copy image directory
+  eleventyConfig.addPassthroughCopy({
+    "./src/assets/Jeff_French-Resume-2023.pdf": ".",
+  });
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);
@@ -32,6 +54,5 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "public",
     },
-    pathPrefix: "/public/",
   };
 };
