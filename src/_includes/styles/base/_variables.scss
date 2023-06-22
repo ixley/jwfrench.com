@@ -1,0 +1,81 @@
+// Typography
+
+$neuton: "Neuton", Book Antiqua, Cambria, serif;
+$source: "Source Sans Pro", sans-serif;
+$gentium: "Gentium Plus", serif;
+
+$base-font-family: $source;
+$heading-font-family: $gentium;
+
+// Font Sizes
+$base-font-size: 16px;
+$heading-font-size: 20px;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.05;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: calc($base-spacing / 2);
+$base-z-index: 0;
+
+// Colors
+
+$blue: #477dca;
+$wine: #be0067;
+
+$gray-darker: #333;
+$gray-dark: #555;
+$gray: #999;
+$gray-light: #ccc;
+$gray-lighter: #eee;
+$gray-pale: #f8f8f8;
+$gray-border: #ddd;
+
+$link-color: $blue;
+$site-bg-color: lighten(#eee, 5%);
+$highlight-color: $wine;
+
+// Font Colors
+$base-background-color: #fff;
+$base-font-color: $gray-darker;
+$action-color: $blue;
+
+// Border
+$base-border-color: $gray-border;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Layout
+
+$breakpoints: (
+  "small": 320px,
+  "mid-small": 480px,
+  "med": 640px,
+  "large": 920px,
+  "wide": 1200px,
+  "mega": 1400px,
+);
+
+$max-container-width: 38rem;
+
+$screen-ms-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+// $header-breakpoint: $screen-sm-min;
+
+$nav-breakpoint: $screen-ms-min;
+$horizontal-nav-height: 55px;
+
+$main-top-padding: 0.5rem;
+$main-side-padding: 1rem;
+
+// Transitions
+
+$default-hover-transition-time: 0.2s;

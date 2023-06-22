@@ -1,0 +1,12 @@
+@import "micro-clearfix";
+@import "breakpoint";
+@import "hide-text";
+
+@mixin small-heading {
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 1em 0;
+}

@@ -1,0 +1,7 @@
+{
+  "search.exclude": {
+    "**/*.jpg": true,
+    "**/*.png": true,
+    "/public/**": true
+  }
+}

@@ -1,0 +1,81 @@
+{% set assetHash = global.random() %}
+<!DOCTYPE html>
+
+{% block head %}
+<head>
+  <meta charset="utf-8"/>
+  <!-- Always force latest IE rendering engine or request Chrome Frame
+  -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- Favicons
+  -->
+  <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"></link>
+  <link href="/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"></link>
+  <link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"></link>
+  <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"></link>
+  
+
+  <style>{% include "styles/critical.css" %}</style>
+
+   <link rel="stylesheet" href="/styles/styles.css?{{ assetHash }}"> 
+  {# Add facility for pages to declare an array of stylesheet paths #}
+  {% if pageStylesheets %}
+    {% for item in pageStylesheets %}
+      <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
+    {% endfor %}
+  {% endif %}
+
+
+  <title>
+    {{ title }} || "Jeff French. Designer, Question-asker"
+  </title>
+  <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Neuton:400,700,400italic">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic"> -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400&family=Gentium+Plus&display=swap" rel="stylesheet">
+
+
+  <script src="/js/bundle.js"></script>
+  
+</head>
+
+{% endblock %}
+
+  <body>
+    <div class="site-container">
+      {% include "layouts/_header.njk" %}
+      <div class="page-content">
+        <main>{{ content | safe }}</main>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var header = document.querySelector("header");
+        var headroom = new Headroom(header, {
+          // scroll tolerance per direction
+          tolerance : {
+              down : 5,
+              up : 10
+          },
+          // vertical offset in px before element is first unpinned
+          offset: 30,
+          // css classes to apply
+          classes : {
+            initial : "headroom",
+            pinned : "headroom--visible",
+            unpinned : "headroom--dim",
+            top : "headroom--top",
+            notTop : "headroom--not-top"
+          }
+        });
+        headroom.init();
+      })();
+    </script>
+    
+
+  </body>
+</html>

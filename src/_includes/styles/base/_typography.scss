@@ -1,0 +1,113 @@
+html {
+  // set to use rems at the module level, ems at the component level
+  font-size: 20px; // larger for Neuton
+}
+
+// ::selection {
+//   background-color: $highlight-color;
+//   color: #fff;
+// }
+
+body {
+  // @include font-feature-settings("liga", "pnum");
+  -webkit-font-smoothing: antialiased;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-kerning: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  // font-size: $base-font-size;
+  font-weight: normal;
+  line-height: $heading-line-height;
+  // margin: 0 0 ($heading-line-height * 1em / 2);
+  margin: 0 0 0.25em;
+  letter-spacing: -0.005em;
+}
+
+p {
+  margin: 0 0 1.25em;
+  line-height: 1.7;
+}
+section {
+  margin: 0 0 $base-spacing;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+  cursor: pointer;
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  // Gradient link underlines
+  .content-container p & {
+    // restrict to .content-container
+    $bg-color: $site-bg-color;
+    html.no-js &,
+    html.no-cssgradients & {
+      text-decoration: underline;
+    }
+    // html.cssgradients &  { // add modernizr
+    & {
+      text-decoration: none;
+      text-shadow: 2px 0 0 $bg-color, -2px 0 0 $bg-color;
+      background-image: linear-gradient(
+        to right,
+        currentColor 0%,
+        currentColor 100%
+      );
+      background-repeat: repeat-x;
+      background-position: 0 95%;
+      background-size: 100% 1px;
+    }
+    &.img__link {
+      background: none;
+    }
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin-right: -0.75rem;
+  margin-bottom: 1.5em;
+  margin-left: -0.75rem;
+  text-align: center;
+}
+figcaption {
+  padding-top: 0.5em;
+  border-top: 1px solid $gray-lighter;
+  font-style: italic;
+  font-size: 0.8em;
+  color: $gray;
+  text-align: center;
+}

@@ -1,0 +1,130 @@
+html {
+  &.turbolinks-progress-bar::before {
+    height: 2px !important;
+  }
+}
+body {
+  background: $site-bg-color;
+}
+
+.lazy-hidden {
+  // background: #fff url("/images/global/spinner.gif") no-repeat 50% 50%;
+  opacity: 0;
+}
+.lazy-loaded {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+i.fa span {
+  // font-awesome
+  @include hide-the-text;
+}
+
+// TODO: move this declaration
+
+// Fade in page content on load
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 1em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.content-container {
+  width: 100%;
+  height: 100%;
+  max-width: $max-container-width;
+  min-height: 100%;
+  margin: $horizontal-nav-height auto 0;
+  padding-top: $main-top-padding;
+  padding-right: $main-side-padding;
+  padding-bottom: $main-side-padding;
+  padding-left: $main-side-padding;
+  animation: fadeInUp 1s;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin-top: 55px;
+  padding-top: 1rem;
+  animation: fadeInUp 1s;
+}
+
+.elsewhere-nav {
+  display: none;
+  font-size: 1rem;
+  display: block;
+  // text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  a {
+    padding: 3px;
+    color: $gray;
+    &:hover {
+      color: $blue;
+    }
+  }
+  span {
+    @include hide-the-text;
+  }
+}
+
+.contain {
+  max-width: 38rem;
+  &,
+  &--full,
+  &--narrow,
+  &--wide {
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  &--narrow {
+    max-width: 32rem;
+  }
+  &--wide {
+    max-width: 42rem;
+  }
+  &__offset {
+    margin-right: -1rem;
+    margin-left: -1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  figure,
+  & > figure {
+    max-width: 42rem;
+  }
+  > .text {
+    max-width: 32rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.contain > .text {
+  max-width: 32rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tape {
+  position: relative;
+  background: linear-gradient(12deg, rgba(#ffab3d, 0.2), rgba(#d43efa, 0.2));
+  padding: 0 0.25rem;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+}
+
+.small-heading {
+  @include small-heading;
+  color: darken($highlight-color, 15);
+}
