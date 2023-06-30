@@ -3,6 +3,7 @@
 $neuton: "Neuton", Book Antiqua, Cambria, serif;
 $source: "Source Sans Pro", sans-serif;
 $gentium: "Gentium Plus", serif;
+$emoji-font: "Noto Emoji";
 
 $base-font-family: $source;
 $heading-font-family: $gentium;
@@ -25,6 +26,7 @@ $base-z-index: 0;
 
 $blue: #477dca;
 $wine: #be0067;
+$purple: #8100be;
 
 $gray-darker: #333;
 $gray-dark: #555;
@@ -72,7 +74,7 @@ $screen-lg-min: 1200px;
 // $header-breakpoint: $screen-sm-min;
 
 $nav-breakpoint: $screen-ms-min;
-$horizontal-nav-height: 55px;
+$horizontal-nav-height: 50px;
 
 $main-top-padding: 0.5rem;
 $main-side-padding: 1rem;

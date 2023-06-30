@@ -8,20 +8,34 @@ layout: layouts/base.njk
   .contain
     %header
       %p
-        %span.tape Product Design Lead
+        %span.emoji 👋&nbsp; 
+        Hiya - I’m Jeff French,
+        %span.emoji 📐&nbsp;
+        a Product Design Lead in the Bay Area 
+        %span.emoji 🌉 
         %span with experience growing early stage products.
+        %span.emoji📈
+        -# %span.tape Product Design Lead
+        -# %span with experience growing early stage products.
 
+%section.recent-experience
+  .contain
+    %h2 Recent experience
     %ul
       %li
-        %span.small-heading Dropbox (DocSend) 2022-23
-        %br
+        %h3 Dropbox
+        .role Product Design Manager (DocSend) 2022-23
         Most recently at Dropbox, I managed a team of designers working on DocSend—growing the standalone product and leading the integration of DocSend into Dropbox’s core product.
+        -# {% image "docsend-thumb-2x.png", "DocSend" %}
       %li
-        %span.small-heading Dropbox (HelloWorks → Dropbox Forms) 2019-22
-        %br
-        I worked with a small product team to build out and grow Dropbox Forms—a form-builder for simplifying business forms and agreements.
+        .role Sr. Product Designer (HelloWorks) 2019-22
+        I worked with a small product team to build out and grow HelloWorks—a form-builder for simplifying business forms and agreements.
       %li
-        %span.small-heading HelloSign 2017-19
-        %br
+        %h3 HelloSign
+        .role Sr. Product Designer 2017-19
         Starting as the sole product designer at HelloSign, I supported the core product, and helped build HelloWorks from the ground up. I also created and helped maintain our design system and component library we grew as our design team.
 
+%section.footer-links
+  .contain
+    %a.external-link{href: "https://www.linkedin.com/in/jefffrench/"} LinkedIn
+    %a.external-link{href: "/Jeff-French-Resume-2023.pdf" } Résumé

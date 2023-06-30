@@ -3,7 +3,7 @@
 // Base nav styles
 
 .header__name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #555;
   margin-bottom: 0;
   float: left;
@@ -42,7 +42,7 @@
 
 .main-nav {
   font-family: $heading-font-family;
-  font-size: 1rem;
+  font-size: 1.2rem;
   li.is-active a {
     color: mix($highlight-color, $link-color, 70%);
   }

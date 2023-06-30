@@ -1,27 +1,68 @@
-$space-xl: 64px;
-
 body.index {
   background-color: $gray-lighter;
 }
 .homepage-intro-section {
   margin-top: -1rem; // offset parent padding
-  padding-top: $space-xl;
-  padding-bottom: $space-xl;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  // padding-bottom: $space-lg;
 
   header p {
     font-family: $heading-font-family;
     line-height: $heading-line-height;
-    font-size: 3rem;
+    @include breakpoints(max mid-small) {
+      font-size: 1.5rem;
+    }
+    @include breakpoints(mid-small large) {
+      font-size: 2rem;
+    }
+    font-size: 2.5rem;
+    transition: font-size 0.2s ease-in-out;
     // font-style: italic;
     color: $highlight-color;
-    // margin: 0;
+    .emoji {
+      font-size: 0.85em;
+      color: #470033;
+      background-color: #470033;
+      background-image: linear-gradient(-25deg, $purple, #470033);
+      // opacity: 0.5;
+      background-size: 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      &::selection {
+        -webkit-text-fill-color: #fff;
+        -moz-text-fill-color: #fff;
+      }
+    }
   }
-
+}
+.recent-experience {
+  h2 {
+    margin-bottom: 1rem;
+  }
+  h3 {
+    color: $purple;
+  }
   p,
   li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: $base-line-height;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  .role {
+    @include small-heading;
+    color: $gray;
+  }
+}
+
+// this needs scoping if you reuse this class
+.footer-links {
+  a {
+    margin-right: 1rem;
   }
 }
 

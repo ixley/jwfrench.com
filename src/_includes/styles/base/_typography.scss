@@ -1,6 +1,6 @@
 html {
   // set to use rems at the module level, ems at the component level
-  font-size: 20px; // larger for Neuton
+  font-size: 16px; // larger for Neuton
 }
 
 // ::selection {
@@ -110,4 +110,8 @@ figcaption {
   font-size: 0.8em;
   color: $gray;
   text-align: center;
+}
+
+.emoji {
+  font-family: $emoji-font;
 }

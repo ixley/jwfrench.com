@@ -126,5 +126,5 @@ i.fa span {
 
 .small-heading {
   @include small-heading;
-  color: darken($highlight-color, 15);
+  color: $purple;
 }
