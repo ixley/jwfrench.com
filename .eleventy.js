@@ -2,6 +2,7 @@
 // const pluginRev = require("eleventy-plugin-rev");
 // const eleventySass = require("eleventy-sass");
 const fs = require("fs");
+// const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   // let haml = require("hamljs");
@@ -44,6 +45,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/assets/Jeff_French-Resume-2023.pdf": ".",
   });
+
+  // // Image plugin
+  // eleventyConfig.addPlugin(Image, {
+  //   // Set global default options
+  //   formats: ["png", "jpg"],
+  //   urlPath: "/images/",
+
+  //   // Notably `outputDir` is resolved automatically
+  //   // to the project output directory
+
+  //   defaultAttributes: {
+  //     loading: "lazy",
+  //     decoding: "async",
+  //   },
+  // });
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   eleventyConfig.setUseGitIgnore(false);

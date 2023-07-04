@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.0",
+    "@11ty/eleventy-img": "^3.1.0",
     "@hotwired/turbo": "^7.3.0",
+    "@sindresorhus/slugify": "^2.2.1",
     "bourbon": "^7.3.0",
     "bourbon-neat": "^4.0.0",
     "concurrently": "^8.0.1",

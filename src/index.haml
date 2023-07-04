@@ -10,11 +10,15 @@ layout: layouts/base.njk
       %p
         %span.emoji 👋&nbsp; 
         Hiya - I’m Jeff French,
-        %span.emoji 📐&nbsp;
-        a Product Design Lead in the Bay Area 
+        %span.emoji 📐 
+        %span a 
+        %span.underline Product 
+        %span.underline Design
+        %span.underline Lead
+        %span in the Bay Area 
         %span.emoji 🌉 
-        %span with experience growing early stage products.
-        %span.emoji📈
+        %span with over 10 years experience growing early stage products.
+        %span.emoji 📈
         -# %span.tape Product Design Lead
         -# %span with experience growing early stage products.
 
@@ -24,16 +28,24 @@ layout: layouts/base.njk
     %ul
       %li
         %h3 Dropbox
+        %img{src: "/images/home/docsend-thumb-2x.png", alt: "DocSend", width: "200", class: "thumb"}
         .role Product Design Manager (DocSend) 2022-23
-        Most recently at Dropbox, I managed a team of designers working on DocSend—growing the standalone product and leading the integration of DocSend into Dropbox’s core product.
+        %p.blurb I led design for the DocSend product, managing a team of 4 designers and focused on growing the standalone product as well as leading the integration of DocSend into Dropbox’s core product.
         -# {% image "docsend-thumb-2x.png", "DocSend" %}
+        
       %li
-        .role Sr. Product Designer (HelloWorks) 2019-22
-        I worked with a small product team to build out and grow HelloWorks—a form-builder for simplifying business forms and agreements.
+        %img{src: "/images/home/helloworks-thumb-2x.png", alt: "DocSend", width: "200", class: "thumb"}
+        .role Senior Product Designer (HelloWorks) 2019 &ndash; 2022
+        .blurb
+          %p I worked with a small product team to build out and grow HelloWorks—a form-builder for simplifying business forms and agreements.
+          %p I prioritized creative and lightweight design solutions, including marketing growth projects, that helped grow ARR from $200K to over $1.5M and improved ROAS by 10x within 2 years.
       %li
         %h3 HelloSign
-        .role Sr. Product Designer 2017-19
-        Starting as the sole product designer at HelloSign, I supported the core product, and helped build HelloWorks from the ground up. I also created and helped maintain our design system and component library we grew as our design team.
+        %img{src: "/images/home/sign-thumb-2x.png", alt: "DocSend", width: "200", class: "thumb"}
+        .role Sr. Product Designer 2017 &ndash; 2019
+        .blurb
+          %p Starting as the sole product designer at HelloSign, I designed the HelloWorks form-builder and customer portal from the ground up, collaborating with a small product team to deliver a freemium model with 100+ new accounts, monthly. 
+          %p I also created and iterated on a design system and component libraries for HelloSign and HelloWorks products, resulting in improved design consistency, accessibility standards, and improved designer/developer productivity.
 
 %section.footer-links
   .contain

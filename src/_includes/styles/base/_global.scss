@@ -118,10 +118,38 @@ i.fa span {
 
 .tape {
   position: relative;
-  background: linear-gradient(12deg, rgba(#ffab3d, 0.2), rgba(#d43efa, 0.2));
-  padding: 0 0.25rem;
-  margin-left: -0.25rem;
-  margin-right: -0.25rem;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0.2em;
+    left: 0;
+    right: 0;
+    height: 1em;
+    // padding: 0 0.25rem;
+    margin-left: -0.125em;
+    margin-right: -0.125em;
+    background: linear-gradient(12deg, rgba(#ffab3d, 0.2), rgba(#d43efa, 0.2));
+    // border-bottom: 2px solid $purple;
+    // height: 0.2rem;
+  }
+}
+.underline {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0.2em;
+    left: 0;
+    right: 0;
+    height: 1em;
+    margin-left: -0.125em;
+    margin-right: -0.125em;
+    // background: linear-gradient(12deg, rgba(#ffab3d, 0.2), rgba(#d43efa, 0.2));
+    border-bottom: 1px solid $purple;
+    height: 0.2em;
+  }
 }
 
 .small-heading {
