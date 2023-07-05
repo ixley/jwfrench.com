@@ -61,7 +61,7 @@
         <main>
 <div class="contain">
 <figure>
-<img src="/images/about/me-lightbox.jpg" style="float: right; width: 260px; margin-left: 20px;"/></figure>
+<img src="/images/about/me-lightbox.jpg" style="float: right; width: 260px; margin-left: 20px;" class="photo"/></figure>
 <h1 class="section-heading">
 <strong>Collaborative</strong>
 <strong class="tape">design</strong>
@@ -120,6 +120,20 @@
         headroom.init();
       })();
     </script>
+    <script>
+      var nav = document.querySelector('.js-nav-toggle__btn');
+      var toggleState = function (elem, one, two) {
+        var elem = document.querySelector(elem);
+        elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
+      };
+
+      nav.onclick = function (e) {
+        toggleState('.js-nav-toggle__menu', 'closed', 'open');
+        e.preventDefault();
+      };
+    </script>
+
+
     <script>
       var externalLinks = document.querySelectorAll('a.external-link');
       externalLinks.forEach(function(link) {

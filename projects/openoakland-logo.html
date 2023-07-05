@@ -173,6 +173,20 @@
       })();
     </script>
     <script>
+      var nav = document.querySelector('.js-nav-toggle__btn');
+      var toggleState = function (elem, one, two) {
+        var elem = document.querySelector(elem);
+        elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
+      };
+
+      nav.onclick = function (e) {
+        toggleState('.js-nav-toggle__menu', 'closed', 'open');
+        e.preventDefault();
+      };
+    </script>
+
+
+    <script>
       var externalLinks = document.querySelectorAll('a.external-link');
       externalLinks.forEach(function(link) {
         link.addEventListener('click', function(event) {
