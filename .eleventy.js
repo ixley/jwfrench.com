@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/assets/favicon": "." }); // Copy favicons over
   eleventyConfig.addPassthroughCopy({ "./src/assets/images": "/images" }); // Copy image directory
   eleventyConfig.addPassthroughCopy({
-    "./src/assets/Jeff_French-Resume-2023.pdf": ".",
+    "./src/assets/Jeff-French-Resume-2023.pdf": ".",
   });
 
   // // Image plugin
