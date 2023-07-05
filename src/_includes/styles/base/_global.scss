@@ -156,3 +156,9 @@ i.fa span {
   @include small-heading;
   color: $purple;
 }
+
+.photo {
+  @include breakpoints(max mid-small) {
+    display: none;
+  }
+}
