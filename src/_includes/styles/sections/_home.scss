@@ -3,13 +3,14 @@ body.index {
 }
 .homepage-intro-section {
   margin-top: -1rem; // offset parent padding
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding-top: 2rem;
   // padding-bottom: $space-lg;
 
   header p {
     font-family: $heading-font-family;
     line-height: $heading-line-height;
+    margin-bottom: 1.25rem;
     @include breakpoints(max mid-small) {
       font-size: 1.5rem;
     }
@@ -30,7 +31,6 @@ body.index {
       background-clip: text;
       -webkit-background-clip: text;
       -moz-background-clip: text;
-      text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent;
       &::selection {
@@ -40,6 +40,19 @@ body.index {
     }
   }
 }
+
+.figma-deck-link {
+  @include small-heading;
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid $link-color;
+  &:hover {
+    background-color: lighten($link-color, 40%);
+  }
+}
+
 .recent-experience {
   h2 {
     margin-bottom: 1rem;
