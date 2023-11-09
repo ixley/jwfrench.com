@@ -5,6 +5,7 @@ html {
 }
 body {
   background: $site-bg-color;
+  padding-bottom: 2rem;
 }
 
 .lazy-hidden {
@@ -78,7 +79,7 @@ i.fa span {
 }
 
 .contain {
-  max-width: 38rem;
+  max-width: $max-container-width;
   &,
   &--full,
   &--narrow,

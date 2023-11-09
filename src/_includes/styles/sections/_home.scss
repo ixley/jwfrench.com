@@ -46,42 +46,101 @@ body.index {
   display: inline-block;
   margin-bottom: 2rem;
   padding: 0.5rem;
-  border-radius: 5px;
+  padding-left: 0.75rem;
+  border-radius: 50px;
   border: 1px solid $link-color;
+  background-color: $link-color;
+  color: #fff !important;
+  box-shadow: 0 0 0 transparent;
   &:hover {
-    background-color: lighten($link-color, 40%);
+    // background-color: lighten($link-color, 40%);
+    background-color: darken($link-color, 10%);
+    color: #fff;
+    transition: box-shadow, 0.25s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    box-shadow: 0 0 0 transparent;
   }
 }
 
 .recent-experience {
-  h2 {
-    margin-bottom: 1rem;
+  .company {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    .logo {
+      margin-right: 4px;
+      margin-bottom: 0.5rem;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 100rem;
+      padding: 4px;
+    }
+    .company-name {
+      font-size: 1.125rem;
+      margin-bottom: 0.5rem;
+    }
   }
-  h3 {
-    color: $purple;
+  h2 {
+    @include small-heading;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    color: $gray;
+    // font-weight: bold;
+    // text-transform: uppercase;
+    // letter-spacing: 0.1rem;
+    // font-family: "Helvetica Neue", sans-serif;
   }
   p,
   li {
     font-size: 1rem;
     line-height: $base-line-height;
   }
-  li {
+  li.entry {
+    position: relative;
     clear: both;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     margin-bottom: 2rem;
     // display: flex;
   }
+  a.entry-link {
+    display: block;
+    // position: absolute;
+    z-index: 0;
+    top: -8px;
+    bottom: -8px;
+    left: -8px;
+    right: -8px;
+  }
+
   .role {
-    @include small-heading;
+    font-size: 1.5rem;
+    // @include small-heading;
     // color: $wine;
   }
+  .years {
+    opacity: 0.8;
+  }
+
+  .blurb {
+    margin-top: 1rem;
+  }
+
+  .thumbnails {
+    display: flex;
+    li {
+      margin-right: 10px;
+    }
+  }
+
   .thumb {
-    float: right;
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    //   float: right;
+    //   margin-left: 1rem;
+    //   margin-bottom: 0.5rem;
+    //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    //   border-radius: 2px;
   }
 }
 
