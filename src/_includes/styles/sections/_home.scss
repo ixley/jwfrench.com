@@ -79,6 +79,9 @@ body.index {
     .company-name {
       font-size: 1.125rem;
       margin-bottom: 0.5rem;
+      span {
+        color: $gray;
+      }
     }
   }
   h2 {
